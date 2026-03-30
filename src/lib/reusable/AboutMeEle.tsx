@@ -35,9 +35,12 @@ const AboutMeEle = ({
           <Icon size={isMobile ? 15 : 24} className="text-gray-400" />
         </span>
       )}
-      <span className=" text-[10px] md:text-sm font-medium flex text-white">
-        {label}
-      </span>
+      {label && (
+        <span className=" text-[10px] md:text-sm font-medium flex text-white cursor-default">
+          {label}
+        </span>
+      )}
+
       {isCompany && (
         <a
           target="_blank"

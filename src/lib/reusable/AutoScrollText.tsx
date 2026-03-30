@@ -19,7 +19,7 @@ export default function AutoScrollText() {
   }, []);
 
   return (
-    <div className="relative h-8 md:h-12 overflow-hidden w-full max-w-md mx-auto ">
+    <div className="relative h-6 sm:h-8 md:h-12 overflow-hidden w-full max-w-md mx-auto ">
       <div
         className="transition-transform duration-700 ease-in-out"
         style={{
@@ -29,7 +29,7 @@ export default function AutoScrollText() {
         {sentences.map((text, i) => (
           <div
             key={i}
-            className="h-12 flex items-center justify-center text-md md:text-lg font-semibold text-gray-500"
+            className="h-12 flex items-center justify-center text-sm sm:text-md md:text-lg font-semibold text-gray-500"
           >
             {text}
           </div>

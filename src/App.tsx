@@ -6,12 +6,12 @@ import NavigationBar from "./pages/navigation/Navigation";
 
 function App() {
   return (
-    <div className="w-screen h-screen overflow-y-scroll m-0 p-0 box-border bg-black ">
+    <div className="w-screen h-screen overflow-y-scroll  box-border bg-black ">
       <NavigationBar />
       <BannerSection />
       <HeroSection />
       <Separator />
-      <AboutMe/>
+      <AboutMe />
     </div>
   );
 }

@@ -1,4 +1,5 @@
 import AutoScrollText from "@/lib/reusable/AutoScrollText";
+import { Tooltip } from "@/lib/reusable/ToolTip";
 import { useRef } from "react";
 
 const HeroSection = () => {
@@ -24,13 +25,14 @@ const HeroSection = () => {
         </div>
         <div className="w-full">
           <div className="w-full h-10 border-gray-500/50 border-b text-gray-500">
-            <p>MrD3MO</p>
+            <Tooltip content={"In Game Name"}>MrD3MO</Tooltip>
           </div>
+
           <div className="text-4xl border-gray-500/50 border-b font-medium  text-zinc-200 flex justify-center items-center gap-1">
             <span>Sumit Karki</span> <img src="./verified.svg" />
             <div>
               <img
-                className="ml-1 p-4 w-6 cursor-pointer rounded-2xl border-black border-2 hover:border-gray-500/50"
+                className="ml-1 w-6 cursor-pointer rounded-2xl "
                 src="./Pronounciation.svg"
                 alt="Play pronunciation"
                 onClick={playAudio}
