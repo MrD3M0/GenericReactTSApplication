@@ -16,7 +16,7 @@ export default function AutoScrollText() {
     }, 2500); // change every 2.5 seconds
 
     return () => clearInterval(interval);
-  }, []);
+  });
 
   return (
     <div className="relative h-6 sm:h-8 md:h-12 overflow-hidden w-full max-w-md mx-auto ">

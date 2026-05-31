@@ -1,5 +1,11 @@
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
 import AutoScrollText from "@/lib/reusable/AutoScrollText";
-import { Tooltip } from "@/lib/reusable/ToolTip";
+
 import { useRef } from "react";
 
 const HeroSection = () => {
@@ -25,7 +31,14 @@ const HeroSection = () => {
         </div>
         <div className="w-full">
           <div className="w-full h-10 border-gray-500/50 border-b text-gray-500">
-            <Tooltip content={"In Game Name"}>MrD3MO</Tooltip>
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>MrD3M0</TooltipTrigger>
+                <TooltipContent side="right" align="start" variant={"dark"}>
+                  IN-GAME-NAME
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
           </div>
 
           <div className="text-4xl border-gray-500/50 border-b font-medium  text-zinc-200 flex justify-center items-center gap-1">

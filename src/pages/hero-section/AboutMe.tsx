@@ -15,10 +15,8 @@ const AboutMe = () => {
       <div className="h-full w-[90%] md:w-[80%] lg:w-[40%] grid grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
         <AboutMeEle
           icon={BriefcaseBusiness}
-          label={"Developer at"}
-          isCompany={true}
-          companyName={"@Sajilo Softwares"}
-          companyLink="https://sajilosoftware.com/"
+          label={"Full Stack Developer"}
+          isCompany={false}
           className="col-span-2"
         />
         <AboutMeEle
