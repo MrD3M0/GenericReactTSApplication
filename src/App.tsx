@@ -1,24 +1,62 @@
-import Separator from "./lib/reusable/Separator";
-import Title from "./lib/reusable/Title";
-import AboutMe from "./pages/hero-section/AboutMe";
+// App.tsx
+import { lazy, Suspense } from "react";
+import NavigationBar from "./pages/navigation/Navigation";
 import BannerSection from "./pages/hero-section/Banner";
 import HeroSection from "./pages/hero-section/HeroSection";
-import NavigationBar from "./pages/navigation/Navigation";
-import Stack from "./pages/skills-section/Stack";
+import Separator from "./lib/reusable/Separator";
+import AboutMe from "./pages/hero-section/AboutMe";
+import Title from "./lib/reusable/Title";
+import StackSkeleton from "./pages/skeletonLoaders/StackSkeleton";
+import ExperienceSkeleton from "./pages/skeletonLoaders/ExperienceSkeleton";
+import ProjectsSkeleton from "./pages/skeletonLoaders/ProjectsSkeleton";
+import FooterSkeleton from "./pages/skeletonLoaders/FooterSkeleton";
+import Connect from "./pages/Connect/Connect";
+import SplashCursor from "./components/SplashCursor";
+
+const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
+const Stack = lazy(() => import("./pages/skills-section/Stack"));
+const Projects = lazy(() => import("./pages/projects/Projects"));
 
 function App() {
   return (
-    <div className="w-full min-h-screen overflow-y-auto box-border bg-black">
+    <div className="w-full min-h-screen box-border bg-black absolute">
+      <SplashCursor />
       <NavigationBar />
-      <BannerSection />
-      <HeroSection />
-      <Separator />
-      <AboutMe />
-      <Title TitleLabel="Tech Stack" TitleSize="sm" />
-      <Stack />
-      <Title TitleLabel="Components" TitleSize="sm" />
+      <section id="home">
+        <BannerSection />
+        <HeroSection />
+        <Separator />
+        <AboutMe />
+      </section>
+
+      <section id="journey">
+        <Title TitleLabel="Experience" TitleSize="md" />
+        <Suspense fallback={<ExperienceSkeleton />}>
+          <Experience />
+        </Suspense>
+        <Separator />
+        <Title TitleLabel="Tech-Stack" TitleSize="md" />
+        <Suspense fallback={<StackSkeleton />}>
+          <Stack />
+        </Suspense>
+      </section>
+
+      {/* Experience isn't in the nav, keep it between sections */}
+
+      <section id="work">
+        <Title TitleLabel="Projects" TitleSize="md" />
+        <Suspense fallback={<ProjectsSkeleton />}>
+          <Projects />
+        </Suspense>
+      </section>
+
+      <section id="connect">
+        <Title TitleLabel="Connect" TitleSize="md" />
+        <Suspense fallback={<FooterSkeleton />}>
+          <Connect />
+        </Suspense>
+      </section>
     </div>
   );
 }
-
 export default App;

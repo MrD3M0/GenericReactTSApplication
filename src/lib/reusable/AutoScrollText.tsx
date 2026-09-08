@@ -13,13 +13,13 @@ export default function AutoScrollText() {
   useEffect(() => {
     const interval = setInterval(() => {
       setIndex((prev) => (prev + 1) % sentences.length);
-    }, 2500); // change every 2.5 seconds
+    }, 2500);
 
     return () => clearInterval(interval);
-  });
+  }, []);
 
   return (
-    <div className="relative h-6 sm:h-8 md:h-12 overflow-hidden w-full max-w-md mx-auto ">
+    <div className="relative h-12 overflow-hidden w-full">
       <div
         className="transition-transform duration-700 ease-in-out"
         style={{

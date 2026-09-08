@@ -5,29 +5,71 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import AutoScrollText from "@/lib/reusable/AutoScrollText";
-
-import { useRef } from "react";
+import { ShimmeringText } from "@/components/shimmering-text";
+import { useRef, useState } from "react";
+import ElectricBorder from "@/components/ElectricBorder";
 
 const HeroSection = () => {
   const audioRef = useRef<HTMLAudioElement | null>(null);
+  const zapAudioRef = useRef<HTMLAudioElement | null>(null);
+  const [isHovering, setIsHovering] = useState(false);
 
   const playAudio = () => {
     if (audioRef.current) {
-      console.log("Audio Played");
       audioRef.current.currentTime = 0;
       audioRef.current.play();
     }
   };
+
+  const startZap = () => {
+    setIsHovering(true);
+    if (zapAudioRef.current) {
+      zapAudioRef.current.currentTime = 0;
+      zapAudioRef.current
+        .play()
+        .catch((err) => console.error("Zap sound blocked:", err));
+    }
+  };
+
+  const stopZap = () => {
+    setIsHovering(false);
+    if (zapAudioRef.current) {
+      zapAudioRef.current.pause();
+      zapAudioRef.current.currentTime = 0;
+    }
+  };
+
   return (
     <div className="w-full flex flex-row justify-center items-center bg-black">
       <div className=" hidden md:flex h-full w-full flex-1"></div>
       <div className="w-[90%] md:w-[80%] lg:w-[40%] flex border-r border-gray-500/50">
-        <div className="min-w-40 h-40 border-l border-r  border-gray-500/50">
-          <img
-            className="w-40 h-40 rounded-full border border-gray-500/50 "
-            src="profile.png"
-            alt=""
-          />
+        <div
+          className="min-w-40 h-40 border-l border-r  border-gray-500/50"
+          onMouseEnter={startZap}
+          onMouseLeave={stopZap}
+        >
+          {isHovering ? (
+            <ElectricBorder
+              color="#FDD835"
+              speed={1}
+              chaos={0.15}
+              borderRadius={9999}
+              className="w-40 h-40"
+            >
+              <img
+                className="w-40 h-40 rounded-full border border-gray-500/50  "
+                src="profile.png"
+                alt=""
+              />
+            </ElectricBorder>
+          ) : (
+            <img
+              className="w-40 h-40 rounded-full border border-gray-500/50  "
+              src="profile.png"
+              alt=""
+            />
+          )}
+          <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
         <div className="w-full">
           <div className="w-full h-10 border-gray-500/50 border-b text-gray-500">
@@ -41,16 +83,17 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className="text-4xl border-gray-500/50 border-b font-medium  text-zinc-200 flex justify-center items-center gap-1">
-            <span>Sumit Karki</span> <img src="./verified.svg" />
-            <div>
+          <div className=" text-2xl md:text-4xl border-gray-500/50 border-b font-light  text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
+            <ShimmeringText text="Sumit Karki" duration={10} />
+            <div className="flex">
+              <img src="./verified.svg" />
               <img
                 className="ml-1 w-6 cursor-pointer rounded-2xl "
                 src="./Pronounciation.svg"
                 alt="Play pronunciation"
                 onClick={playAudio}
               />
-              <audio ref={audioRef} src="../../../public/pronounce.mp3" />
+              <audio ref={audioRef} src="pronounce.mp3" />
             </div>
           </div>
           <div>

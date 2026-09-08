@@ -3,7 +3,7 @@ import {
   BriefcaseBusiness,
   Clock2,
   FileUser,
-  Github,
+  Lightbulb,
   Link,
   Mail,
   MapPin,
@@ -22,8 +22,8 @@ const AboutMe = () => {
         <AboutMeEle
           icon={MapPin}
           isCompany={true}
-          companyName={"@Bhaktapur, Nepal"}
-          companyLink="https://www.google.com/maps/place/Bhaktapur/@27.678201,85.324009,13z/data=!3m1!4b1!4m5!3m4!1s0x0:0x0!8m2!3d27.678201!4d85.324009"
+          companyName={"Nepal"}
+          companyLink="https://maps.app.goo.gl/GRVr8kPD7VHJLjwW7"
         />
         <AboutMeEle
           icon={Mail}
@@ -32,9 +32,10 @@ const AboutMe = () => {
           companyLink="mailto:sumitkarki1000@gmail.com"
         />
         <AboutMeEle
-          icon={Github}
+          icon={Lightbulb}
           isCompany={true}
-          companyName={"Mr D3M0"}
+          label="Founder "
+          companyName={"@Zippos"}
           companyLink="https://github.com/MrD3M0"
         />
         <AboutMeEle

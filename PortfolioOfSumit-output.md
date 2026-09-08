@@ -1,3 +1,6018 @@
+# 📁 PROJECT EXPORT FOR LLMs
+
+## 📊 Project Information
+
+- **Project Name**: `PortfolioOfSumit`
+- **Generated On**: 2026-08-29 16:36:23 (Asia/Katmandu / GMT+06:45)
+- **Total Files Processed**: 69
+- **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
+- **Tool Author**: Jota / José Guilherme Pandolfi
+
+### ⚙️ Export Configuration
+
+| Setting | Value |
+|---------|-------|
+| Language | `en` |
+| Max File Size | `1 MB` |
+| Include Hidden Files | `false` |
+| Output Format | `both` |
+
+## 🌳 Project Structure
+
+```
+├── 📁 public/
+│   ├── 📄 apple-touch-icon.png (5.56 KB)
+│   ├── 📄 banner.png (481.44 KB)
+│   ├── 📄 favicon-96x96.png (2.3 KB)
+│   ├── 📄 favicon.ico (14.73 KB)
+│   ├── 📄 favicon.svg (402.33 KB)
+│   ├── 📄 profile.png (1.5 MB)
+│   ├── 📄 pronounce.mp3 (36 KB)
+│   ├── 📄 Pronounciation.svg (478 B)
+│   ├── 📄 sajilo-softwares.png (21.6 KB)
+│   ├── 📄 site.webmanifest (436 B)
+│   ├── 📄 SK-nobg.png (301.3 KB)
+│   ├── 📄 verified.svg (997 B)
+│   ├── 📄 web-app-manifest-192x192.png (6.08 KB)
+│   ├── 📄 web-app-manifest-512x512.png (36.25 KB)
+│   ├── 📄 zapSound.mp3 (6.53 KB)
+│   └── 📄 Zippos.png (624.25 KB)
+├── 📁 src/
+│   ├── 📁 assets/
+│   │   ├── 📄 react.svg (4.03 KB)
+│   │   └── 📄 SK.jsx (10.95 KB)
+│   ├── 📁 components/
+│   │   ├── 📁 element/
+│   │   │   └── 📄 componet-ele.tsx
+│   │   ├── 📁 ui/
+│   │   │   ├── 📄 button.tsx (2.34 KB)
+│   │   │   ├── 📄 collapsible.tsx (781 B)
+│   │   │   ├── 📄 dialog.tsx (4.19 KB)
+│   │   │   ├── 📄 separator.tsx (694 B)
+│   │   │   ├── 📄 skeleton.tsx (276 B)
+│   │   │   └── 📄 tooltip.tsx (2.17 KB)
+│   │   ├── 📄 chevrons-up-down-icon.tsx (1.58 KB)
+│   │   ├── 📄 dot-grid-spotlight.tsx (5.62 KB)
+│   │   ├── 📄 ElectricBorder.css (1.1 KB)
+│   │   ├── 📄 ElectricBorder.jsx (8.75 KB)
+│   │   ├── 📄 fluid-gradient-text.tsx (2.35 KB)
+│   │   ├── 📄 scroll-fade-effect.tsx (712 B)
+│   │   ├── 📄 shimmering-text.tsx (1.87 KB)
+│   │   ├── 📄 SplashCursor.jsx (36.07 KB)
+│   │   └── 📄 work-experience.tsx (10.05 KB)
+│   ├── 📁 lib/
+│   │   ├── 📁 reusable/
+│   │   │   ├── 📄 AboutMeEle.tsx (1.6 KB)
+│   │   │   ├── 📄 AutoScrollText.tsx (977 B)
+│   │   │   ├── 📄 Component-Ele.tsx (447 B)
+│   │   │   ├── 📄 Separator.tsx (734 B)
+│   │   │   └── 📄 Title.tsx (776 B)
+│   │   ├── 📄 responsive.ts (318 B)
+│   │   └── 📄 utils.ts (166 B)
+│   ├── 📁 pages/
+│   │   ├── 📁 components-section/
+│   │   │   └── 📄 Component.tsx (245 B)
+│   │   ├── 📁 Connect/
+│   │   │   └── 📄 Connect.tsx (3.42 KB)
+│   │   ├── 📁 Experience/
+│   │   │   └── 📄 WorkExperience.tsx (2.98 KB)
+│   │   ├── 📁 Footer/
+│   │   │   └── 📄 Footer.tsx (635 B)
+│   │   ├── 📁 hero-section/
+│   │   │   ├── 📄 AboutMe.tsx (1.61 KB)
+│   │   │   ├── 📄 Banner.tsx (2.01 KB)
+│   │   │   └── 📄 HeroSection.tsx (3.38 KB)
+│   │   ├── 📁 navigation/
+│   │   │   └── 📄 Navigation.tsx (2.66 KB)
+│   │   ├── 📁 projects/
+│   │   │   ├── 📄 projectElement.tsx (1.9 KB)
+│   │   │   └── 📄 Projects.tsx (2.07 KB)
+│   │   ├── 📁 skeletonLoaders/
+│   │   │   ├── 📄 ExperienceSkeleton.tsx (963 B)
+│   │   │   ├── 📄 FooterSkeleton.tsx (229 B)
+│   │   │   ├── 📄 ProjectsSkeleton.tsx (789 B)
+│   │   │   └── 📄 StackSkeleton.tsx (740 B)
+│   │   └── 📁 skills-section/
+│   │       └── 📄 Stack.tsx (5.77 KB)
+│   ├── 📄 App.tsx (2.06 KB)
+│   ├── 📄 index.css (6.92 KB)
+│   └── 📄 main.tsx (234 B)
+├── 📄 components.json (574 B)
+├── 📄 eslint.config.js (616 B)
+├── 📄 index.html (1.07 KB)
+├── 📄 package.json (1.2 KB)
+├── 📄 pnpm-lock.yaml (262.81 KB)
+├── 📄 README.md (2.5 KB)
+├── 📄 tsconfig.app.json (880 B)
+├── 📄 tsconfig.json (248 B)
+├── 📄 tsconfig.node.json (653 B)
+└── 📄 vite.config.ts (332 B)
+```
+
+## 📑 Table of Contents
+
+**Project Files:**
+
+- [📄 src/assets/SK.jsx](#📄-src-assets-sk-jsx)
+- [📄 src/components/element/componet-ele.tsx](#📄-src-components-element-componet-ele-tsx)
+- [📄 src/components/ui/button.tsx](#📄-src-components-ui-button-tsx)
+- [📄 src/components/ui/collapsible.tsx](#📄-src-components-ui-collapsible-tsx)
+- [📄 src/components/ui/dialog.tsx](#📄-src-components-ui-dialog-tsx)
+- [📄 src/components/ui/separator.tsx](#📄-src-components-ui-separator-tsx)
+- [📄 src/components/ui/skeleton.tsx](#📄-src-components-ui-skeleton-tsx)
+- [📄 src/components/ui/tooltip.tsx](#📄-src-components-ui-tooltip-tsx)
+- [📄 src/components/chevrons-up-down-icon.tsx](#📄-src-components-chevrons-up-down-icon-tsx)
+- [📄 src/components/dot-grid-spotlight.tsx](#📄-src-components-dot-grid-spotlight-tsx)
+- [📄 src/components/ElectricBorder.css](#📄-src-components-electricborder-css)
+- [📄 src/components/ElectricBorder.jsx](#📄-src-components-electricborder-jsx)
+- [📄 src/components/fluid-gradient-text.tsx](#📄-src-components-fluid-gradient-text-tsx)
+- [📄 src/components/scroll-fade-effect.tsx](#📄-src-components-scroll-fade-effect-tsx)
+- [📄 src/components/shimmering-text.tsx](#📄-src-components-shimmering-text-tsx)
+- [📄 src/components/SplashCursor.jsx](#📄-src-components-splashcursor-jsx)
+- [📄 src/components/work-experience.tsx](#📄-src-components-work-experience-tsx)
+- [📄 src/lib/reusable/AboutMeEle.tsx](#📄-src-lib-reusable-aboutmeele-tsx)
+- [📄 src/lib/reusable/AutoScrollText.tsx](#📄-src-lib-reusable-autoscrolltext-tsx)
+- [📄 src/lib/reusable/Component-Ele.tsx](#📄-src-lib-reusable-component-ele-tsx)
+- [📄 src/lib/reusable/Separator.tsx](#📄-src-lib-reusable-separator-tsx)
+- [📄 src/lib/reusable/Title.tsx](#📄-src-lib-reusable-title-tsx)
+- [📄 src/lib/responsive.ts](#📄-src-lib-responsive-ts)
+- [📄 src/lib/utils.ts](#📄-src-lib-utils-ts)
+- [📄 src/pages/components-section/Component.tsx](#📄-src-pages-components-section-component-tsx)
+- [📄 src/pages/Connect/Connect.tsx](#📄-src-pages-connect-connect-tsx)
+- [📄 src/pages/Experience/WorkExperience.tsx](#📄-src-pages-experience-workexperience-tsx)
+- [📄 src/pages/Footer/Footer.tsx](#📄-src-pages-footer-footer-tsx)
+- [📄 src/pages/hero-section/AboutMe.tsx](#📄-src-pages-hero-section-aboutme-tsx)
+- [📄 src/pages/hero-section/Banner.tsx](#📄-src-pages-hero-section-banner-tsx)
+- [📄 src/pages/hero-section/HeroSection.tsx](#📄-src-pages-hero-section-herosection-tsx)
+- [📄 src/pages/navigation/Navigation.tsx](#📄-src-pages-navigation-navigation-tsx)
+- [📄 src/pages/projects/projectElement.tsx](#📄-src-pages-projects-projectelement-tsx)
+- [📄 src/pages/projects/Projects.tsx](#📄-src-pages-projects-projects-tsx)
+- [📄 src/pages/skeletonLoaders/ExperienceSkeleton.tsx](#📄-src-pages-skeletonloaders-experienceskeleton-tsx)
+- [📄 src/pages/skeletonLoaders/FooterSkeleton.tsx](#📄-src-pages-skeletonloaders-footerskeleton-tsx)
+- [📄 src/pages/skeletonLoaders/ProjectsSkeleton.tsx](#📄-src-pages-skeletonloaders-projectsskeleton-tsx)
+- [📄 src/pages/skeletonLoaders/StackSkeleton.tsx](#📄-src-pages-skeletonloaders-stackskeleton-tsx)
+- [📄 src/pages/skills-section/Stack.tsx](#📄-src-pages-skills-section-stack-tsx)
+- [📄 src/App.tsx](#📄-src-app-tsx)
+- [📄 src/index.css](#📄-src-index-css)
+- [📄 src/main.tsx](#📄-src-main-tsx)
+- [📄 components.json](#📄-components-json)
+- [📄 eslint.config.js](#📄-eslint-config-js)
+- [📄 index.html](#📄-index-html)
+- [📄 package.json](#📄-package-json)
+- [📄 pnpm-lock.yaml](#📄-pnpm-lock-yaml)
+- [📄 README.md](#📄-readme-md)
+- [📄 tsconfig.app.json](#📄-tsconfig-app-json)
+- [📄 tsconfig.json](#📄-tsconfig-json)
+- [📄 tsconfig.node.json](#📄-tsconfig-node-json)
+- [📄 vite.config.ts](#📄-vite-config-ts)
+
+---
+
+## 📈 Project Statistics
+
+| Metric | Count |
+|--------|-------|
+| Total Files | 69 |
+| Total Directories | 18 |
+| Text Files | 52 |
+| Binary Files | 17 |
+| Total Size | 3.79 MB |
+
+### 📄 File Types Distribution
+
+| Extension | Count |
+|-----------|-------|
+| `.tsx` | 35 |
+| `.png` | 9 |
+| `.json` | 5 |
+| `.svg` | 4 |
+| `.jsx` | 3 |
+| `.ts` | 3 |
+| `.mp3` | 2 |
+| `.css` | 2 |
+| `.ico` | 1 |
+| `.webmanifest` | 1 |
+| `.js` | 1 |
+| `.html` | 1 |
+| `.yaml` | 1 |
+| `.md` | 1 |
+
+## 💻 File Code Contents
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `public/apple-touch-icon.png`
+- `public/banner.png`
+- `public/favicon-96x96.png`
+- `public/favicon.ico`
+- `public/favicon.svg`
+- `public/profile.png`
+- `public/pronounce.mp3`
+- `public/Pronounciation.svg`
+- `public/sajilo-softwares.png`
+- `public/site.webmanifest`
+- `public/SK-nobg.png`
+- `public/verified.svg`
+- `public/web-app-manifest-192x192.png`
+- `public/web-app-manifest-512x512.png`
+- `public/zapSound.mp3`
+- `public/Zippos.png`
+
+### <a id="📄-src-assets-sk-jsx"></a>📄 `src/assets/SK.jsx`
+
+**File Info:**
+- **Size**: 10.95 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/assets/SK.jsx`
+- **Relative Path**: `src/assets`
+- **Created**: 2026-08-02 17:10:54 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 17:13:58 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9797c2515f3fc82987934e1d4cc0d7d2`
+- **SHA256**: `ba6542301b8b949ce3452bfca721ef0b0332af717cb30fea1f3df125e820e725`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import * as React from "react";
+const SkFtrSVG = (props) => (
+  <svg
+    viewBox="0 0 810.01 549.00"
+    xmlns="http://www.w3.org/2000/svg"
+    fontFamily="'JetBrains Mono','Courier New',monospace"
+    {...props}
+  >
+    <defs>
+      <pattern
+        id="hatch"
+        width={7}
+        height={7}
+        patternTransform="rotate(-45)"
+        patternUnits="userSpaceOnUse"
+      >
+        <line x1={0} y1={0} x2={0} y2={7} stroke="#cfd3d6" strokeWidth={1} />
+      </pattern>
+      <style>
+        {
+          "\n      .bg { fill: #0a0a0b; }\n      .grid { stroke: #3a3d42; stroke-width: 1; stroke-dasharray: 3 5; opacity: 0.55; }\n      .frame { stroke: #4a4d52; stroke-width: 1; opacity: 0.6; }\n      .face { fill: url(#hatch); fill-opacity: 0.16; stroke: #cfd3d6; stroke-width: 1.1; stroke-linejoin: round; }\n      .face-dim { fill: url(#hatch); fill-opacity: 0.08; stroke: #7d8085; stroke-width: 1; stroke-linejoin: round; }\n      .label { fill: #6a6d72; font-size: 13px; letter-spacing: 2px; }\n      .tick { stroke: #4a4d52; stroke-width: 1; opacity: 0.7; }\n    "
+        }
+      </style>
+    </defs>
+    <rect className="bg" x={0} y={0} width={810.01} height={549} />
+    <line className="frame" x1={0} y1={14} x2={810.01} y2={14} />
+    <line className="frame" x1={0} y1={535} x2={810.01} y2={535} />
+    <line className="frame" x1={14} y1={0} x2={14} y2={549} />
+    <line className="frame" x1={796.01} y1={0} x2={796.01} y2={549} />
+    <line className="grid" x1={0} y1={0} x2={340.2} y2={0} />
+    <line className="grid" x1={0} y1={0} x2={0} y2={274.5} />
+    <line className="grid" x1={810.01} y1={549} x2={445.5} y2={549} />
+    <line className="grid" x1={810.01} y1={549} x2={810.01} y2={274.5} />
+    <line className="grid" x1={0} y1={549} x2={243} y2={301.95} />
+    <line className="grid" x1={810.01} y1={0} x2={583.21} y2={230.58} />
+    <line className="tick" x1={14} y1={14} x2={34} y2={14} />
+    <line className="tick" x1={14} y1={14} x2={14} y2={34} />
+    <line className="tick" x1={796.01} y1={535} x2={776.01} y2={535} />
+    <line className="tick" x1={796.01} y1={535} x2={796.01} y2={515} />
+    <g>
+      <polygon
+        className="face-dim"
+        points="346.11,127.00 316.67,144.00 316.67,184.00 346.11,167.00"
+      />
+      <polygon
+        className="face-dim"
+        points="316.67,144.00 287.22,161.00 287.22,201.00 316.67,184.00"
+      />
+      <polygon
+        className="face-dim"
+        points="375.56,212.00 346.11,229.00 346.11,269.00 375.56,252.00"
+      />
+      <polygon
+        className="face-dim"
+        points="287.22,263.00 257.78,280.00 257.78,320.00 287.22,303.00"
+      />
+      <polygon
+        className="face-dim"
+        points="493.34,178.00 463.89,195.00 463.89,235.00 493.34,218.00"
+      />
+      <polygon
+        className="face-dim"
+        points="375.56,246.00 346.11,263.00 346.11,303.00 375.56,286.00"
+      />
+      <polygon
+        className="face-dim"
+        points="346.11,263.00 316.67,280.00 316.67,320.00 346.11,303.00"
+      />
+      <polygon
+        className="face-dim"
+        points="552.23,212.00 522.78,229.00 522.78,269.00 552.23,252.00"
+      />
+      <polygon
+        className="face-dim"
+        points="522.78,229.00 493.34,246.00 493.34,286.00 522.78,269.00"
+      />
+      <polygon
+        className="face-dim"
+        points="493.34,246.00 463.89,263.00 463.89,303.00 493.34,286.00"
+      />
+      <polygon
+        className="face-dim"
+        points="434.45,280.00 405.00,297.00 405.00,337.00 434.45,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="405.00,297.00 375.56,314.00 375.56,354.00 405.00,337.00"
+      />
+      <polygon
+        className="face-dim"
+        points="375.56,314.00 346.11,331.00 346.11,371.00 375.56,354.00"
+      />
+      <polygon
+        className="face-dim"
+        points="493.34,280.00 463.89,297.00 463.89,337.00 493.34,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="552.23,280.00 522.78,297.00 522.78,337.00 552.23,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="493.34,314.00 463.89,331.00 463.89,371.00 493.34,354.00"
+      />
+      <polygon
+        className="face-dim"
+        points="611.12,280.00 581.67,297.00 581.67,337.00 611.12,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="493.34,348.00 463.89,365.00 463.89,405.00 493.34,388.00"
+      />
+      <polygon
+        className="face-dim"
+        points="670.01,280.00 640.56,297.00 640.56,337.00 670.01,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="493.34,382.00 463.89,399.00 463.89,439.00 493.34,422.00"
+      />
+      <polygon
+        className="face-dim"
+        points="257.78,144.00 287.22,161.00 287.22,201.00 257.78,184.00"
+      />
+      <polygon
+        className="face-dim"
+        points="140.00,212.00 169.44,229.00 169.44,269.00 140.00,252.00"
+      />
+      <polygon
+        className="face-dim"
+        points="346.11,127.00 375.56,144.00 375.56,184.00 346.11,167.00"
+      />
+      <polygon
+        className="face-dim"
+        points="257.78,178.00 287.22,195.00 287.22,235.00 257.78,218.00"
+      />
+      <polygon
+        className="face-dim"
+        points="169.44,229.00 198.89,246.00 198.89,286.00 169.44,269.00"
+      />
+      <polygon
+        className="face-dim"
+        points="375.56,144.00 405.00,161.00 405.00,201.00 375.56,184.00"
+      />
+      <polygon
+        className="face-dim"
+        points="287.22,195.00 316.67,212.00 316.67,252.00 287.22,235.00"
+      />
+      <polygon
+        className="face-dim"
+        points="198.89,246.00 228.33,263.00 228.33,303.00 198.89,286.00"
+      />
+      <polygon
+        className="face-dim"
+        points="405.00,161.00 434.45,178.00 434.45,218.00 405.00,201.00"
+      />
+      <polygon
+        className="face-dim"
+        points="316.67,212.00 346.11,229.00 346.11,269.00 316.67,252.00"
+      />
+      <polygon
+        className="face-dim"
+        points="228.33,263.00 257.78,280.00 257.78,320.00 228.33,303.00"
+      />
+      <polygon
+        className="face-dim"
+        points="434.45,178.00 463.89,195.00 463.89,235.00 434.45,218.00"
+      />
+      <polygon
+        className="face-dim"
+        points="287.22,263.00 316.67,280.00 316.67,320.00 287.22,303.00"
+      />
+      <polygon
+        className="face-dim"
+        points="316.67,314.00 346.11,331.00 346.11,371.00 316.67,354.00"
+      />
+      <polygon
+        className="face-dim"
+        points="434.45,280.00 463.89,297.00 463.89,337.00 434.45,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="493.34,280.00 522.78,297.00 522.78,337.00 493.34,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="434.45,314.00 463.89,331.00 463.89,371.00 434.45,354.00"
+      />
+      <polygon
+        className="face-dim"
+        points="552.23,280.00 581.67,297.00 581.67,337.00 552.23,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="434.45,348.00 463.89,365.00 463.89,405.00 434.45,388.00"
+      />
+      <polygon
+        className="face-dim"
+        points="611.12,280.00 640.56,297.00 640.56,337.00 611.12,320.00"
+      />
+      <polygon
+        className="face-dim"
+        points="434.45,382.00 463.89,399.00 463.89,439.00 434.45,422.00"
+      />
+      <polygon
+        className="face"
+        points="316.67,110.00 346.11,127.00 316.67,144.00 287.22,127.00"
+      />
+      <polygon
+        className="face"
+        points="287.22,127.00 316.67,144.00 287.22,161.00 257.78,144.00"
+      />
+      <polygon
+        className="face"
+        points="169.44,195.00 198.89,212.00 169.44,229.00 140.00,212.00"
+      />
+      <polygon
+        className="face"
+        points="375.56,110.00 405.00,127.00 375.56,144.00 346.11,127.00"
+      />
+      <polygon
+        className="face"
+        points="287.22,161.00 316.67,178.00 287.22,195.00 257.78,178.00"
+      />
+      <polygon
+        className="face"
+        points="198.89,212.00 228.33,229.00 198.89,246.00 169.44,229.00"
+      />
+      <polygon
+        className="face"
+        points="405.00,127.00 434.45,144.00 405.00,161.00 375.56,144.00"
+      />
+      <polygon
+        className="face"
+        points="316.67,178.00 346.11,195.00 316.67,212.00 287.22,195.00"
+      />
+      <polygon
+        className="face"
+        points="228.33,229.00 257.78,246.00 228.33,263.00 198.89,246.00"
+      />
+      <polygon
+        className="face"
+        points="434.45,144.00 463.89,161.00 434.45,178.00 405.00,161.00"
+      />
+      <polygon
+        className="face"
+        points="346.11,195.00 375.56,212.00 346.11,229.00 316.67,212.00"
+      />
+      <polygon
+        className="face"
+        points="257.78,246.00 287.22,263.00 257.78,280.00 228.33,263.00"
+      />
+      <polygon
+        className="face"
+        points="463.89,161.00 493.34,178.00 463.89,195.00 434.45,178.00"
+      />
+      <polygon
+        className="face"
+        points="346.11,229.00 375.56,246.00 346.11,263.00 316.67,246.00"
+      />
+      <polygon
+        className="face"
+        points="316.67,246.00 346.11,263.00 316.67,280.00 287.22,263.00"
+      />
+      <polygon
+        className="face"
+        points="522.78,195.00 552.23,212.00 522.78,229.00 493.34,212.00"
+      />
+      <polygon
+        className="face"
+        points="493.34,212.00 522.78,229.00 493.34,246.00 463.89,229.00"
+      />
+      <polygon
+        className="face"
+        points="463.89,229.00 493.34,246.00 463.89,263.00 434.45,246.00"
+      />
+      <polygon
+        className="face"
+        points="434.45,246.00 463.89,263.00 434.45,280.00 405.00,263.00"
+      />
+      <polygon
+        className="face"
+        points="405.00,263.00 434.45,280.00 405.00,297.00 375.56,280.00"
+      />
+      <polygon
+        className="face"
+        points="375.56,280.00 405.00,297.00 375.56,314.00 346.11,297.00"
+      />
+      <polygon
+        className="face"
+        points="346.11,297.00 375.56,314.00 346.11,331.00 316.67,314.00"
+      />
+      <polygon
+        className="face"
+        points="463.89,263.00 493.34,280.00 463.89,297.00 434.45,280.00"
+      />
+      <polygon
+        className="face"
+        points="522.78,263.00 552.23,280.00 522.78,297.00 493.34,280.00"
+      />
+      <polygon
+        className="face"
+        points="463.89,297.00 493.34,314.00 463.89,331.00 434.45,314.00"
+      />
+      <polygon
+        className="face"
+        points="581.67,263.00 611.12,280.00 581.67,297.00 552.23,280.00"
+      />
+      <polygon
+        className="face"
+        points="463.89,331.00 493.34,348.00 463.89,365.00 434.45,348.00"
+      />
+      <polygon
+        className="face"
+        points="640.56,263.00 670.01,280.00 640.56,297.00 611.12,280.00"
+      />
+      <polygon
+        className="face"
+        points="463.89,365.00 493.34,382.00 463.89,399.00 434.45,382.00"
+      />
+    </g>
+  </svg>
+);
+export default SkFtrSVG;
+
+```
+
+---
+
+## 🚫 Binary/Excluded Files
+
+The following files were not included in the text content:
+
+- `src/assets/react.svg`
+
+### <a id="📄-src-components-element-componet-ele-tsx"></a>📄 `src/components/element/componet-ele.tsx`
+
+**File Info:**
+- **Size**: 0 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/element/componet-ele.tsx`
+- **Relative Path**: `src/components/element`
+- **Created**: 2026-06-30 13:43:50 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-06-30 13:43:50 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `d41d8cd98f00b204e9800998ecf8427e`
+- **SHA256**: `e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+
+```
+
+---
+
+### <a id="📄-src-components-ui-button-tsx"></a>📄 `src/components/ui/button.tsx`
+
+**File Info:**
+- **Size**: 2.34 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/ui/button.tsx`
+- **Relative Path**: `src/components/ui`
+- **Created**: 2026-03-15 16:40:48 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-03-15 16:40:48 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `5eb5c23dfc552fe75b9beeffacede350`
+- **SHA256**: `cc36af0f8b5019c33cc039fbf03bb952a513072b15b55b53c592b78af3e5f4c4`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import * as React from "react"
+import { cva, type VariantProps } from "class-variance-authority"
+import { Slot } from "radix-ui"
+
+import { cn } from "@/lib/utils"
+
+const buttonVariants = cva(
+  "inline-flex shrink-0 items-center justify-center gap-2 rounded-md text-sm font-medium whitespace-nowrap transition-all outline-none focus-visible:border-ring focus-visible:ring-[3px] focus-visible:ring-ring/50 disabled:pointer-events-none disabled:opacity-50 aria-invalid:border-destructive aria-invalid:ring-destructive/20 dark:aria-invalid:ring-destructive/40 [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4",
+  {
+    variants: {
+      variant: {
+        default: "bg-primary text-primary-foreground hover:bg-primary/90",
+        destructive:
+          "bg-destructive text-white hover:bg-destructive/90 focus-visible:ring-destructive/20 dark:bg-destructive/60 dark:focus-visible:ring-destructive/40",
+        outline:
+          "border bg-background shadow-xs hover:bg-accent hover:text-accent-foreground dark:border-input dark:bg-input/30 dark:hover:bg-input/50",
+        secondary:
+          "bg-secondary text-secondary-foreground hover:bg-secondary/80",
+        ghost:
+          "hover:bg-accent hover:text-accent-foreground dark:hover:bg-accent/50",
+        link: "text-primary underline-offset-4 hover:underline",
+      },
+      size: {
+        default: "h-9 px-4 py-2 has-[>svg]:px-3",
+        xs: "h-6 gap-1 rounded-md px-2 text-xs has-[>svg]:px-1.5 [&_svg:not([class*='size-'])]:size-3",
+        sm: "h-8 gap-1.5 rounded-md px-3 has-[>svg]:px-2.5",
+        lg: "h-10 rounded-md px-6 has-[>svg]:px-4",
+        icon: "size-9",
+        "icon-xs": "size-6 rounded-md [&_svg:not([class*='size-'])]:size-3",
+        "icon-sm": "size-8",
+        "icon-lg": "size-10",
+      },
+    },
+    defaultVariants: {
+      variant: "default",
+      size: "default",
+    },
+  }
+)
+
+function Button({
+  className,
+  variant = "default",
+  size = "default",
+  asChild = false,
+  ...props
+}: React.ComponentProps<"button"> &
+  VariantProps<typeof buttonVariants> & {
+    asChild?: boolean
+  }) {
+  const Comp = asChild ? Slot.Root : "button"
+
+  return (
+    <Comp
+      data-slot="button"
+      data-variant={variant}
+      data-size={size}
+      className={cn(buttonVariants({ variant, size, className }))}
+      {...props}
+    />
+  )
+}
+
+export { Button, buttonVariants }
+
+```
+
+---
+
+### <a id="📄-src-components-ui-collapsible-tsx"></a>📄 `src/components/ui/collapsible.tsx`
+
+**File Info:**
+- **Size**: 781 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/ui/collapsible.tsx`
+- **Relative Path**: `src/components/ui`
+- **Created**: 2026-08-02 15:44:33 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 15:44:33 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `8afc6de380a5fda231f8500179a49984`
+- **SHA256**: `eb4ee2a9ddb3c566c509753a79e4f4c9425d9f8474d55f61f8c8694928b6a509`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { Collapsible as CollapsiblePrimitive } from "radix-ui"
+
+function Collapsible({
+  ...props
+}: React.ComponentProps<typeof CollapsiblePrimitive.Root>) {
+  return <CollapsiblePrimitive.Root data-slot="collapsible" {...props} />
+}
+
+function CollapsibleTrigger({
+  ...props
+}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleTrigger>) {
+  return (
+    <CollapsiblePrimitive.CollapsibleTrigger
+      data-slot="collapsible-trigger"
+      {...props}
+    />
+  )
+}
+
+function CollapsibleContent({
+  ...props
+}: React.ComponentProps<typeof CollapsiblePrimitive.CollapsibleContent>) {
+  return (
+    <CollapsiblePrimitive.CollapsibleContent
+      data-slot="collapsible-content"
+      {...props}
+    />
+  )
+}
+
+export { Collapsible, CollapsibleTrigger, CollapsibleContent }
+
+```
+
+---
+
+### <a id="📄-src-components-ui-dialog-tsx"></a>📄 `src/components/ui/dialog.tsx`
+
+**File Info:**
+- **Size**: 4.19 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/ui/dialog.tsx`
+- **Relative Path**: `src/components/ui`
+- **Created**: 2026-05-12 17:13:35 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-05-12 17:13:35 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `993a9ca4c90359250f452aadd3e2e28c`
+- **SHA256**: `1eef94a2bb44fb1a1f132c9538eacca61cb9555e085ee285e5f23d108a931fb0`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import * as React from "react"
+import { XIcon } from "lucide-react"
+import { Dialog as DialogPrimitive } from "radix-ui"
+
+import { cn } from "@/lib/utils"
+import { Button } from "@/components/ui/button"
+
+function Dialog({
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Root>) {
+  return <DialogPrimitive.Root data-slot="dialog" {...props} />
+}
+
+function DialogTrigger({
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Trigger>) {
+  return <DialogPrimitive.Trigger data-slot="dialog-trigger" {...props} />
+}
+
+function DialogPortal({
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Portal>) {
+  return <DialogPrimitive.Portal data-slot="dialog-portal" {...props} />
+}
+
+function DialogClose({
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Close>) {
+  return <DialogPrimitive.Close data-slot="dialog-close" {...props} />
+}
+
+function DialogOverlay({
+  className,
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Overlay>) {
+  return (
+    <DialogPrimitive.Overlay
+      data-slot="dialog-overlay"
+      className={cn(
+        "fixed inset-0 z-50 bg-black/50 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=open]:animate-in data-[state=open]:fade-in-0",
+        className
+      )}
+      {...props}
+    />
+  )
+}
+
+function DialogContent({
+  className,
+  children,
+  showCloseButton = true,
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Content> & {
+  showCloseButton?: boolean
+}) {
+  return (
+    <DialogPortal data-slot="dialog-portal">
+      <DialogOverlay />
+      <DialogPrimitive.Content
+        data-slot="dialog-content"
+        className={cn(
+          "fixed top-[50%] left-[50%] z-50 grid w-full max-w-[calc(100%-2rem)] translate-x-[-50%] translate-y-[-50%] gap-4 rounded-lg border bg-background p-6 shadow-lg duration-200 outline-none data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[state=open]:animate-in data-[state=open]:fade-in-0 data-[state=open]:zoom-in-95 sm:max-w-lg",
+          className
+        )}
+        {...props}
+      >
+        {children}
+        {showCloseButton && (
+          <DialogPrimitive.Close
+            data-slot="dialog-close"
+            className="absolute top-4 right-4 rounded-xs opacity-70 ring-offset-background transition-opacity hover:opacity-100 focus:ring-2 focus:ring-ring focus:ring-offset-2 focus:outline-hidden disabled:pointer-events-none data-[state=open]:bg-accent data-[state=open]:text-muted-foreground [&_svg]:pointer-events-none [&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+          >
+            <XIcon />
+            <span className="sr-only">Close</span>
+          </DialogPrimitive.Close>
+        )}
+      </DialogPrimitive.Content>
+    </DialogPortal>
+  )
+}
+
+function DialogHeader({ className, ...props }: React.ComponentProps<"div">) {
+  return (
+    <div
+      data-slot="dialog-header"
+      className={cn("flex flex-col gap-2 text-center sm:text-left", className)}
+      {...props}
+    />
+  )
+}
+
+function DialogFooter({
+  className,
+  showCloseButton = false,
+  children,
+  ...props
+}: React.ComponentProps<"div"> & {
+  showCloseButton?: boolean
+}) {
+  return (
+    <div
+      data-slot="dialog-footer"
+      className={cn(
+        "flex flex-col-reverse gap-2 sm:flex-row sm:justify-end",
+        className
+      )}
+      {...props}
+    >
+      {children}
+      {showCloseButton && (
+        <DialogPrimitive.Close asChild>
+          <Button variant="outline">Close</Button>
+        </DialogPrimitive.Close>
+      )}
+    </div>
+  )
+}
+
+function DialogTitle({
+  className,
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Title>) {
+  return (
+    <DialogPrimitive.Title
+      data-slot="dialog-title"
+      className={cn("text-lg leading-none font-semibold", className)}
+      {...props}
+    />
+  )
+}
+
+function DialogDescription({
+  className,
+  ...props
+}: React.ComponentProps<typeof DialogPrimitive.Description>) {
+  return (
+    <DialogPrimitive.Description
+      data-slot="dialog-description"
+      className={cn("text-sm text-muted-foreground", className)}
+      {...props}
+    />
+  )
+}
+
+export {
+  Dialog,
+  DialogClose,
+  DialogContent,
+  DialogDescription,
+  DialogFooter,
+  DialogHeader,
+  DialogOverlay,
+  DialogPortal,
+  DialogTitle,
+  DialogTrigger,
+}
+
+```
+
+---
+
+### <a id="📄-src-components-ui-separator-tsx"></a>📄 `src/components/ui/separator.tsx`
+
+**File Info:**
+- **Size**: 694 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/ui/separator.tsx`
+- **Relative Path**: `src/components/ui`
+- **Created**: 2026-08-02 15:44:34 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 15:44:34 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `31309c8fad1e9a91db2a4bdfb4988b45`
+- **SHA256**: `6da346505c8629a4668420d2a5ca48891383bbe0b0ceb14163537c671879427e`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+"use client"
+
+import * as React from "react"
+import { Separator as SeparatorPrimitive } from "radix-ui"
+
+import { cn } from "@/lib/utils"
+
+function Separator({
+  className,
+  orientation = "horizontal",
+  decorative = true,
+  ...props
+}: React.ComponentProps<typeof SeparatorPrimitive.Root>) {
+  return (
+    <SeparatorPrimitive.Root
+      data-slot="separator"
+      decorative={decorative}
+      orientation={orientation}
+      className={cn(
+        "shrink-0 bg-border data-[orientation=horizontal]:h-px data-[orientation=horizontal]:w-full data-[orientation=vertical]:h-full data-[orientation=vertical]:w-px",
+        className
+      )}
+      {...props}
+    />
+  )
+}
+
+export { Separator }
+
+```
+
+---
+
+### <a id="📄-src-components-ui-skeleton-tsx"></a>📄 `src/components/ui/skeleton.tsx`
+
+**File Info:**
+- **Size**: 276 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/ui/skeleton.tsx`
+- **Relative Path**: `src/components/ui`
+- **Created**: 2026-08-14 12:11:25 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-14 12:11:25 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `64033a08d89d382ad050d80cbb0cc98d`
+- **SHA256**: `ba48dd5be5a6a1378bd4e011028654b5bf419f1e7d20ee4b9f8330c1264e7239`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { cn } from "@/lib/utils"
+
+function Skeleton({ className, ...props }: React.ComponentProps<"div">) {
+  return (
+    <div
+      data-slot="skeleton"
+      className={cn("animate-pulse rounded-md bg-accent", className)}
+      {...props}
+    />
+  )
+}
+
+export { Skeleton }
+
+```
+
+---
+
+### <a id="📄-src-components-ui-tooltip-tsx"></a>📄 `src/components/ui/tooltip.tsx`
+
+**File Info:**
+- **Size**: 2.17 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/ui/tooltip.tsx`
+- **Relative Path**: `src/components/ui`
+- **Created**: 2026-05-09 14:08:03 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-05-09 14:34:39 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `f2eb0251190097e76a294866d9e5ab46`
+- **SHA256**: `0e716d6c93fad7ab922c0c8d0dfd2ebf0e50908af3e1ba95242d176389c525ad`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+"use client";
+
+import * as React from "react";
+import { cva, type VariantProps } from "class-variance-authority";
+import { Tooltip as TooltipPrimitive } from "radix-ui";
+import { cn } from "@/lib/utils";
+
+function TooltipProvider({
+  delayDuration = 0,
+  ...props
+}: React.ComponentProps<typeof TooltipPrimitive.Provider>) {
+  return (
+    <TooltipPrimitive.Provider
+      data-slot="tooltip-provider"
+      delayDuration={delayDuration}
+      {...props}
+    />
+  );
+}
+
+function Tooltip({
+  ...props
+}: React.ComponentProps<typeof TooltipPrimitive.Root>) {
+  return (
+    <TooltipProvider>
+      <TooltipPrimitive.Root data-slot="tooltip" {...props} />
+    </TooltipProvider>
+  );
+}
+
+function TooltipTrigger({
+  ...props
+}: React.ComponentProps<typeof TooltipPrimitive.Trigger>) {
+  return <TooltipPrimitive.Trigger data-slot="tooltip-trigger" {...props} />;
+}
+
+const tooltipVariants = cva(
+  "z-50 overflow-hidden rounded-md px-3 py-1.5 text-xs animate-in fade-in-0 zoom-in-95 data-[state=closed]:animate-out data-[state=closed]:fade-out-0 data-[state=closed]:zoom-out-95 data-[side=bottom]:slide-in-from-top-2 data-[side=left]:slide-in-from-right-2 data-[side=right]:slide-in-from-left-2 data-[side=top]:slide-in-from-bottom-2",
+  {
+    variants: {
+      variant: {
+        light:
+          "border border-border bg-background text-foreground shadow-md shadow-black/5",
+        dark: "dark:border dark:border-border bg-zinc-950 text-white dark:bg-zinc-300 dark:text-black shadow-md shadow-black/5",
+      },
+    },
+    defaultVariants: {
+      variant: "light",
+    },
+  },
+);
+
+function TooltipContent({
+  className,
+  sideOffset = 4,
+  variant,
+  ...props
+}: React.ComponentProps<typeof TooltipPrimitive.Content> &
+  VariantProps<typeof tooltipVariants>) {
+  return (
+    <TooltipPrimitive.Content
+      data-slot="tooltip-content"
+      sideOffset={sideOffset}
+      className={cn(tooltipVariants({ variant }), className)}
+      {...props}
+    >
+      {props.children}
+      <TooltipPrimitive.Arrow className="fill-zinc-300 -my-0.5 " />
+    </TooltipPrimitive.Content>
+  );
+}
+
+export { Tooltip, TooltipContent, TooltipProvider, TooltipTrigger };
+
+```
+
+---
+
+### <a id="📄-src-components-chevrons-up-down-icon-tsx"></a>📄 `src/components/chevrons-up-down-icon.tsx`
+
+**File Info:**
+- **Size**: 1.58 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/chevrons-up-down-icon.tsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-02 15:44:35 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 15:44:35 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `4ed05dd73e141bd5a1395528801972bb`
+- **SHA256**: `9e28965aa892d3cd8056d856fca3e53df8edd35f62e6bc68fb481a97cd0062ed`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useImperativeHandle } from "react"
+import { motion, useAnimation } from "motion/react"
+
+export type ChevronsUpDownIconHandle = {
+  startAnimation: () => void
+  stopAnimation: () => void
+}
+
+export type ChevronsUpDownIconProps = React.ComponentPropsWithoutRef<"svg"> & {
+  ref?: React.Ref<ChevronsUpDownIconHandle>
+  duration?: number
+}
+
+export function ChevronsUpDownIcon({
+  ref,
+  duration = 0.3,
+  ...props
+}: ChevronsUpDownIconProps) {
+  const controls = useAnimation()
+
+  useImperativeHandle(ref, () => {
+    return {
+      startAnimation: () => controls.start("animate"),
+      stopAnimation: () => controls.start("normal"),
+    }
+  })
+
+  return (
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+      {...props}
+    >
+      <motion.path
+        d="M7 15L12 20L17 15"
+        variants={{
+          normal: {
+            d: "M7 15L12 20L17 15",
+          },
+          animate: {
+            d: "M7 20L12 15L17 20",
+          },
+        }}
+        initial="normal"
+        animate={controls}
+        transition={{
+          duration,
+        }}
+      />
+      <motion.path
+        d="M7 9L12 4L17 9"
+        variants={{
+          normal: {
+            d: "M7 9L12 4L17 9",
+          },
+          animate: {
+            d: "M7 4L12 9L17 4",
+          },
+        }}
+        initial="normal"
+        animate={controls}
+        transition={{
+          duration,
+        }}
+      />
+    </svg>
+  )
+}
+
+```
+
+---
+
+### <a id="📄-src-components-dot-grid-spotlight-tsx"></a>📄 `src/components/dot-grid-spotlight.tsx`
+
+**File Info:**
+- **Size**: 5.62 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/dot-grid-spotlight.tsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-02 17:07:20 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 17:07:20 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `7e6a74c8d9d3634578c16c4c5b3c3e01`
+- **SHA256**: `7aff46d237e62bfaf6823a7f725bdb9fc3b85145fe52ecd574a01e02f40564f1`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import React, { useEffect, useRef } from "react"
+
+import { cn } from "@/lib/utils"
+
+export type DotGridSpotlightProps = {
+  /**
+   * The base color of the default/inactive dots.
+   * @default "rgba(255, 255, 255, 0.05)"
+   */
+  dotColor?: string
+
+  /**
+   * The color of the active dots when illuminated by the cursor's spotlight.
+   * @default "rgba(255, 255, 255, 0.1)"
+   */
+  activeDotColor?: string
+
+  /**
+   * The distance (in pixels) between each dot in the grid.
+   * @default 10
+   */
+  spacing?: number
+
+  /**
+   * The default radius of the dots when they are outside the interaction area.
+   * @default 1
+   */
+  baseRadius?: number
+
+  /**
+   * The maximum radius of a dot when it is at the exact center of the cursor.
+   * @default 2
+   */
+  activeRadius?: number
+
+  /**
+   * The radius (in pixels) of the interaction area (spotlight) around the cursor.
+   * @default 128
+   */
+  interactionRadius?: number
+
+  /**
+   * The maximum opacity (alpha) at the exact center of the spotlight.
+   * Accepts a value between `0` and `1` (e.g., `1` for full opacity).
+   * @default 1.0
+   */
+  activeMaxAlpha?: number
+
+  /**
+   * The minimum opacity (alpha) at the outer edge of the spotlight.
+   * Accepts a value between `0` and `1` (e.g., a low value for a soft, subtle fade).
+   * @default 0.5
+   */
+  activeMinAlpha?: number
+
+  /**
+   * Optional CSS class name to apply to the canvas or its wrapper.
+   */
+  className?: string
+}
+
+export function DotGridSpotlight({
+  dotColor = "rgba(255, 255, 255, 0.05)",
+  activeDotColor = "rgba(255, 255, 255, 0.1)",
+  spacing = 10,
+  baseRadius = 1,
+  activeRadius = 2,
+  interactionRadius = 128,
+  activeMaxAlpha = 1.0,
+  activeMinAlpha = 0.5,
+  className,
+}: DotGridSpotlightProps) {
+  const canvasRef = useRef<HTMLCanvasElement>(null)
+  const mouse = useRef({ x: -1000, y: -1000, isActive: false })
+
+  useEffect(() => {
+    const canvas = canvasRef.current
+    if (!canvas) return
+
+    const ctx = canvas.getContext("2d")
+    if (!ctx) return
+
+    let width = 0
+    let height = 0
+    let renderFrameId: number | null = null
+
+    const draw = () => {
+      ctx.clearRect(0, 0, width, height)
+
+      const offsetX = (width % spacing) / 2
+      const offsetY = (height % spacing) / 2
+
+      for (let x = offsetX; x <= width; x += spacing) {
+        for (let y = offsetY; y <= height; y += spacing) {
+          const dx = x - mouse.current.x
+          const dy = y - mouse.current.y
+          const distance = Math.sqrt(dx * dx + dy * dy)
+
+          let currentRadius = baseRadius
+          let currentColor = dotColor
+          let currentAlpha = 1.0
+
+          if (mouse.current.isActive && distance < interactionRadius) {
+            const factor = 1 - distance / interactionRadius
+            currentRadius = baseRadius + (activeRadius - baseRadius) * factor
+            currentColor = activeDotColor
+            currentAlpha =
+              activeMinAlpha + (activeMaxAlpha - activeMinAlpha) * factor
+          }
+
+          ctx.globalAlpha = currentAlpha
+          ctx.beginPath()
+          ctx.arc(x, y, currentRadius, 0, Math.PI * 2)
+          ctx.fillStyle = currentColor
+          ctx.fill()
+        }
+      }
+      ctx.globalAlpha = 1.0
+    }
+
+    const resizeCanvas = () => {
+      const parent = canvas.parentElement
+      if (!parent) return
+
+      const dpr = window.devicePixelRatio || 1
+      width = parent.clientWidth
+      height = parent.clientHeight
+
+      if (width === 0 || height === 0) return
+
+      canvas.width = width * dpr
+      canvas.height = height * dpr
+      canvas.style.width = `${width}px`
+      canvas.style.height = `${height}px`
+      ctx.scale(dpr, dpr)
+
+      draw()
+
+      requestAnimationFrame(() => {
+        canvas.dataset.ready = "true"
+      })
+    }
+
+    const handleMouseMove = (e: MouseEvent) => {
+      const rect = canvas.getBoundingClientRect()
+      mouse.current = {
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+        isActive: true,
+      }
+
+      if (renderFrameId === null) {
+        renderFrameId = requestAnimationFrame(() => {
+          draw()
+          renderFrameId = null
+        })
+      }
+    }
+
+    const handleMouseLeave = () => {
+      mouse.current.isActive = false
+      if (renderFrameId === null) {
+        renderFrameId = requestAnimationFrame(() => {
+          draw()
+          renderFrameId = null
+        })
+      }
+    }
+
+    canvas.addEventListener("mousemove", handleMouseMove)
+    canvas.addEventListener("mouseleave", handleMouseLeave)
+
+    const resizeObserver = new ResizeObserver(() => resizeCanvas())
+    if (canvas.parentElement) resizeObserver.observe(canvas.parentElement)
+
+    resizeCanvas()
+
+    return () => {
+      canvas.removeEventListener("mousemove", handleMouseMove)
+      canvas.removeEventListener("mouseleave", handleMouseLeave)
+      resizeObserver.disconnect()
+      if (renderFrameId !== null) cancelAnimationFrame(renderFrameId)
+    }
+  }, [
+    spacing,
+    baseRadius,
+    activeRadius,
+    interactionRadius,
+    dotColor,
+    activeDotColor,
+    activeMaxAlpha,
+    activeMinAlpha,
+  ])
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLCanvasElement>) => {
+    const rect = canvasRef.current?.getBoundingClientRect()
+    if (rect) {
+      mouse.current = {
+        x: e.clientX - rect.left,
+        y: e.clientY - rect.top,
+        isActive: true,
+      }
+    }
+  }
+
+  const handleMouseLeave = () => {
+    mouse.current.isActive = false
+  }
+
+  return (
+    <canvas
+      ref={canvasRef}
+      data-ready="false"
+      className={cn(
+        "pointer-events-auto absolute inset-0 block opacity-0 transition-opacity! duration-500 data-[ready=true]:opacity-100",
+        className
+      )}
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    />
+  )
+}
+
+```
+
+---
+
+### <a id="📄-src-components-electricborder-css"></a>📄 `src/components/ElectricBorder.css`
+
+**File Info:**
+- **Size**: 1.1 KB
+- **Extension**: `.css`
+- **Language**: `css`
+- **Location**: `src/components/ElectricBorder.css`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-25 15:05:18 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-25 15:05:18 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `0e35845611d8b1818975736d903dcfb3`
+- **SHA256**: `f827d435106963c5db77445e02c2df372f1c85908cb4e8403575e91e5ed5eece`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```css
+.electric-border {
+  --electric-light-color: oklch(from var(--electric-border-color) l c h);
+  position: relative;
+  border-radius: inherit;
+  overflow: visible;
+  isolation: isolate;
+}
+
+.eb-canvas-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.eb-canvas {
+  display: block;
+}
+
+.eb-content {
+  position: relative;
+  border-radius: inherit;
+  z-index: 1;
+}
+
+.eb-layers {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.eb-glow-1,
+.eb-glow-2,
+.eb-background-glow {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  box-sizing: border-box;
+}
+
+.eb-glow-1 {
+  border: 2px solid oklch(from var(--electric-border-color) l c h / 0.6);
+  filter: blur(1px);
+}
+
+.eb-glow-2 {
+  border: 2px solid var(--electric-light-color);
+  filter: blur(4px);
+}
+
+.eb-background-glow {
+  z-index: -1;
+  transform: scale(1.1);
+  filter: blur(32px);
+  opacity: 0.3;
+  background: linear-gradient(-30deg, var(--electric-light-color), transparent, var(--electric-border-color));
+}
+
+```
+
+---
+
+### <a id="📄-src-components-electricborder-jsx"></a>📄 `src/components/ElectricBorder.jsx`
+
+**File Info:**
+- **Size**: 8.75 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/ElectricBorder.jsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-25 15:05:20 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-25 15:05:20 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `17f9a6c928bab06832d6aa01c9aab761`
+- **SHA256**: `455f90f5182804434d80ff167a928b40105f7eebb99d2dec4bf96869e0f496ae`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+import { useEffect, useRef, useCallback } from 'react';
+import './ElectricBorder.css';
+
+const ElectricBorder = ({
+  children,
+  color = '#5227FF',
+  speed = 1,
+  chaos = 0.12,
+  borderRadius = 24,
+  className,
+  style
+}) => {
+  const canvasRef = useRef(null);
+  const containerRef = useRef(null);
+  const animationRef = useRef(null);
+  const timeRef = useRef(0);
+  const lastFrameTimeRef = useRef(0);
+
+  // Noise functions
+  const random = useCallback(x => {
+    return (Math.sin(x * 12.9898) * 43758.5453) % 1;
+  }, []);
+
+  const noise2D = useCallback(
+    (x, y) => {
+      const i = Math.floor(x);
+      const j = Math.floor(y);
+      const fx = x - i;
+      const fy = y - j;
+
+      const a = random(i + j * 57);
+      const b = random(i + 1 + j * 57);
+      const c = random(i + (j + 1) * 57);
+      const d = random(i + 1 + (j + 1) * 57);
+
+      const ux = fx * fx * (3.0 - 2.0 * fx);
+      const uy = fy * fy * (3.0 - 2.0 * fy);
+
+      return a * (1 - ux) * (1 - uy) + b * ux * (1 - uy) + c * (1 - ux) * uy + d * ux * uy;
+    },
+    [random]
+  );
+
+  const octavedNoise = useCallback(
+    (x, octaves, lacunarity, gain, baseAmplitude, baseFrequency, time, seed, baseFlatness) => {
+      let y = 0;
+      let amplitude = baseAmplitude;
+      let frequency = baseFrequency;
+
+      for (let i = 0; i < octaves; i++) {
+        let octaveAmplitude = amplitude;
+        if (i === 0) {
+          octaveAmplitude *= baseFlatness;
+        }
+        y += octaveAmplitude * noise2D(frequency * x + seed * 100, time * frequency * 0.3);
+        frequency *= lacunarity;
+        amplitude *= gain;
+      }
+
+      return y;
+    },
+    [noise2D]
+  );
+
+  const getCornerPoint = useCallback((centerX, centerY, radius, startAngle, arcLength, progress) => {
+    const angle = startAngle + progress * arcLength;
+    return {
+      x: centerX + radius * Math.cos(angle),
+      y: centerY + radius * Math.sin(angle)
+    };
+  }, []);
+
+  const getRoundedRectPoint = useCallback(
+    (t, left, top, width, height, radius) => {
+      const straightWidth = width - 2 * radius;
+      const straightHeight = height - 2 * radius;
+      const cornerArc = (Math.PI * radius) / 2;
+      const totalPerimeter = 2 * straightWidth + 2 * straightHeight + 4 * cornerArc;
+      const distance = t * totalPerimeter;
+
+      let accumulated = 0;
+
+      // Top edge
+      if (distance <= accumulated + straightWidth) {
+        const progress = (distance - accumulated) / straightWidth;
+        return { x: left + radius + progress * straightWidth, y: top };
+      }
+      accumulated += straightWidth;
+
+      // Top-right corner
+      if (distance <= accumulated + cornerArc) {
+        const progress = (distance - accumulated) / cornerArc;
+        return getCornerPoint(left + width - radius, top + radius, radius, -Math.PI / 2, Math.PI / 2, progress);
+      }
+      accumulated += cornerArc;
+
+      // Right edge
+      if (distance <= accumulated + straightHeight) {
+        const progress = (distance - accumulated) / straightHeight;
+        return { x: left + width, y: top + radius + progress * straightHeight };
+      }
+      accumulated += straightHeight;
+
+      // Bottom-right corner
+      if (distance <= accumulated + cornerArc) {
+        const progress = (distance - accumulated) / cornerArc;
+        return getCornerPoint(left + width - radius, top + height - radius, radius, 0, Math.PI / 2, progress);
+      }
+      accumulated += cornerArc;
+
+      // Bottom edge
+      if (distance <= accumulated + straightWidth) {
+        const progress = (distance - accumulated) / straightWidth;
+        return { x: left + width - radius - progress * straightWidth, y: top + height };
+      }
+      accumulated += straightWidth;
+
+      // Bottom-left corner
+      if (distance <= accumulated + cornerArc) {
+        const progress = (distance - accumulated) / cornerArc;
+        return getCornerPoint(left + radius, top + height - radius, radius, Math.PI / 2, Math.PI / 2, progress);
+      }
+      accumulated += cornerArc;
+
+      // Left edge
+      if (distance <= accumulated + straightHeight) {
+        const progress = (distance - accumulated) / straightHeight;
+        return { x: left, y: top + height - radius - progress * straightHeight };
+      }
+      accumulated += straightHeight;
+
+      // Top-left corner
+      const progress = (distance - accumulated) / cornerArc;
+      return getCornerPoint(left + radius, top + radius, radius, Math.PI, Math.PI / 2, progress);
+    },
+    [getCornerPoint]
+  );
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    const container = containerRef.current;
+    if (!canvas || !container) return;
+
+    const ctx = canvas.getContext('2d');
+    if (!ctx) return;
+
+    // Configuration
+    const octaves = 10;
+    const lacunarity = 1.6;
+    const gain = 0.7;
+    const amplitude = chaos;
+    const frequency = 10;
+    const baseFlatness = 0;
+    const displacement = 60;
+    const borderOffset = 60;
+
+    const updateSize = () => {
+      const rect = container.getBoundingClientRect();
+      const width = rect.width + borderOffset * 2;
+      const height = rect.height + borderOffset * 2;
+
+      // Use device pixel ratio for sharp rendering
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      canvas.width = width * dpr;
+      canvas.height = height * dpr;
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.scale(dpr, dpr);
+
+      return { width, height };
+    };
+
+    let { width, height } = updateSize();
+    let lastDpr = Math.min(window.devicePixelRatio || 1, 2);
+
+    const drawElectricBorder = currentTime => {
+      if (!canvas || !ctx) return;
+
+      const dpr = Math.min(window.devicePixelRatio || 1, 2);
+      if (dpr !== lastDpr) {
+        lastDpr = dpr;
+        const newSize = updateSize();
+        width = newSize.width;
+        height = newSize.height;
+      }
+
+      const deltaTime = (currentTime - lastFrameTimeRef.current) / 1000;
+      timeRef.current += deltaTime * speed;
+      lastFrameTimeRef.current = currentTime;
+
+      ctx.setTransform(1, 0, 0, 1, 0, 0);
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      ctx.scale(dpr, dpr);
+
+      ctx.strokeStyle = color;
+      ctx.lineWidth = 1;
+      ctx.lineCap = 'round';
+      ctx.lineJoin = 'round';
+
+      const scale = displacement;
+      const left = borderOffset;
+      const top = borderOffset;
+      const borderWidth = width - 2 * borderOffset;
+      const borderHeight = height - 2 * borderOffset;
+      const maxRadius = Math.min(borderWidth, borderHeight) / 2;
+      const radius = Math.min(borderRadius, maxRadius);
+
+      const approximatePerimeter = 2 * (borderWidth + borderHeight) + 2 * Math.PI * radius;
+      const sampleCount = Math.floor(approximatePerimeter / 2);
+
+      ctx.beginPath();
+
+      for (let i = 0; i <= sampleCount; i++) {
+        const progress = i / sampleCount;
+
+        const point = getRoundedRectPoint(progress, left, top, borderWidth, borderHeight, radius);
+
+        const xNoise = octavedNoise(
+          progress * 8,
+          octaves,
+          lacunarity,
+          gain,
+          amplitude,
+          frequency,
+          timeRef.current,
+          0,
+          baseFlatness
+        );
+
+        const yNoise = octavedNoise(
+          progress * 8,
+          octaves,
+          lacunarity,
+          gain,
+          amplitude,
+          frequency,
+          timeRef.current,
+          1,
+          baseFlatness
+        );
+
+        const displacedX = point.x + xNoise * scale;
+        const displacedY = point.y + yNoise * scale;
+
+        if (i === 0) {
+          ctx.moveTo(displacedX, displacedY);
+        } else {
+          ctx.lineTo(displacedX, displacedY);
+        }
+      }
+
+      ctx.closePath();
+      ctx.stroke();
+
+      animationRef.current = requestAnimationFrame(drawElectricBorder);
+    };
+
+    // Handle resize
+    const resizeObserver = new ResizeObserver(() => {
+      const newSize = updateSize();
+      width = newSize.width;
+      height = newSize.height;
+    });
+    resizeObserver.observe(container);
+
+    // Start animation
+    animationRef.current = requestAnimationFrame(drawElectricBorder);
+
+    return () => {
+      if (animationRef.current) {
+        cancelAnimationFrame(animationRef.current);
+      }
+      resizeObserver.disconnect();
+    };
+  }, [color, speed, chaos, borderRadius, octavedNoise, getRoundedRectPoint]);
+
+  const vars = {
+    '--electric-border-color': color,
+    borderRadius: borderRadius
+  };
+
+  return (
+    <div ref={containerRef} className={`electric-border ${className ?? ''}`} style={{ ...vars, ...style }}>
+      <div className="eb-canvas-container">
+        <canvas ref={canvasRef} className="eb-canvas" />
+      </div>
+      <div className="eb-layers">
+        <div className="eb-glow-1" />
+        <div className="eb-glow-2" />
+        <div className="eb-background-glow" />
+      </div>
+      <div className="eb-content">{children}</div>
+    </div>
+  );
+};
+
+export default ElectricBorder;
+
+```
+
+---
+
+### <a id="📄-src-components-fluid-gradient-text-tsx"></a>📄 `src/components/fluid-gradient-text.tsx`
+
+**File Info:**
+- **Size**: 2.35 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/fluid-gradient-text.tsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-02 17:14:53 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 17:14:53 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `280b262db209a6e45c0335d37749e003`
+- **SHA256**: `6d931316032cbe20e648757fc5bee573142d7d3afbe97fdba929ac4d6f2ba51d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { motion, useMotionValue, useSpring, useTransform } from "motion/react"
+
+export type FluidGradientTextProps = {
+  /** Text content rendered inside the SVG. */
+  text: string
+  /**
+   * SVG viewBox width used to scale the gradient and text layout.
+   * @default 1200
+   * */
+  svgViewBoxWidth?: number
+  /**
+   * SVG viewBox height used as the base text size.
+   * @default 300
+   * */
+  svgViewBoxHeight?: number
+}
+
+export function FluidGradientText({
+  text,
+  svgViewBoxWidth = 1200,
+  svgViewBoxHeight = 300,
+}: FluidGradientTextProps) {
+  const gradientX1Raw = useMotionValue(0.5)
+  const gradientX1 = useSpring(
+    useTransform(gradientX1Raw, [0, 1], [0, svgViewBoxWidth]),
+    {
+      stiffness: 150,
+      damping: 25,
+    }
+  )
+
+  const handleMouseMove = (event: React.MouseEvent<HTMLDivElement>) => {
+    const containerRect = event.currentTarget.getBoundingClientRect()
+    gradientX1Raw.set(
+      (event.clientX - containerRect.left) / containerRect.width
+    )
+  }
+
+  const handleMouseLeave = () => {
+    gradientX1Raw.set(0.5)
+  }
+
+  return (
+    <div
+      className="relative size-full overflow-hidden after:absolute after:bottom-0 after:h-px after:w-full after:bg-current/15"
+      onMouseMove={handleMouseMove}
+      onMouseLeave={handleMouseLeave}
+    >
+      <svg
+        className="size-full translate-y-[37.5%] select-none"
+        viewBox={`0 0 ${svgViewBoxWidth} ${svgViewBoxHeight}`}
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <text
+          x="50%"
+          y="50%"
+          textAnchor="middle"
+          dominantBaseline="central"
+          stroke="currentColor"
+          strokeOpacity="0.1"
+          strokeWidth="2"
+          fill="url(#fluid_gradient_text_linear)"
+          style={{
+            fontFamily: "Helvetica",
+            fontSize: svgViewBoxHeight,
+            fontWeight: "bold",
+          }}
+        >
+          {text}
+        </text>
+        <defs>
+          <motion.linearGradient
+            id="fluid_gradient_text_linear"
+            x1={gradientX1}
+            y1="0"
+            x2={svgViewBoxWidth / 2}
+            y2={svgViewBoxHeight}
+            gradientUnits="userSpaceOnUse"
+          >
+            <stop offset="0.625" stopColor="currentColor" stopOpacity="0" />
+            <stop offset="1" stopColor="currentColor" />
+          </motion.linearGradient>
+        </defs>
+      </svg>
+    </div>
+  )
+}
+
+```
+
+---
+
+### <a id="📄-src-components-scroll-fade-effect-tsx"></a>📄 `src/components/scroll-fade-effect.tsx`
+
+**File Info:**
+- **Size**: 712 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/scroll-fade-effect.tsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-02 17:02:29 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 17:02:29 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `d0c84e6d7a4e793c8a65d0efa7347bf4`
+- **SHA256**: `f0be9824f2d0e1470331899e1650f9a175e483231e2933a45eb7ce83b80730e3`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import type { ComponentProps } from "react"
+
+import { cn } from "@/lib/utils"
+
+export type ScrollFadeEffectProps = ComponentProps<"div"> & {
+  /**
+   * Scroll direction to apply the fade effect.
+   * @defaultValue "vertical"
+   * */
+  orientation?: "horizontal" | "vertical"
+}
+
+export function ScrollFadeEffect({
+  className,
+  orientation = "vertical",
+  ...props
+}: ScrollFadeEffectProps) {
+  return (
+    <div
+      data-orientation={orientation}
+      className={cn(
+        "data-[orientation=horizontal]:overflow-x-auto data-vertical:overflow-y-auto",
+        "data-[orientation=horizontal]:scroll-fade-effect-x data-vertical:scroll-fade-effect-y",
+        className
+      )}
+      {...props}
+    />
+  )
+}
+
+```
+
+---
+
+### <a id="📄-src-components-shimmering-text-tsx"></a>📄 `src/components/shimmering-text.tsx`
+
+**File Info:**
+- **Size**: 1.87 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/shimmering-text.tsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-02 16:43:24 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 16:43:24 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `aec43e038dd71b48d7bda1a1c566ad7f`
+- **SHA256**: `a5cf2f93f047a650ca9fc59ddd5157ee8a7528cc2671c74eb99177905883dd95`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import * as React from "react"
+import type { Variants } from "motion/react"
+import { motion } from "motion/react"
+
+import { cn } from "@/lib/utils"
+
+export type ShimmeringTextProps = Omit<
+  React.ComponentProps<typeof motion.span>,
+  "children"
+> & {
+  /** The text to render with the shimmering effect. */
+  text: string
+  /**
+   * Duration in seconds for one shimmer cycle.
+   * @defaultValue 1 */
+  duration?: number
+  /**
+   * Whether the shimmer animation is paused.
+   * @defaultValue false */
+  isStopped?: boolean
+}
+
+export function ShimmeringText({
+  text,
+  duration = 1,
+  isStopped = false,
+  className,
+  ...props
+}: ShimmeringTextProps) {
+  const createCharVariants = React.useCallback(
+    (charIndex: number): Variants => ({
+      running: {
+        color: ["var(--color)", "var(--shimmering-color)", "var(--color)"],
+        transition: {
+          duration,
+          repeat: Infinity,
+          repeatType: "loop" as const,
+          repeatDelay: text.length * 0.05,
+          delay: (charIndex * duration) / text.length,
+          ease: "easeInOut",
+        },
+      },
+      stopped: {
+        color: "var(--color)",
+        transition: {
+          duration: duration * 0.5,
+          ease: "easeOut",
+        },
+      },
+    }),
+    [duration, text.length]
+  )
+
+  return (
+    <motion.span
+      className={cn(
+        "inline-block select-none",
+        "[--color:var(--muted-foreground)] [--shimmering-color:var(--foreground)]",
+        className
+      )}
+      {...props}
+    >
+      {text?.split("")?.map((char, i) => (
+        <motion.span
+          key={i}
+          className="inline-block whitespace-pre"
+          initial="stopped"
+          animate={isStopped ? "stopped" : "running"}
+          variants={createCharVariants(i)}
+          aria-hidden
+        >
+          {char}
+        </motion.span>
+      ))}
+      <span className="sr-only">{text}</span>
+    </motion.span>
+  )
+}
+
+```
+
+---
+
+### <a id="📄-src-components-splashcursor-jsx"></a>📄 `src/components/SplashCursor.jsx`
+
+**File Info:**
+- **Size**: 36.07 KB
+- **Extension**: `.jsx`
+- **Language**: `jsx`
+- **Location**: `src/components/SplashCursor.jsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-25 14:36:48 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-25 14:50:33 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `152a655e81498f552e8c2aea1bec33da`
+- **SHA256**: `44debaf338a5a6663a22acbe19b40c3f17b2e4003ada266d8272cdad208f746d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```jsx
+"use client";
+import { useEffect, useRef } from "react";
+
+function SplashCursor({
+  SIM_RESOLUTION = 128,
+  DYE_RESOLUTION = 1440,
+  CAPTURE_RESOLUTION = 512,
+  DENSITY_DISSIPATION = 3.5,
+  VELOCITY_DISSIPATION = 2,
+  PRESSURE = 0.1,
+  PRESSURE_ITERATIONS = 20,
+  CURL = 3,
+  SPLAT_RADIUS = 0.2,
+  SPLAT_FORCE = 6000,
+  SHADING = true,
+  COLOR_UPDATE_SPEED = 10,
+  BACK_COLOR = { r: 0.5, g: 0, b: 0 },
+  TRANSPARENT = true,
+  RAINBOW_MODE = false,
+  COLOR = "#d3d3d3",
+}) {
+  const canvasRef = useRef(null);
+  const animationFrameId = useRef(null);
+
+  useEffect(() => {
+    const canvas = canvasRef.current;
+    if (!canvas) return;
+
+    // Track if the effect is still active for cleanup
+    let isActive = true;
+
+    function pointerPrototype() {
+      this.id = -1;
+      this.texcoordX = 0;
+      this.texcoordY = 0;
+      this.prevTexcoordX = 0;
+      this.prevTexcoordY = 0;
+      this.deltaX = 0;
+      this.deltaY = 0;
+      this.down = false;
+      this.moved = false;
+      this.color = [0, 0, 0];
+    }
+
+    let config = {
+      SIM_RESOLUTION,
+      DYE_RESOLUTION,
+      CAPTURE_RESOLUTION,
+      DENSITY_DISSIPATION,
+      VELOCITY_DISSIPATION,
+      PRESSURE,
+      PRESSURE_ITERATIONS,
+      CURL,
+      SPLAT_RADIUS,
+      SPLAT_FORCE,
+      SHADING,
+      COLOR_UPDATE_SPEED,
+      PAUSED: false,
+      BACK_COLOR,
+      TRANSPARENT,
+      RAINBOW_MODE,
+      COLOR,
+    };
+
+    let pointers = [new pointerPrototype()];
+
+    const { gl, ext } = getWebGLContext(canvas);
+    if (!ext.supportLinearFiltering) {
+      config.DYE_RESOLUTION = 256;
+      config.SHADING = false;
+    }
+
+    function getWebGLContext(canvas) {
+      const params = {
+        alpha: true,
+        depth: false,
+        stencil: false,
+        antialias: false,
+        preserveDrawingBuffer: false,
+      };
+      let gl = canvas.getContext("webgl2", params);
+      const isWebGL2 = !!gl;
+      if (!isWebGL2)
+        gl =
+          canvas.getContext("webgl", params) ||
+          canvas.getContext("experimental-webgl", params);
+
+      let halfFloat;
+      let supportLinearFiltering;
+      if (isWebGL2) {
+        gl.getExtension("EXT_color_buffer_float");
+        supportLinearFiltering = gl.getExtension("OES_texture_float_linear");
+      } else {
+        halfFloat = gl.getExtension("OES_texture_half_float");
+        supportLinearFiltering = gl.getExtension(
+          "OES_texture_half_float_linear",
+        );
+      }
+      gl.clearColor(0.0, 0.0, 0.0, 1.0);
+
+      const halfFloatTexType = isWebGL2
+        ? gl.HALF_FLOAT
+        : halfFloat && halfFloat.HALF_FLOAT_OES;
+      let formatRGBA;
+      let formatRG;
+      let formatR;
+
+      if (isWebGL2) {
+        formatRGBA = getSupportedFormat(
+          gl,
+          gl.RGBA16F,
+          gl.RGBA,
+          halfFloatTexType,
+        );
+        formatRG = getSupportedFormat(gl, gl.RG16F, gl.RG, halfFloatTexType);
+        formatR = getSupportedFormat(gl, gl.R16F, gl.RED, halfFloatTexType);
+      } else {
+        formatRGBA = getSupportedFormat(gl, gl.RGBA, gl.RGBA, halfFloatTexType);
+        formatRG = getSupportedFormat(gl, gl.RGBA, gl.RGBA, halfFloatTexType);
+        formatR = getSupportedFormat(gl, gl.RGBA, gl.RGBA, halfFloatTexType);
+      }
+
+      return {
+        gl,
+        ext: {
+          formatRGBA,
+          formatRG,
+          formatR,
+          halfFloatTexType,
+          supportLinearFiltering,
+        },
+      };
+    }
+
+    function getSupportedFormat(gl, internalFormat, format, type) {
+      if (!supportRenderTextureFormat(gl, internalFormat, format, type)) {
+        switch (internalFormat) {
+          case gl.R16F:
+            return getSupportedFormat(gl, gl.RG16F, gl.RG, type);
+          case gl.RG16F:
+            return getSupportedFormat(gl, gl.RGBA16F, gl.RGBA, type);
+          default:
+            return null;
+        }
+      }
+      return { internalFormat, format };
+    }
+
+    function supportRenderTextureFormat(gl, internalFormat, format, type) {
+      const texture = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D, texture);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, gl.NEAREST);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texImage2D(
+        gl.TEXTURE_2D,
+        0,
+        internalFormat,
+        4,
+        4,
+        0,
+        format,
+        type,
+        null,
+      );
+      const fbo = gl.createFramebuffer();
+      gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+      gl.framebufferTexture2D(
+        gl.FRAMEBUFFER,
+        gl.COLOR_ATTACHMENT0,
+        gl.TEXTURE_2D,
+        texture,
+        0,
+      );
+      const status = gl.checkFramebufferStatus(gl.FRAMEBUFFER);
+      return status === gl.FRAMEBUFFER_COMPLETE;
+    }
+
+    class Material {
+      constructor(vertexShader, fragmentShaderSource) {
+        this.vertexShader = vertexShader;
+        this.fragmentShaderSource = fragmentShaderSource;
+        this.programs = [];
+        this.activeProgram = null;
+        this.uniforms = [];
+      }
+      setKeywords(keywords) {
+        let hash = 0;
+        for (let i = 0; i < keywords.length; i++) hash += hashCode(keywords[i]);
+        let program = this.programs[hash];
+        if (program == null) {
+          let fragmentShader = compileShader(
+            gl.FRAGMENT_SHADER,
+            this.fragmentShaderSource,
+            keywords,
+          );
+          program = createProgram(this.vertexShader, fragmentShader);
+          this.programs[hash] = program;
+        }
+        if (program === this.activeProgram) return;
+        this.uniforms = getUniforms(program);
+        this.activeProgram = program;
+      }
+      bind() {
+        gl.useProgram(this.activeProgram);
+      }
+    }
+
+    class Program {
+      constructor(vertexShader, fragmentShader) {
+        this.uniforms = {};
+        this.program = createProgram(vertexShader, fragmentShader);
+        this.uniforms = getUniforms(this.program);
+      }
+      bind() {
+        gl.useProgram(this.program);
+      }
+    }
+
+    function createProgram(vertexShader, fragmentShader) {
+      let program = gl.createProgram();
+      gl.attachShader(program, vertexShader);
+      gl.attachShader(program, fragmentShader);
+      gl.linkProgram(program);
+      if (!gl.getProgramParameter(program, gl.LINK_STATUS))
+        console.trace(gl.getProgramInfoLog(program));
+      return program;
+    }
+
+    function getUniforms(program) {
+      let uniforms = [];
+      let uniformCount = gl.getProgramParameter(program, gl.ACTIVE_UNIFORMS);
+      for (let i = 0; i < uniformCount; i++) {
+        let uniformName = gl.getActiveUniform(program, i).name;
+        uniforms[uniformName] = gl.getUniformLocation(program, uniformName);
+      }
+      return uniforms;
+    }
+
+    function compileShader(type, source, keywords) {
+      source = addKeywords(source, keywords);
+      const shader = gl.createShader(type);
+      gl.shaderSource(shader, source);
+      gl.compileShader(shader);
+      if (!gl.getShaderParameter(shader, gl.COMPILE_STATUS))
+        console.trace(gl.getShaderInfoLog(shader));
+      return shader;
+    }
+
+    function addKeywords(source, keywords) {
+      if (!keywords) return source;
+      let keywordsString = "";
+      keywords.forEach((keyword) => {
+        keywordsString += "#define " + keyword + "\n";
+      });
+      return keywordsString + source;
+    }
+
+    const baseVertexShader = compileShader(
+      gl.VERTEX_SHADER,
+      `
+        precision highp float;
+        attribute vec2 aPosition;
+        varying vec2 vUv;
+        varying vec2 vL;
+        varying vec2 vR;
+        varying vec2 vT;
+        varying vec2 vB;
+        uniform vec2 texelSize;
+
+        void main () {
+            vUv = aPosition * 0.5 + 0.5;
+            vL = vUv - vec2(texelSize.x, 0.0);
+            vR = vUv + vec2(texelSize.x, 0.0);
+            vT = vUv + vec2(0.0, texelSize.y);
+            vB = vUv - vec2(0.0, texelSize.y);
+            gl_Position = vec4(aPosition, 0.0, 1.0);
+        }
+      `,
+    );
+
+    const copyShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision mediump float;
+        precision mediump sampler2D;
+        varying highp vec2 vUv;
+        uniform sampler2D uTexture;
+
+        void main () {
+            gl_FragColor = texture2D(uTexture, vUv);
+        }
+      `,
+    );
+
+    const clearShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision mediump float;
+        precision mediump sampler2D;
+        varying highp vec2 vUv;
+        uniform sampler2D uTexture;
+        uniform float value;
+
+        void main () {
+            gl_FragColor = value * texture2D(uTexture, vUv);
+        }
+      `,
+    );
+
+    const displayShaderSource = `
+      precision highp float;
+      precision highp sampler2D;
+      varying vec2 vUv;
+      varying vec2 vL;
+      varying vec2 vR;
+      varying vec2 vT;
+      varying vec2 vB;
+      uniform sampler2D uTexture;
+      uniform sampler2D uDithering;
+      uniform vec2 ditherScale;
+      uniform vec2 texelSize;
+
+      vec3 linearToGamma (vec3 color) {
+          color = max(color, vec3(0));
+          return max(1.055 * pow(color, vec3(0.416666667)) - 0.055, vec3(0));
+      }
+
+      void main () {
+          vec3 c = texture2D(uTexture, vUv).rgb;
+          #ifdef SHADING
+              vec3 lc = texture2D(uTexture, vL).rgb;
+              vec3 rc = texture2D(uTexture, vR).rgb;
+              vec3 tc = texture2D(uTexture, vT).rgb;
+              vec3 bc = texture2D(uTexture, vB).rgb;
+
+              float dx = length(rc) - length(lc);
+              float dy = length(tc) - length(bc);
+
+              vec3 n = normalize(vec3(dx, dy, length(texelSize)));
+              vec3 l = vec3(0.0, 0.0, 1.0);
+
+              float diffuse = clamp(dot(n, l) + 0.7, 0.7, 1.0);
+              c *= diffuse;
+          #endif
+
+          float a = max(c.r, max(c.g, c.b));
+          gl_FragColor = vec4(c, a);
+      }
+    `;
+
+    const splatShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision highp float;
+        precision highp sampler2D;
+        varying vec2 vUv;
+        uniform sampler2D uTarget;
+        uniform float aspectRatio;
+        uniform vec3 color;
+        uniform vec2 point;
+        uniform float radius;
+
+        void main () {
+            vec2 p = vUv - point.xy;
+            p.x *= aspectRatio;
+            vec3 splat = exp(-dot(p, p) / radius) * color;
+            vec3 base = texture2D(uTarget, vUv).xyz;
+            gl_FragColor = vec4(base + splat, 1.0);
+        }
+      `,
+    );
+
+    const advectionShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision highp float;
+        precision highp sampler2D;
+        varying vec2 vUv;
+        uniform sampler2D uVelocity;
+        uniform sampler2D uSource;
+        uniform vec2 texelSize;
+        uniform vec2 dyeTexelSize;
+        uniform float dt;
+        uniform float dissipation;
+
+        vec4 bilerp (sampler2D sam, vec2 uv, vec2 tsize) {
+            vec2 st = uv / tsize - 0.5;
+            vec2 iuv = floor(st);
+            vec2 fuv = fract(st);
+
+            vec4 a = texture2D(sam, (iuv + vec2(0.5, 0.5)) * tsize);
+            vec4 b = texture2D(sam, (iuv + vec2(1.5, 0.5)) * tsize);
+            vec4 c = texture2D(sam, (iuv + vec2(0.5, 1.5)) * tsize);
+            vec4 d = texture2D(sam, (iuv + vec2(1.5, 1.5)) * tsize);
+
+            return mix(mix(a, b, fuv.x), mix(c, d, fuv.x), fuv.y);
+        }
+
+        void main () {
+            #ifdef MANUAL_FILTERING
+                vec2 coord = vUv - dt * bilerp(uVelocity, vUv, texelSize).xy * texelSize;
+                vec4 result = bilerp(uSource, coord, dyeTexelSize);
+            #else
+                vec2 coord = vUv - dt * texture2D(uVelocity, vUv).xy * texelSize;
+                vec4 result = texture2D(uSource, coord);
+            #endif
+            float decay = 1.0 + dissipation * dt;
+            gl_FragColor = result / decay;
+        }
+      `,
+      ext.supportLinearFiltering ? null : ["MANUAL_FILTERING"],
+    );
+
+    const divergenceShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision mediump float;
+        precision mediump sampler2D;
+        varying highp vec2 vUv;
+        varying highp vec2 vL;
+        varying highp vec2 vR;
+        varying highp vec2 vT;
+        varying highp vec2 vB;
+        uniform sampler2D uVelocity;
+
+        void main () {
+            float L = texture2D(uVelocity, vL).x;
+            float R = texture2D(uVelocity, vR).x;
+            float T = texture2D(uVelocity, vT).y;
+            float B = texture2D(uVelocity, vB).y;
+
+            vec2 C = texture2D(uVelocity, vUv).xy;
+            if (vL.x < 0.0) { L = -C.x; }
+            if (vR.x > 1.0) { R = -C.x; }
+            if (vT.y > 1.0) { T = -C.y; }
+            if (vB.y < 0.0) { B = -C.y; }
+
+            float div = 0.5 * (R - L + T - B);
+            gl_FragColor = vec4(div, 0.0, 0.0, 1.0);
+        }
+      `,
+    );
+
+    const curlShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision mediump float;
+        precision mediump sampler2D;
+        varying highp vec2 vUv;
+        varying highp vec2 vL;
+        varying highp vec2 vR;
+        varying highp vec2 vT;
+        varying highp vec2 vB;
+        uniform sampler2D uVelocity;
+
+        void main () {
+            float L = texture2D(uVelocity, vL).y;
+            float R = texture2D(uVelocity, vR).y;
+            float T = texture2D(uVelocity, vT).x;
+            float B = texture2D(uVelocity, vB).x;
+            float vorticity = R - L - T + B;
+            gl_FragColor = vec4(0.5 * vorticity, 0.0, 0.0, 1.0);
+        }
+      `,
+    );
+
+    const vorticityShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision highp float;
+        precision highp sampler2D;
+        varying vec2 vUv;
+        varying vec2 vL;
+        varying vec2 vR;
+        varying vec2 vT;
+        varying vec2 vB;
+        uniform sampler2D uVelocity;
+        uniform sampler2D uCurl;
+        uniform float curl;
+        uniform float dt;
+
+        void main () {
+            float L = texture2D(uCurl, vL).x;
+            float R = texture2D(uCurl, vR).x;
+            float T = texture2D(uCurl, vT).x;
+            float B = texture2D(uCurl, vB).x;
+            float C = texture2D(uCurl, vUv).x;
+
+            vec2 force = 0.5 * vec2(abs(T) - abs(B), abs(R) - abs(L));
+            force /= length(force) + 0.0001;
+            force *= curl * C;
+            force.y *= -1.0;
+
+            vec2 velocity = texture2D(uVelocity, vUv).xy;
+            velocity += force * dt;
+            velocity = min(max(velocity, -1000.0), 1000.0);
+            gl_FragColor = vec4(velocity, 0.0, 1.0);
+        }
+      `,
+    );
+
+    const pressureShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision mediump float;
+        precision mediump sampler2D;
+        varying highp vec2 vUv;
+        varying highp vec2 vL;
+        varying highp vec2 vR;
+        varying highp vec2 vT;
+        varying highp vec2 vB;
+        uniform sampler2D uPressure;
+        uniform sampler2D uDivergence;
+
+        void main () {
+            float L = texture2D(uPressure, vL).x;
+            float R = texture2D(uPressure, vR).x;
+            float T = texture2D(uPressure, vT).x;
+            float B = texture2D(uPressure, vB).x;
+            float C = texture2D(uPressure, vUv).x;
+            float divergence = texture2D(uDivergence, vUv).x;
+            float pressure = (L + R + B + T - divergence) * 0.25;
+            gl_FragColor = vec4(pressure, 0.0, 0.0, 1.0);
+        }
+      `,
+    );
+
+    const gradientSubtractShader = compileShader(
+      gl.FRAGMENT_SHADER,
+      `
+        precision mediump float;
+        precision mediump sampler2D;
+        varying highp vec2 vUv;
+        varying highp vec2 vL;
+        varying highp vec2 vR;
+        varying highp vec2 vT;
+        varying highp vec2 vB;
+        uniform sampler2D uPressure;
+        uniform sampler2D uVelocity;
+
+        void main () {
+            float L = texture2D(uPressure, vL).x;
+            float R = texture2D(uPressure, vR).x;
+            float T = texture2D(uPressure, vT).x;
+            float B = texture2D(uPressure, vB).x;
+            vec2 velocity = texture2D(uVelocity, vUv).xy;
+            velocity.xy -= vec2(R - L, T - B);
+            gl_FragColor = vec4(velocity, 0.0, 1.0);
+        }
+      `,
+    );
+
+    const blit = (() => {
+      gl.bindBuffer(gl.ARRAY_BUFFER, gl.createBuffer());
+      gl.bufferData(
+        gl.ARRAY_BUFFER,
+        new Float32Array([-1, -1, -1, 1, 1, 1, 1, -1]),
+        gl.STATIC_DRAW,
+      );
+      gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, gl.createBuffer());
+      gl.bufferData(
+        gl.ELEMENT_ARRAY_BUFFER,
+        new Uint16Array([0, 1, 2, 0, 2, 3]),
+        gl.STATIC_DRAW,
+      );
+      gl.vertexAttribPointer(0, 2, gl.FLOAT, false, 0, 0);
+      gl.enableVertexAttribArray(0);
+      return (target, clear = false) => {
+        if (target == null) {
+          gl.viewport(0, 0, gl.drawingBufferWidth, gl.drawingBufferHeight);
+          gl.bindFramebuffer(gl.FRAMEBUFFER, null);
+        } else {
+          gl.viewport(0, 0, target.width, target.height);
+          gl.bindFramebuffer(gl.FRAMEBUFFER, target.fbo);
+        }
+        if (clear) {
+          gl.clearColor(0.0, 0.0, 0.0, 1.0);
+          gl.clear(gl.COLOR_BUFFER_BIT);
+        }
+        gl.drawElements(gl.TRIANGLES, 6, gl.UNSIGNED_SHORT, 0);
+      };
+    })();
+
+    let dye, velocity, divergence, curl, pressure;
+
+    const copyProgram = new Program(baseVertexShader, copyShader);
+    const clearProgram = new Program(baseVertexShader, clearShader);
+    const splatProgram = new Program(baseVertexShader, splatShader);
+    const advectionProgram = new Program(baseVertexShader, advectionShader);
+    const divergenceProgram = new Program(baseVertexShader, divergenceShader);
+    const curlProgram = new Program(baseVertexShader, curlShader);
+    const vorticityProgram = new Program(baseVertexShader, vorticityShader);
+    const pressureProgram = new Program(baseVertexShader, pressureShader);
+    const gradienSubtractProgram = new Program(
+      baseVertexShader,
+      gradientSubtractShader,
+    );
+    const displayMaterial = new Material(baseVertexShader, displayShaderSource);
+
+    function initFramebuffers() {
+      let simRes = getResolution(config.SIM_RESOLUTION);
+      let dyeRes = getResolution(config.DYE_RESOLUTION);
+      const texType = ext.halfFloatTexType;
+      const rgba = ext.formatRGBA;
+      const rg = ext.formatRG;
+      const r = ext.formatR;
+      const filtering = ext.supportLinearFiltering ? gl.LINEAR : gl.NEAREST;
+      gl.disable(gl.BLEND);
+
+      if (!dye)
+        dye = createDoubleFBO(
+          dyeRes.width,
+          dyeRes.height,
+          rgba.internalFormat,
+          rgba.format,
+          texType,
+          filtering,
+        );
+      else
+        dye = resizeDoubleFBO(
+          dye,
+          dyeRes.width,
+          dyeRes.height,
+          rgba.internalFormat,
+          rgba.format,
+          texType,
+          filtering,
+        );
+
+      if (!velocity)
+        velocity = createDoubleFBO(
+          simRes.width,
+          simRes.height,
+          rg.internalFormat,
+          rg.format,
+          texType,
+          filtering,
+        );
+      else
+        velocity = resizeDoubleFBO(
+          velocity,
+          simRes.width,
+          simRes.height,
+          rg.internalFormat,
+          rg.format,
+          texType,
+          filtering,
+        );
+
+      divergence = createFBO(
+        simRes.width,
+        simRes.height,
+        r.internalFormat,
+        r.format,
+        texType,
+        gl.NEAREST,
+      );
+      curl = createFBO(
+        simRes.width,
+        simRes.height,
+        r.internalFormat,
+        r.format,
+        texType,
+        gl.NEAREST,
+      );
+      pressure = createDoubleFBO(
+        simRes.width,
+        simRes.height,
+        r.internalFormat,
+        r.format,
+        texType,
+        gl.NEAREST,
+      );
+    }
+
+    function createFBO(w, h, internalFormat, format, type, param) {
+      gl.activeTexture(gl.TEXTURE0);
+      let texture = gl.createTexture();
+      gl.bindTexture(gl.TEXTURE_2D, texture);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, param);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MAG_FILTER, param);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE);
+      gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE);
+      gl.texImage2D(
+        gl.TEXTURE_2D,
+        0,
+        internalFormat,
+        w,
+        h,
+        0,
+        format,
+        type,
+        null,
+      );
+
+      let fbo = gl.createFramebuffer();
+      gl.bindFramebuffer(gl.FRAMEBUFFER, fbo);
+      gl.framebufferTexture2D(
+        gl.FRAMEBUFFER,
+        gl.COLOR_ATTACHMENT0,
+        gl.TEXTURE_2D,
+        texture,
+        0,
+      );
+      gl.viewport(0, 0, w, h);
+      gl.clear(gl.COLOR_BUFFER_BIT);
+
+      let texelSizeX = 1.0 / w;
+      let texelSizeY = 1.0 / h;
+      return {
+        texture,
+        fbo,
+        width: w,
+        height: h,
+        texelSizeX,
+        texelSizeY,
+        attach(id) {
+          gl.activeTexture(gl.TEXTURE0 + id);
+          gl.bindTexture(gl.TEXTURE_2D, texture);
+          return id;
+        },
+      };
+    }
+
+    function createDoubleFBO(w, h, internalFormat, format, type, param) {
+      let fbo1 = createFBO(w, h, internalFormat, format, type, param);
+      let fbo2 = createFBO(w, h, internalFormat, format, type, param);
+      return {
+        width: w,
+        height: h,
+        texelSizeX: fbo1.texelSizeX,
+        texelSizeY: fbo1.texelSizeY,
+        get read() {
+          return fbo1;
+        },
+        set read(value) {
+          fbo1 = value;
+        },
+        get write() {
+          return fbo2;
+        },
+        set write(value) {
+          fbo2 = value;
+        },
+        swap() {
+          let temp = fbo1;
+          fbo1 = fbo2;
+          fbo2 = temp;
+        },
+      };
+    }
+
+    function resizeFBO(target, w, h, internalFormat, format, type, param) {
+      let newFBO = createFBO(w, h, internalFormat, format, type, param);
+      copyProgram.bind();
+      gl.uniform1i(copyProgram.uniforms.uTexture, target.attach(0));
+      blit(newFBO);
+      return newFBO;
+    }
+
+    function resizeDoubleFBO(
+      target,
+      w,
+      h,
+      internalFormat,
+      format,
+      type,
+      param,
+    ) {
+      if (target.width === w && target.height === h) return target;
+      target.read = resizeFBO(
+        target.read,
+        w,
+        h,
+        internalFormat,
+        format,
+        type,
+        param,
+      );
+      target.write = createFBO(w, h, internalFormat, format, type, param);
+      target.width = w;
+      target.height = h;
+      target.texelSizeX = 1.0 / w;
+      target.texelSizeY = 1.0 / h;
+      return target;
+    }
+
+    function updateKeywords() {
+      let displayKeywords = [];
+      if (config.SHADING) displayKeywords.push("SHADING");
+      displayMaterial.setKeywords(displayKeywords);
+    }
+
+    updateKeywords();
+    initFramebuffers();
+    let lastUpdateTime = Date.now();
+    let colorUpdateTimer = 0.0;
+
+    function updateFrame() {
+      if (!isActive) return;
+      const dt = calcDeltaTime();
+      if (resizeCanvas()) initFramebuffers();
+      updateColors(dt);
+      applyInputs();
+      step(dt);
+      render(null);
+      animationFrameId.current = requestAnimationFrame(updateFrame);
+    }
+
+    function calcDeltaTime() {
+      let now = Date.now();
+      let dt = (now - lastUpdateTime) / 1000;
+      dt = Math.min(dt, 0.016666);
+      lastUpdateTime = now;
+      return dt;
+    }
+
+    function resizeCanvas() {
+      let width = scaleByPixelRatio(canvas.clientWidth);
+      let height = scaleByPixelRatio(canvas.clientHeight);
+      if (canvas.width !== width || canvas.height !== height) {
+        canvas.width = width;
+        canvas.height = height;
+        return true;
+      }
+      return false;
+    }
+
+    function updateColors(dt) {
+      colorUpdateTimer += dt * config.COLOR_UPDATE_SPEED;
+      if (colorUpdateTimer >= 1) {
+        colorUpdateTimer = wrap(colorUpdateTimer, 0, 1);
+        pointers.forEach((p) => {
+          p.color = generateColor();
+        });
+      }
+    }
+
+    function applyInputs() {
+      pointers.forEach((p) => {
+        if (p.moved) {
+          p.moved = false;
+          splatPointer(p);
+        }
+      });
+    }
+
+    function step(dt) {
+      gl.disable(gl.BLEND);
+      curlProgram.bind();
+      gl.uniform2f(
+        curlProgram.uniforms.texelSize,
+        velocity.texelSizeX,
+        velocity.texelSizeY,
+      );
+      gl.uniform1i(curlProgram.uniforms.uVelocity, velocity.read.attach(0));
+      blit(curl);
+
+      vorticityProgram.bind();
+      gl.uniform2f(
+        vorticityProgram.uniforms.texelSize,
+        velocity.texelSizeX,
+        velocity.texelSizeY,
+      );
+      gl.uniform1i(
+        vorticityProgram.uniforms.uVelocity,
+        velocity.read.attach(0),
+      );
+      gl.uniform1i(vorticityProgram.uniforms.uCurl, curl.attach(1));
+      gl.uniform1f(vorticityProgram.uniforms.curl, config.CURL);
+      gl.uniform1f(vorticityProgram.uniforms.dt, dt);
+      blit(velocity.write);
+      velocity.swap();
+
+      divergenceProgram.bind();
+      gl.uniform2f(
+        divergenceProgram.uniforms.texelSize,
+        velocity.texelSizeX,
+        velocity.texelSizeY,
+      );
+      gl.uniform1i(
+        divergenceProgram.uniforms.uVelocity,
+        velocity.read.attach(0),
+      );
+      blit(divergence);
+
+      clearProgram.bind();
+      gl.uniform1i(clearProgram.uniforms.uTexture, pressure.read.attach(0));
+      gl.uniform1f(clearProgram.uniforms.value, config.PRESSURE);
+      blit(pressure.write);
+      pressure.swap();
+
+      pressureProgram.bind();
+      gl.uniform2f(
+        pressureProgram.uniforms.texelSize,
+        velocity.texelSizeX,
+        velocity.texelSizeY,
+      );
+      gl.uniform1i(pressureProgram.uniforms.uDivergence, divergence.attach(0));
+      for (let i = 0; i < config.PRESSURE_ITERATIONS; i++) {
+        gl.uniform1i(
+          pressureProgram.uniforms.uPressure,
+          pressure.read.attach(1),
+        );
+        blit(pressure.write);
+        pressure.swap();
+      }
+
+      gradienSubtractProgram.bind();
+      gl.uniform2f(
+        gradienSubtractProgram.uniforms.texelSize,
+        velocity.texelSizeX,
+        velocity.texelSizeY,
+      );
+      gl.uniform1i(
+        gradienSubtractProgram.uniforms.uPressure,
+        pressure.read.attach(0),
+      );
+      gl.uniform1i(
+        gradienSubtractProgram.uniforms.uVelocity,
+        velocity.read.attach(1),
+      );
+      blit(velocity.write);
+      velocity.swap();
+
+      advectionProgram.bind();
+      gl.uniform2f(
+        advectionProgram.uniforms.texelSize,
+        velocity.texelSizeX,
+        velocity.texelSizeY,
+      );
+      if (!ext.supportLinearFiltering)
+        gl.uniform2f(
+          advectionProgram.uniforms.dyeTexelSize,
+          velocity.texelSizeX,
+          velocity.texelSizeY,
+        );
+      let velocityId = velocity.read.attach(0);
+      gl.uniform1i(advectionProgram.uniforms.uVelocity, velocityId);
+      gl.uniform1i(advectionProgram.uniforms.uSource, velocityId);
+      gl.uniform1f(advectionProgram.uniforms.dt, dt);
+      gl.uniform1f(
+        advectionProgram.uniforms.dissipation,
+        config.VELOCITY_DISSIPATION,
+      );
+      blit(velocity.write);
+      velocity.swap();
+
+      if (!ext.supportLinearFiltering)
+        gl.uniform2f(
+          advectionProgram.uniforms.dyeTexelSize,
+          dye.texelSizeX,
+          dye.texelSizeY,
+        );
+      gl.uniform1i(
+        advectionProgram.uniforms.uVelocity,
+        velocity.read.attach(0),
+      );
+      gl.uniform1i(advectionProgram.uniforms.uSource, dye.read.attach(1));
+      gl.uniform1f(
+        advectionProgram.uniforms.dissipation,
+        config.DENSITY_DISSIPATION,
+      );
+      blit(dye.write);
+      dye.swap();
+    }
+
+    function render(target) {
+      gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA);
+      gl.enable(gl.BLEND);
+      drawDisplay(target);
+    }
+
+    function drawDisplay(target) {
+      let width = target == null ? gl.drawingBufferWidth : target.width;
+      let height = target == null ? gl.drawingBufferHeight : target.height;
+      displayMaterial.bind();
+      if (config.SHADING)
+        gl.uniform2f(
+          displayMaterial.uniforms.texelSize,
+          1.0 / width,
+          1.0 / height,
+        );
+      gl.uniform1i(displayMaterial.uniforms.uTexture, dye.read.attach(0));
+      blit(target);
+    }
+
+    function splatPointer(pointer) {
+      let dx = pointer.deltaX * config.SPLAT_FORCE;
+      let dy = pointer.deltaY * config.SPLAT_FORCE;
+      splat(pointer.texcoordX, pointer.texcoordY, dx, dy, pointer.color);
+    }
+
+    function clickSplat(pointer) {
+      const color = generateColor();
+      color.r *= 10.0;
+      color.g *= 10.0;
+      color.b *= 10.0;
+      let dx = 10 * (Math.random() - 0.5);
+      let dy = 30 * (Math.random() - 0.5);
+      splat(pointer.texcoordX, pointer.texcoordY, dx, dy, color);
+    }
+
+    function splat(x, y, dx, dy, color) {
+      splatProgram.bind();
+      gl.uniform1i(splatProgram.uniforms.uTarget, velocity.read.attach(0));
+      gl.uniform1f(
+        splatProgram.uniforms.aspectRatio,
+        canvas.width / canvas.height,
+      );
+      gl.uniform2f(splatProgram.uniforms.point, x, y);
+      gl.uniform3f(splatProgram.uniforms.color, dx, dy, 0.0);
+      gl.uniform1f(
+        splatProgram.uniforms.radius,
+        correctRadius(config.SPLAT_RADIUS / 100.0),
+      );
+      blit(velocity.write);
+      velocity.swap();
+
+      gl.uniform1i(splatProgram.uniforms.uTarget, dye.read.attach(0));
+      gl.uniform3f(splatProgram.uniforms.color, color.r, color.g, color.b);
+      blit(dye.write);
+      dye.swap();
+    }
+
+    function correctRadius(radius) {
+      let aspectRatio = canvas.width / canvas.height;
+      if (aspectRatio > 1) radius *= aspectRatio;
+      return radius;
+    }
+
+    function updatePointerDownData(pointer, id, posX, posY) {
+      pointer.id = id;
+      pointer.down = true;
+      pointer.moved = false;
+      pointer.texcoordX = posX / canvas.width;
+      pointer.texcoordY = 1.0 - posY / canvas.height;
+      pointer.prevTexcoordX = pointer.texcoordX;
+      pointer.prevTexcoordY = pointer.texcoordY;
+      pointer.deltaX = 0;
+      pointer.deltaY = 0;
+      pointer.color = generateColor();
+    }
+
+    function updatePointerMoveData(pointer, posX, posY, color) {
+      pointer.prevTexcoordX = pointer.texcoordX;
+      pointer.prevTexcoordY = pointer.texcoordY;
+      pointer.texcoordX = posX / canvas.width;
+      pointer.texcoordY = 1.0 - posY / canvas.height;
+      pointer.deltaX = correctDeltaX(pointer.texcoordX - pointer.prevTexcoordX);
+      pointer.deltaY = correctDeltaY(pointer.texcoordY - pointer.prevTexcoordY);
+      pointer.moved =
+        Math.abs(pointer.deltaX) > 0 || Math.abs(pointer.deltaY) > 0;
+      pointer.color = color;
+    }
+
+    function updatePointerUpData(pointer) {
+      pointer.down = false;
+    }
+
+    function correctDeltaX(delta) {
+      let aspectRatio = canvas.width / canvas.height;
+      if (aspectRatio < 1) delta *= aspectRatio;
+      return delta;
+    }
+
+    function correctDeltaY(delta) {
+      let aspectRatio = canvas.width / canvas.height;
+      if (aspectRatio > 1) delta /= aspectRatio;
+      return delta;
+    }
+
+    function hexToRGB(hex) {
+      let val = hex.replace("#", "");
+      if (val.length === 3)
+        val = val[0] + val[0] + val[1] + val[1] + val[2] + val[2];
+      const r = parseInt(val.slice(0, 2), 16) / 255;
+      const g = parseInt(val.slice(2, 4), 16) / 255;
+      const b = parseInt(val.slice(4, 6), 16) / 255;
+      return { r: r * 0.15, g: g * 0.15, b: b * 0.15 };
+    }
+
+    function generateColor() {
+      if (!config.RAINBOW_MODE) {
+        return hexToRGB(config.COLOR);
+      }
+      let c = HSVtoRGB(Math.random(), 1.0, 1.0);
+      c.r *= 0.15;
+      c.g *= 0.15;
+      c.b *= 0.15;
+      return c;
+    }
+
+    function HSVtoRGB(h, s, v) {
+      let r, g, b, i, f, p, q, t;
+      i = Math.floor(h * 6);
+      f = h * 6 - i;
+      p = v * (1 - s);
+      q = v * (1 - f * s);
+      t = v * (1 - (1 - f) * s);
+      switch (i % 6) {
+        case 0:
+          r = v;
+          g = t;
+          b = p;
+          break;
+        case 1:
+          r = q;
+          g = v;
+          b = p;
+          break;
+        case 2:
+          r = p;
+          g = v;
+          b = t;
+          break;
+        case 3:
+          r = p;
+          g = q;
+          b = v;
+          break;
+        case 4:
+          r = t;
+          g = p;
+          b = v;
+          break;
+        case 5:
+          r = v;
+          g = p;
+          b = q;
+          break;
+        default:
+          break;
+      }
+      return { r, g, b };
+    }
+
+    function wrap(value, min, max) {
+      const range = max - min;
+      if (range === 0) return min;
+      return ((value - min) % range) + min;
+    }
+
+    function getResolution(resolution) {
+      let aspectRatio = gl.drawingBufferWidth / gl.drawingBufferHeight;
+      if (aspectRatio < 1) aspectRatio = 1.0 / aspectRatio;
+      const min = Math.round(resolution);
+      const max = Math.round(resolution * aspectRatio);
+      if (gl.drawingBufferWidth > gl.drawingBufferHeight)
+        return { width: max, height: min };
+      else return { width: min, height: max };
+    }
+
+    function scaleByPixelRatio(input) {
+      const pixelRatio = window.devicePixelRatio || 1;
+      return Math.floor(input * pixelRatio);
+    }
+
+    function hashCode(s) {
+      if (s.length === 0) return 0;
+      let hash = 0;
+      for (let i = 0; i < s.length; i++) {
+        hash = (hash << 5) - hash + s.charCodeAt(i);
+        hash |= 0;
+      }
+      return hash;
+    }
+
+    // Named event handlers for proper cleanup
+    function handleMouseDown(e) {
+      let pointer = pointers[0];
+      let posX = scaleByPixelRatio(e.clientX);
+      let posY = scaleByPixelRatio(e.clientY);
+      updatePointerDownData(pointer, -1, posX, posY);
+      clickSplat(pointer);
+    }
+
+    let firstMouseMoveHandled = false;
+    function handleMouseMove(e) {
+      let pointer = pointers[0];
+      let posX = scaleByPixelRatio(e.clientX);
+      let posY = scaleByPixelRatio(e.clientY);
+      if (!firstMouseMoveHandled) {
+        let color = generateColor();
+        updatePointerMoveData(pointer, posX, posY, color);
+        firstMouseMoveHandled = true;
+      } else {
+        updatePointerMoveData(pointer, posX, posY, pointer.color);
+      }
+    }
+
+    function handleTouchStart(e) {
+      const touches = e.targetTouches;
+      let pointer = pointers[0];
+      for (let i = 0; i < touches.length; i++) {
+        let posX = scaleByPixelRatio(touches[i].clientX);
+        let posY = scaleByPixelRatio(touches[i].clientY);
+        updatePointerDownData(pointer, touches[i].identifier, posX, posY);
+      }
+    }
+
+    function handleTouchMove(e) {
+      const touches = e.targetTouches;
+      let pointer = pointers[0];
+      for (let i = 0; i < touches.length; i++) {
+        let posX = scaleByPixelRatio(touches[i].clientX);
+        let posY = scaleByPixelRatio(touches[i].clientY);
+        updatePointerMoveData(pointer, posX, posY, pointer.color);
+      }
+    }
+
+    function handleTouchEnd(e) {
+      const touches = e.changedTouches;
+      let pointer = pointers[0];
+      for (let i = 0; i < touches.length; i++) {
+        updatePointerUpData(pointer);
+      }
+    }
+
+    // Add event listeners
+    window.addEventListener("mousedown", handleMouseDown);
+    window.addEventListener("mousemove", handleMouseMove);
+    window.addEventListener("touchstart", handleTouchStart);
+    window.addEventListener("touchmove", handleTouchMove, false);
+    window.addEventListener("touchend", handleTouchEnd);
+
+    updateFrame();
+
+    // Cleanup function
+    return () => {
+      isActive = false;
+
+      // Cancel animation frame
+      if (animationFrameId.current) {
+        cancelAnimationFrame(animationFrameId.current);
+        animationFrameId.current = null;
+      }
+
+      // Remove event listeners
+      window.removeEventListener("mousedown", handleMouseDown);
+      window.removeEventListener("mousemove", handleMouseMove);
+      window.removeEventListener("touchstart", handleTouchStart);
+      window.removeEventListener("touchmove", handleTouchMove);
+      window.removeEventListener("touchend", handleTouchEnd);
+    };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  return (
+    <div
+      style={{
+        position: "fixed",
+        top: 0,
+        left: 0,
+        zIndex: 50,
+        pointerEvents: "none",
+        width: "100%",
+        height: "100%",
+      }}
+    >
+      <canvas
+        ref={canvasRef}
+        id="fluid"
+        style={{
+          width: "100vw",
+          height: "100vh",
+          display: "block",
+        }}
+      />
+    </div>
+  );
+}
+
+export default SplashCursor;
+
+```
+
+---
+
+### <a id="📄-src-components-work-experience-tsx"></a>📄 `src/components/work-experience.tsx`
+
+**File Info:**
+- **Size**: 10.05 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/work-experience.tsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-08-02 15:44:36 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-13 12:54:19 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `e5c9b9ae5051915fa79c4203150ebabf`
+- **SHA256**: `4e440b15cee87684abe93722c54e979c20f0b0103e0c3d13be441426533ddbf6`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+"use client"
+
+import { useCallback, useRef, type ComponentProps } from "react"
+import { differenceInMonths, parse } from "date-fns"
+import ReactMarkdown from "react-markdown"
+
+import { cn } from "@/lib/utils"
+import {
+  Collapsible,
+  CollapsibleContent,
+  CollapsibleTrigger,
+} from "@/components/ui/collapsible"
+import { Separator } from "@/components/ui/separator"
+import type { ChevronsUpDownIconHandle } from "@/components/chevrons-up-down-icon"
+import { ChevronsUpDownIcon } from "@/components/chevrons-up-down-icon"
+import { BriefcaseBusinessIcon, InfinityIcon } from "lucide-react"
+
+export type ExperiencePositionItemType = {
+  /** Unique identifier for the position */
+  id: string
+  /** The job title or position name */
+  title: string
+  /**
+   * Employment period of the position.
+   * Use "MM.YYYY" or "YYYY" format. Omit `end` for current roles.
+   */
+  employmentPeriod: {
+    /** Start date (e.g., "10.2022" or "2020"). */
+    start: string
+    /** End date; leave undefined for "Present". */
+    end?: string
+  }
+  /** The type of employment (e.g., "Full-time", "Part-time", "Contract") */
+  employmentType?: string
+  /** A brief description of the position or responsibilities */
+  description?: string
+  /** An icon representing the position */
+  icon?: React.ReactElement
+  /** A list of skills associated with the position */
+  skills?: string[]
+  /** Indicates if the position details are expanded in the UI */
+  isExpanded?: boolean
+}
+
+export type ExperienceItemType = {
+  /** Unique identifier for the experience item */
+  id: string
+  /** Name of the company where the experience was gained */
+  companyName: string
+  /** URL or path to the company's logo image */
+  companyLogo?: string
+  /** URL to the company's website. */
+  companyWebsite?: string
+  /**
+   * List of positions held at the company
+   * @fumadocsHref #experiencepositionitemtype
+   * */
+  positions: ExperiencePositionItemType[]
+  /** Indicates if this is the user's current employer */
+  isCurrentEmployer?: boolean
+}
+
+export type WorkExperienceProps = {
+  className?: string
+  /** @fumadocsHref #experienceitemtype */
+  experiences: ExperienceItemType[]
+}
+
+export function WorkExperience({
+  className,
+  experiences,
+}: WorkExperienceProps) {
+  return (
+    <div className={cn("bg-background px-4 text-foreground", className)}>
+      {experiences.map((experience) => (
+        <ExperienceItem key={experience.id} experience={experience} />
+      ))}
+    </div>
+  )
+}
+
+export type ExperienceItemProps = {
+  experience: ExperienceItemType
+}
+
+export function ExperienceItem({ experience }: ExperienceItemProps) {
+  return (
+    <div className="space-y-4 py-4">
+      <div className="not-prose flex items-center gap-3">
+        <div className="flex size-6 shrink-0 items-center justify-center">
+          {experience.companyLogo ? (
+            <img
+              src={experience.companyLogo}
+              alt={experience.companyName}
+              className="size-6 rounded-full"
+              aria-hidden
+            />
+          ) : (
+            <span className="flex size-2 rounded-full bg-zinc-300 dark:bg-zinc-600" />
+          )}
+        </div>
+
+        <h3 className="text-lg leading-snug font-semibold">
+          {experience.companyWebsite ? (
+            <a
+              className="link"
+              href={experience.companyWebsite}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {experience.companyName}
+            </a>
+          ) : (
+            experience.companyName
+          )}
+        </h3>
+
+        {experience.isCurrentEmployer && (
+          <span
+            className="relative flex items-center justify-center"
+            aria-label="Current Employer"
+          >
+            <span className="absolute inline-flex size-3 animate-ping rounded-full bg-sky-500 opacity-50" />
+            <span className="relative inline-flex size-2 rounded-full bg-sky-500" />
+          </span>
+        )}
+      </div>
+
+      <div className="relative space-y-4 before:absolute before:left-3 before:h-full before:w-px before:bg-border">
+        {experience.positions.map((position) => (
+          <ExperiencePositionItem key={position.id} position={position} />
+        ))}
+      </div>
+    </div>
+  )
+}
+
+export type ExperiencePositionItemProps = {
+  position: ExperiencePositionItemType
+}
+
+export function ExperiencePositionItem({
+  position,
+}: ExperiencePositionItemProps) {
+  const chevronsUpDownIconRef = useRef<ChevronsUpDownIconHandle>(null)
+
+  const handleOpenChange = useCallback((open: boolean) => {
+    const controls = chevronsUpDownIconRef.current
+    if (!controls) return
+
+    if (open) {
+      controls.startAnimation()
+    } else {
+      controls.stopAnimation()
+    }
+  }, [])
+
+  const { start, end } = position.employmentPeriod
+  const isOngoing = !end
+  const duration = formatDuration(start, end)
+
+  return (
+    <Collapsible
+      defaultOpen={position.isExpanded}
+      onOpenChange={handleOpenChange}
+      disabled={!position.description}
+      asChild
+    >
+      <div className="relative last:before:absolute last:before:h-full last:before:w-4 last:before:bg-background">
+        <CollapsibleTrigger
+          className={cn(
+            "group/experience-position not-prose block w-full text-left select-none",
+            "relative before:absolute before:-top-1 before:-right-1 before:-bottom-1.5 before:left-7 before:rounded-lg hover:before:bg-muted/30",
+            "data-disabled:before:content-none"
+          )}
+        >
+          <div className="relative z-1 mb-1 flex items-start gap-3 text-sm">
+            <div
+              className={cn(
+                "flex size-6 shrink-0 items-center justify-center rounded-lg",
+                "bg-muted text-muted-foreground",
+                "border border-muted-foreground/15 ring-1 ring-line ring-offset-1 ring-offset-background",
+                "[&_svg]:shrink-0 [&_svg:not([class*='size-'])]:size-4"
+              )}
+            >
+              {position.icon ?? (
+                <BriefcaseBusinessIcon
+                />
+              )}
+            </div>
+
+            <h4 className="flex-1 font-medium text-balance text-foreground">
+              {position.title}
+            </h4>
+
+            <div className="shrink-0 text-muted-foreground group-disabled/experience-position:hidden [&_svg]:h-lh [&_svg]:w-4">
+              <ChevronsUpDownIcon ref={chevronsUpDownIconRef} duration={0.15} />
+            </div>
+          </div>
+
+          <dl className="relative z-1 flex items-center gap-2 pl-9 text-sm text-muted-foreground">
+            {position.employmentType && (
+              <>
+                <div>
+                  <dt className="sr-only">Employment Type</dt>
+                  <dd>{position.employmentType}</dd>
+                </div>
+
+                <Separator
+                  className="data-vertical:h-4 data-vertical:self-center"
+                  orientation="vertical"
+                />
+              </>
+            )}
+
+            <div>
+              <dt className="sr-only">Employment Period</dt>
+              <dd className="flex items-center gap-0.5 tabular-nums">
+                <span>{start}</span>
+                <span className="font-mono">—</span>
+                {isOngoing ? (
+                  <InfinityIcon className="size-4.5 translate-y-[0.5px]" aria-label="Present" />
+                ) : (
+                  <span>{end}</span>
+                )}
+              </dd>
+            </div>
+
+            {duration && (
+              <>
+                <Separator
+                  className="data-vertical:h-4 data-vertical:self-center"
+                  orientation="vertical"
+                />
+                <div>
+                  <dt className="sr-only">Duration</dt>
+                  <dd className="tabular-nums">{duration}</dd>
+                </div>
+              </>
+            )}
+          </dl>
+        </CollapsibleTrigger>
+
+        <CollapsibleContent className="overflow-hidden">
+          {position.description && (
+            <Prose className="pt-2 pl-9">
+              <ReactMarkdown>{position.description}</ReactMarkdown>
+            </Prose>
+          )}
+        </CollapsibleContent>
+
+        {Array.isArray(position.skills) && position.skills.length > 0 && (
+          <ul className="not-prose flex flex-wrap gap-1.5 pt-3 pl-9">
+            {position.skills.map((skill, index) => (
+              <li key={index} className="flex">
+                <Skill>{skill}</Skill>
+              </li>
+            ))}
+          </ul>
+        )}
+      </div>
+    </Collapsible>
+  )
+}
+
+function Prose({ className, ...props }: ComponentProps<"div">) {
+  return (
+    <div
+      className={cn(
+        "prose prose-sm max-w-none prose-ncdai prose-zinc dark:prose-invert",
+        className
+      )}
+      {...props}
+    />
+  )
+}
+
+function Skill({ className, ...props }: ComponentProps<"span">) {
+  return (
+    <span
+      className={cn(
+        "inline-flex items-center rounded-md border bg-muted/50 px-1.5 py-0.5 font-mono text-xs text-muted-foreground",
+        className
+      )}
+      {...props}
+    />
+  )
+}
+
+function formatDuration(start: string, end?: string): string {
+  const startHasMonth = start.includes(".")
+  const endHasMonth = end ? end.includes(".") : true
+
+  // Both year-only: granularity is years, no month arithmetic needed.
+  if (!startHasMonth && end && !endHasMonth) {
+    const years = parseInt(end, 10) - parseInt(start, 10)
+    if (years <= 0) {
+      return ""
+    }
+    return `${years}y`
+  }
+
+  const startDate = parsePeriodDate(start, "first")
+  const endDate = end ? parsePeriodDate(end, "last") : new Date()
+
+  // +1 to count both the start and end months inclusively.
+  const totalMonths = differenceInMonths(endDate, startDate) + 1
+  if (totalMonths <= 0) {
+    return ""
+  }
+
+  if (totalMonths < 12) {
+    return `${totalMonths}m`
+  }
+
+  const years = Math.floor(totalMonths / 12)
+  const months = totalMonths % 12
+  if (months === 0) {
+    return `${years}y`
+  }
+  return `${years}y ${months}m`
+}
+
+function parsePeriodDate(str: string, fallbackMonth: "first" | "last"): Date {
+  if (str.includes(".")) {
+    return parse(str, "MM.yyyy", new Date())
+  }
+  return parse(
+    `${fallbackMonth === "last" ? "12" : "01"}.${str}`,
+    "MM.yyyy",
+    new Date()
+  )
+}
+
+```
+
+---
+
+### <a id="📄-src-lib-reusable-aboutmeele-tsx"></a>📄 `src/lib/reusable/AboutMeEle.tsx`
+
+**File Info:**
+- **Size**: 1.6 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/lib/reusable/AboutMeEle.tsx`
+- **Relative Path**: `src/lib/reusable`
+- **Created**: 2026-02-26 18:56:36 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 14:34:52 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `db9d33103bbfa36ae6e9fba5c14f3057`
+- **SHA256**: `fe119e2409d487e0032aa929ee5f908454c8ea4faef3a7abb9b97a676aec9fed`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { type LucideIcon } from "lucide-react";
+import { useDevice } from "../responsive";
+
+type T_AboutMeProps = {
+  label?: string;
+  icon?: LucideIcon;
+  isCompany?: boolean;
+  companyName?: string;
+  companyLink?: string;
+  disableAnchor?: boolean;
+  className?: string;
+};
+
+const AboutMeEle = ({
+  label,
+  icon: Icon,
+  isCompany,
+  companyName,
+  companyLink,
+  className,
+  disableAnchor = false,
+}: T_AboutMeProps) => {
+  const { isMobile, isTablet } = useDevice();
+  return (
+    <div
+      className={`w-full h-8 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
+    >
+      {Icon && (
+        <span
+          className="p-0.5! bg-[#0f1117] rounded-md
+                    border border-white/10
+                    shadow-inner shadow-black/40
+                    flex items-center justify-center "
+        >
+          <Icon
+            size={isMobile ? 16 : isTablet ? 20 : 24}
+            className="text-gray-400"
+          />
+        </span>
+      )}
+      {label && (
+        <span className="text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-medium flex text-white cursor-default">
+          {label}
+        </span>
+      )}
+
+      {isCompany && (
+        <a
+          target="_blank"
+          href={companyLink ? companyLink : "#"}
+          className={`text-white text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-bold ${!disableAnchor && "hover:underline hover:underline-offset-4 cursor-pointer"} cursor-default  text-left`}
+          onClick={(e) => disableAnchor && e.preventDefault()}
+        >
+          {companyName}
+        </a>
+      )}
+    </div>
+  );
+};
+
+export default AboutMeEle;
+
+```
+
+---
+
+### <a id="📄-src-lib-reusable-autoscrolltext-tsx"></a>📄 `src/lib/reusable/AutoScrollText.tsx`
+
+**File Info:**
+- **Size**: 977 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/lib/reusable/AutoScrollText.tsx`
+- **Relative Path**: `src/lib/reusable`
+- **Created**: 2026-02-26 18:42:33 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 13:41:07 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `f750e5d6d60d2afc6680807b616a6986`
+- **SHA256**: `d46e91c14decf801188a5896a66dd47ae16c2903c4eafa0e86066e27ef49d684`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useEffect, useState } from "react";
+
+export default function AutoScrollText() {
+  const sentences = [
+    "$_Build Web Applications;",
+    "$_Full-stack Developer;",
+    "$_Great listener;",
+    "$_Good learner;",
+  ];
+
+  const [index, setIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIndex((prev) => (prev + 1) % sentences.length);
+    }, 2500);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="relative h-12 overflow-hidden w-full">
+      <div
+        className="transition-transform duration-700 ease-in-out"
+        style={{
+          transform: `translateY(-${index * 3}rem)`,
+        }}
+      >
+        {sentences.map((text, i) => (
+          <div
+            key={i}
+            className="h-12 flex items-center justify-center text-sm sm:text-md md:text-lg font-semibold text-gray-500"
+          >
+            {text}
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-lib-reusable-component-ele-tsx"></a>📄 `src/lib/reusable/Component-Ele.tsx`
+
+**File Info:**
+- **Size**: 447 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/lib/reusable/Component-Ele.tsx`
+- **Relative Path**: `src/lib/reusable`
+- **Created**: 2026-05-12 16:55:40 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-07-05 11:13:00 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `24b162be9277730d9b379e3d64a6b07d`
+- **SHA256**: `5dfc2017f6bf895bfa8999b611d66629b4c13fe6658df1045253ce19fd4d23d4`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import type { LucideIcon } from "lucide-react";
+
+type ComponentEleProps = {
+  title: string;
+  icon: LucideIcon;
+  description: string;
+};
+
+const ComponentEle = (args: ComponentEleProps) => {
+  return (
+    <div className="w-full flex justify-around items-center ">
+      <args.icon />
+      <div>
+        <div className="text-3xl">{args.title}</div>
+        <p>{args.description}</p>
+      </div>
+    </div>
+  );
+};
+
+export default ComponentEle;
+
+```
+
+---
+
+### <a id="📄-src-lib-reusable-separator-tsx"></a>📄 `src/lib/reusable/Separator.tsx`
+
+**File Info:**
+- **Size**: 734 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/lib/reusable/Separator.tsx`
+- **Relative Path**: `src/lib/reusable`
+- **Created**: 2026-02-26 18:42:33 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-03-14 18:55:33 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `84d6dcca26780fc708e56cc00712db91`
+- **SHA256**: `29e5c956c521ec4e5f2f043e7d0c0c6f5ce4e58b986ec49b33dcad7d62e12a2c`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+export default function Separator() {
+  return (
+    <div className="relative w-full h-9 border-gray-500!">
+      {/* Background stripes (behind) */}
+      <div
+        className="absolute inset-0 bg-black border border-y-gray-500  z-0"
+        style={{
+          backgroundImage: `repeating-linear-gradient(
+            135deg,
+            rgba(107,114,128,0.9) 0px,
+            rgba(107,114,128,0.9) 1.4px,
+            transparent 1px,
+            transparent 10px
+          )`,
+        }}
+      />
+
+      <div className="relative z-10 h-full w-full flex items-center justify-center border-gray-500!">
+        <div className="w-[90%] md:w-[80%] lg:w-[40%] h-full border-l border-r border-gray-500" />
+      </div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-lib-reusable-title-tsx"></a>📄 `src/lib/reusable/Title.tsx`
+
+**File Info:**
+- **Size**: 776 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/lib/reusable/Title.tsx`
+- **Relative Path**: `src/lib/reusable`
+- **Created**: 2026-05-10 18:21:17 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-13 11:45:03 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `f77b33a4f8859cbd41e9cf8f05e546b1`
+- **SHA256**: `593782106cc170b37b7fb3c572e1e644909d33fc2c207fb18504cb82da5a646d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+type T_TitleSize = "sm" | "md" | "lg" | "vlg";
+const Title = ({
+  TitleLabel,
+  TitleSize,
+}: {
+  TitleLabel: string;
+  TitleSize: T_TitleSize;
+}) => {
+  return (
+    <div className="w-full min-h-8 flex justify-center items-center bg-black  border-b border-b-gray-500/50 ">
+      <div className=" hidden md:flex h-full w-full flex-1"></div>
+      <div
+        className={`w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50 text-white text-${TitleSize == "sm" ? "2xl" : TitleSize == "md" ? "3xl font-light" : TitleSize == "lg" ? "4xl font-thin" : "5xl font-thin"} pl-2 pt-1`}
+      >
+        <span>{TitleLabel}</span>
+      </div>
+      <div className="hidden md:flex flex-1 h-full w-full"></div>
+    </div>
+  );
+};
+
+export default Title;
+
+```
+
+---
+
+### <a id="📄-src-lib-responsive-ts"></a>📄 `src/lib/responsive.ts`
+
+**File Info:**
+- **Size**: 318 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/lib/responsive.ts`
+- **Relative Path**: `src/lib`
+- **Created**: 2026-02-26 18:18:39 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-02-26 18:18:41 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `f888e14f77bbfca97c0d2122317adcd2`
+- **SHA256**: `40970e7424cae258a804c4ab46a3863af9397677d2d4423a425a524c282d92ef`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useMediaQuery } from "react-responsive";
+
+export const useDevice = () => {
+  const isMobile = useMediaQuery({ maxWidth: 768 });
+  const isTablet = useMediaQuery({ minWidth: 769, maxWidth: 1024 });
+  const isDesktop = useMediaQuery({ minWidth: 1025 });
+
+  return { isMobile, isTablet, isDesktop };
+};
+
+```
+
+---
+
+### <a id="📄-src-lib-utils-ts"></a>📄 `src/lib/utils.ts`
+
+**File Info:**
+- **Size**: 166 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `src/lib/utils.ts`
+- **Relative Path**: `src/lib`
+- **Created**: 2026-02-26 18:28:55 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-02-26 18:28:55 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `5a6fd53fdcf2be529e9cc0b718fde352`
+- **SHA256**: `7c8c3dfc0cdd370d44932828eb067ef771c8fe7996693221d5d4b90af6d54f2d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { clsx, type ClassValue } from "clsx"
+import { twMerge } from "tailwind-merge"
+
+export function cn(...inputs: ClassValue[]) {
+  return twMerge(clsx(inputs))
+}
+
+```
+
+---
+
+### <a id="📄-src-pages-components-section-component-tsx"></a>📄 `src/pages/components-section/Component.tsx`
+
+**File Info:**
+- **Size**: 245 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/components-section/Component.tsx`
+- **Relative Path**: `src/pages/components-section`
+- **Created**: 2026-05-12 16:52:29 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-05-12 16:54:11 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `55162a59500dbb6343e60a489e207712`
+- **SHA256**: `42efe2e990cb7032fd379a561b57c4705da85d8e14b8cf97f6425eb746e0e476`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+const Component = () => {
+  return (
+    <div>
+      <div className=" hidden md:flex h-full w-full flex-1"></div>
+      
+      <div className=" hidden md:flex h-full w-full flex-1"></div>
+    </div>
+  );
+};
+
+export default Component;
+
+```
+
+---
+
+### <a id="📄-src-pages-connect-connect-tsx"></a>📄 `src/pages/Connect/Connect.tsx`
+
+**File Info:**
+- **Size**: 3.42 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/Connect/Connect.tsx`
+- **Relative Path**: `src/pages/Connect`
+- **Created**: 2026-08-15 17:44:54 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 17:47:45 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `52d6cd56636481f9d680d08c83b6745b`
+- **SHA256**: `8533c2011e10b1110fa4e74e577c2275fd72590351a354d266cddcb6feb80c5c`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { FluidGradientText } from "@/components/fluid-gradient-text";
+import { Button } from "@/components/ui/button";
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import {
+  SiGithub,
+  SiLinkerd,
+  SiDiscord,
+  SiYoutube,
+  SiInstagram,
+  SiX,
+} from "react-icons/si";
+import type { IconType } from "react-icons";
+
+gsap.registerPlugin(ScrollTrigger);
+
+type SocialLink = {
+  label: string;
+  href: string;
+  icon: IconType;
+};
+
+const SOCIAL_LINKS: SocialLink[] = [
+  { label: "X (Twitter)", href: "https://x.com/", icon: SiX },
+  { label: "GitHub", href: "https://github.com/", icon: SiGithub },
+  { label: "LinkedIn", href: "https://linkedin.com/", icon: SiLinkerd },
+  { label: "Discord", href: "https://discord.com/", icon: SiDiscord },
+  { label: "YouTube", href: "https://youtube.com/", icon: SiYoutube },
+  { label: "Instagram", href: "https://instagram.com/", icon: SiInstagram },
+];
+
+export default function Connect() {
+  const containerRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.from(".connect-item", {
+        opacity: 0,
+        y: 20,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 85%",
+        },
+      });
+    },
+    { scope: containerRef },
+  );
+
+  return (
+    <div className="w-full bg-black">
+      <div className="w-full flex justify-center items-center border-b border-gray-500/50">
+        <div className="hidden md:flex h-full w-full flex-1"></div>
+        <div
+          ref={containerRef}
+          className="flex min-w-0 flex-wrap items-center justify-center gap-4 w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50 p-6"
+        >
+          {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
+            <Tooltip key={label}>
+              <TooltipTrigger asChild>
+                <Button
+                  asChild
+                  variant="outline"
+                  size="icon-lg"
+                  className="connect-item bg-[#0f1117] border-white/10 hover:bg-white/[0.06] hover:scale-110 transition-transform duration-200"
+                >
+                  <a
+                    href={href}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label={label}
+                  >
+                    <Icon className="size-5 text-gray-300" />
+                  </a>
+                </Button>
+              </TooltipTrigger>
+              <TooltipContent variant="dark">{label}</TooltipContent>
+            </Tooltip>
+          ))}
+        </div>
+        <div className="hidden md:flex h-full w-full flex-1"></div>
+      </div>
+
+      <div className="relative w-full text-foreground">
+        <div className="pointer-events-none absolute inset-x-0 top-0 text-center text-xs text-muted-foreground select-none">
+          <span className="hidden pointer-fine:inline-block">
+            Move your cursor within the text below
+          </span>
+          <span className="hidden pointer-coarse:inline-block">
+            Press anywhere within the text below
+          </span>
+        </div>
+
+        <FluidGradientText text="SUMIT" />
+      </div>
+    </div>
+  );
+}
+```
+
+---
+
+### <a id="📄-src-pages-experience-workexperience-tsx"></a>📄 `src/pages/Experience/WorkExperience.tsx`
+
+**File Info:**
+- **Size**: 2.98 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/Experience/WorkExperience.tsx`
+- **Relative Path**: `src/pages/Experience`
+- **Created**: 2026-08-02 16:02:13 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 14:40:04 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `ae3a8aa50313b2d5a8516bb49f19ec1d`
+- **SHA256**: `9e702b1d03d278e809d8ebed623c7cf7d29bd436c34a388b21e01a1d7c71ca17`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import {
+  WorkExperience,
+  type ExperienceItemType,
+} from "@/components/work-experience";
+import { DraftingCompass } from "lucide-react";
+const experiences: ExperienceItemType[] = [
+  {
+    id: "acme-corp",
+    companyName: "Sajilo Softwares",
+    companyWebsite: "https://sajilosoftware.com/",
+
+    companyLogo: "sajilo-softwares.png",
+    isCurrentEmployer: false,
+    positions: [
+      {
+        id: "fei",
+        title: "Front-End Intern",
+        employmentType: "Full-time",
+        icon: <DraftingCompass />,
+        employmentPeriod: {
+          start: "11.2025",
+          end: "4.2026",
+        },
+        description: `- Built and maintained frontend interfaces for **Sajilo Restaurant Management System** and **Sajilo Hotel Management System**
+- Developed reusable UI components with **React**, **TypeScript**, and **Tailwind CSS**
+- Implemented data-fetching and caching logic using **TanStack Query** to keep order and booking views in sync with the backend
+- Used **shadcn/ui** to build accessible, consistent forms and dashboards across both products`,
+        skills: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "TanStackQuery",
+          "ShadCn",
+        ],
+        isExpanded: false,
+      },
+    ],
+  },
+  {
+    id: "zippos",
+    companyName: "Zippos Softwares",
+    companyWebsite: "https://globex.example.com",
+    companyLogo: "Zippos.png",
+    isCurrentEmployer: true,
+    positions: [
+      {
+        id: "globex-swe",
+        title: "Full-Stack Engineer",
+        employmentType: "Full-time ",
+        employmentPeriod: {
+          start: "4.2026",
+        },
+        description: `- Building **POS**, a point-of-sale system for retail businesses shipped in two independent variants
+- An **offline desktop app** packaged with **Electron** for native installers across Windows, macOS, and Linux
+- A separate **online web app** built on a **PERN** stack (**PostgreSQL**, **Express**, **React**, **Node.js**) with **Prisma** ORM
+- Designed the **FIFO batch stock schema** and **transaction-safe billing service** shared conceptually across both variants
+- Built **analytics dashboards** using **TanStack Query** and **shadcn/ui**`,
+        skills: [
+          "React",
+          "TypeScript",
+          "Tailwind CSS",
+          "TanStackQuery",
+          "ShadCn",
+          "Node.js",
+          "Express",
+          "PostgreSQL",
+          "Prisma",
+          "Electron",
+          "Tauri",
+        ],
+        isExpanded: false,
+      },
+    ],
+  },
+];
+
+export default function Experience() {
+  return (
+    <div className="w-full  flex justify-center items-center  border-b border-gray-500/50">
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+      <WorkExperience
+        experiences={experiences}
+        className="w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50"
+      />
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-pages-footer-footer-tsx"></a>📄 `src/pages/Footer/Footer.tsx`
+
+**File Info:**
+- **Size**: 635 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/Footer/Footer.tsx`
+- **Relative Path**: `src/pages/Footer`
+- **Created**: 2026-08-02 17:15:59 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 20:40:51 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `f25a7531804298aa7be3664da811f84e`
+- **SHA256**: `af8d9caa1c49931d7dc015910f52b8ca2beb37b0ac9191c805805291463da123`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { FluidGradientText } from "@/components/fluid-gradient-text";
+
+export default function Footer() {
+  return (
+    <div className="relative w-full text-foreground">
+      <div className="pointer-events-none absolute inset-x-0 top-0 text-center text-xs text-muted-foreground select-none">
+        <span className="hidden pointer-fine:inline-block">
+          Move your cursor within the text below
+        </span>
+        <span className="hidden pointer-coarse:inline-block">
+          Press anywhere within the text below
+        </span>
+      </div>
+
+      <FluidGradientText text="SUMIT" />
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-pages-hero-section-aboutme-tsx"></a>📄 `src/pages/hero-section/AboutMe.tsx`
+
+**File Info:**
+- **Size**: 1.61 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/hero-section/AboutMe.tsx`
+- **Relative Path**: `src/pages/hero-section`
+- **Created**: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-13 15:26:32 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `bf95bfe5f9ade4dadbe0162cf55db37d`
+- **SHA256**: `8830585cc59a0e920a5cbf332a74f63e61fb287d08d0b78cada5d49776bf5393`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import AboutMeEle from "@/lib/reusable/AboutMeEle";
+import {
+  BriefcaseBusiness,
+  Clock2,
+  FileUser,
+  Lightbulb,
+  Link,
+  Mail,
+  MapPin,
+} from "lucide-react";
+
+const AboutMe = () => {
+  return (
+    <div className="w-full bg-black border-b border-gray-500/50 flex justify-center items-center">
+      <div className="h-full w-[90%] md:w-[80%] lg:w-[40%] grid grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
+        <AboutMeEle
+          icon={BriefcaseBusiness}
+          label={"Full Stack Developer"}
+          isCompany={false}
+          className="col-span-2"
+        />
+        <AboutMeEle
+          icon={MapPin}
+          isCompany={true}
+          companyName={"Nepal"}
+          companyLink="https://maps.app.goo.gl/GRVr8kPD7VHJLjwW7"
+        />
+        <AboutMeEle
+          icon={Mail}
+          isCompany={true}
+          companyName={"sumitkarki1000@gmail.com"}
+          companyLink="mailto:sumitkarki1000@gmail.com"
+        />
+        <AboutMeEle
+          icon={Lightbulb}
+          isCompany={true}
+          label="Founder "
+          companyName={"@Zippos"}
+          companyLink="https://github.com/MrD3M0"
+        />
+        <AboutMeEle
+          icon={FileUser}
+          isCompany={true}
+          companyName={"Find My Resume"}
+          companyLink="https://github.com/MrD3M0"
+        />
+        <AboutMeEle
+          icon={Link}
+          isCompany={true}
+          companyName={"sumitkarki2061.com.np"}
+          companyLink="https://sumitkarki2061.com.np"
+        />
+        <AboutMeEle icon={Clock2} label="GMT+5:45" />
+      </div>
+    </div>
+  );
+};
+
+export default AboutMe;
+
+```
+
+---
+
+### <a id="📄-src-pages-hero-section-banner-tsx"></a>📄 `src/pages/hero-section/Banner.tsx`
+
+**File Info:**
+- **Size**: 2.01 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/hero-section/Banner.tsx`
+- **Relative Path**: `src/pages/hero-section`
+- **Created**: 2026-02-26 18:38:26 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-14 11:58:42 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `6ca6c8f72d34ea3e0458aad2c3f7266a`
+- **SHA256**: `956cd11f5a77e254f4d7ebe3d8b681042b69ea2387e990629fcb1aa31fe2709b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { DotGridSpotlight } from "@/components/dot-grid-spotlight";
+
+const BannerSection = () => {
+  const imgRef = useRef<HTMLImageElement>(null);
+  const wrapperRef = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      gsap.from(imgRef.current, {
+        y: 20,
+        opacity: 0,
+        duration: 0.8,
+        ease: "power3.out",
+      });
+    },
+    { scope: wrapperRef },
+  );
+
+  const handleMouseMove = (e: React.MouseEvent<HTMLDivElement>) => {
+    const rect = wrapperRef.current?.getBoundingClientRect();
+    if (!rect) return;
+
+    const x = e.clientX - rect.left - rect.width / 2;
+    const y = e.clientY - rect.top - rect.height / 2;
+
+    gsap.to(imgRef.current, {
+      x: x * 0.04,
+      y: y * 0.04,
+      rotateX: -(y * 0.02),
+      rotateY: x * 0.02,
+      scale: 1.03,
+      duration: 0.5,
+      ease: "power3.out",
+      transformPerspective: 600,
+    });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(imgRef.current, {
+      x: 0,
+      y: 0,
+      rotateX: 0,
+      rotateY: 0,
+      scale: 1,
+      duration: 0.6,
+      ease: "elastic.out(1, 0.5)",
+    });
+  };
+
+  return (
+    <div className="w-full flex justify-center items-center bg-black border-b border-gray-500/50">
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+
+      <div
+        ref={wrapperRef}
+        onMouseMove={handleMouseMove}
+        onMouseLeave={handleMouseLeave}
+        className="relative w-[90%] md:w-[80%] lg:w-[40%] h-40 md:h-70 border-l border-r border-gray-500/50 flex items-center justify-center overflow-hidden"
+      >
+        <DotGridSpotlight className="z-0" />
+
+        <img
+          ref={imgRef}
+          className="relative z-10 w-[50%] md:w-[40%] pointer-events-none will-change-transform"
+          src="SK-nobg.png"
+          alt="Sumit Karki"
+          draggable={false}
+        />
+      </div>
+
+      <div className="hidden md:flex flex-1 h-full w-full"></div>
+    </div>
+  );
+};
+
+export default BannerSection;
+
+```
+
+---
+
+### <a id="📄-src-pages-hero-section-herosection-tsx"></a>📄 `src/pages/hero-section/HeroSection.tsx`
+
+**File Info:**
+- **Size**: 3.38 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/hero-section/HeroSection.tsx`
+- **Relative Path**: `src/pages/hero-section`
+- **Created**: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-29 16:36:22 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `8860eeed0cfaa235d39ff10f5271f251`
+- **SHA256**: `4d7357c3ef154492de665f274c29df0dd2563947093c8701b4918f5ced2296fd`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import {
+  Tooltip,
+  TooltipContent,
+  TooltipProvider,
+  TooltipTrigger,
+} from "@/components/ui/tooltip";
+import AutoScrollText from "@/lib/reusable/AutoScrollText";
+import { ShimmeringText } from "@/components/shimmering-text";
+import { useRef, useState } from "react";
+import ElectricBorder from "@/components/ElectricBorder";
+
+const HeroSection = () => {
+  const audioRef = useRef<HTMLAudioElement | null>(null);
+  const zapAudioRef = useRef<HTMLAudioElement | null>(null);
+  const [isHovering, setIsHovering] = useState(false);
+
+  const playAudio = () => {
+    if (audioRef.current) {
+      audioRef.current.currentTime = 0;
+      audioRef.current.play();
+    }
+  };
+
+  const startZap = () => {
+    setIsHovering(true);
+    if (zapAudioRef.current) {
+      zapAudioRef.current.currentTime = 0;
+      zapAudioRef.current
+        .play()
+        .catch((err) => console.error("Zap sound blocked:", err));
+    }
+  };
+
+  const stopZap = () => {
+    setIsHovering(false);
+    if (zapAudioRef.current) {
+      zapAudioRef.current.pause();
+      zapAudioRef.current.currentTime = 0;
+    }
+  };
+
+  return (
+    <div className="w-full flex flex-row justify-center items-center bg-black">
+      <div className=" hidden md:flex h-full w-full flex-1"></div>
+      <div className="w-[90%] md:w-[80%] lg:w-[40%] flex border-r border-gray-500/50">
+        <div
+          className="min-w-40 h-40 border-l border-r  border-gray-500/50"
+          onMouseEnter={startZap}
+          onMouseLeave={stopZap}
+        >
+          {isHovering ? (
+            <ElectricBorder
+              color="#FDD835"
+              speed={1}
+              chaos={0.15}
+              borderRadius={9999}
+              className="w-40 h-40"
+            >
+              <img
+                className="w-40 h-40 rounded-full border border-gray-500/50  "
+                src="profile.png"
+                alt=""
+              />
+            </ElectricBorder>
+          ) : (
+            <img
+              className="w-40 h-40 rounded-full border border-gray-500/50  "
+              src="profile.png"
+              alt=""
+            />
+          )}
+          <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
+        </div>
+        <div className="w-full">
+          <div className="w-full h-10 border-gray-500/50 border-b text-gray-500">
+            <TooltipProvider>
+              <Tooltip>
+                <TooltipTrigger>MrD3M0</TooltipTrigger>
+                <TooltipContent side="right" align="start" variant={"dark"}>
+                  IN-GAME-NAME
+                </TooltipContent>
+              </Tooltip>
+            </TooltipProvider>
+          </div>
+
+          <div className=" text-2xl md:text-4xl border-gray-500/50 border-b font-light  text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
+            <ShimmeringText text="Sumit Karki" duration={10} />
+            <div className="flex">
+              <img src="./verified.svg" />
+              <img
+                className="ml-1 w-6 cursor-pointer rounded-2xl "
+                src="./Pronounciation.svg"
+                alt="Play pronunciation"
+                onClick={playAudio}
+              />
+              <audio ref={audioRef} src="pronounce.mp3" />
+            </div>
+          </div>
+          <div>
+            <AutoScrollText />
+          </div>
+        </div>
+      </div>
+      <div className=" hidden md:flex h-full w-full flex-1"></div>
+    </div>
+  );
+};
+
+export default HeroSection;
+
+```
+
+---
+
+### <a id="📄-src-pages-navigation-navigation-tsx"></a>📄 `src/pages/navigation/Navigation.tsx`
+
+**File Info:**
+- **Size**: 2.66 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/navigation/Navigation.tsx`
+- **Relative Path**: `src/pages/navigation`
+- **Created**: 2026-02-26 18:22:30 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 17:57:51 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `1c9c6aef3dac670239145bd2e7db0841`
+- **SHA256**: `cf2021ad6c107d9d85d95eaa5fbc6e4def27eea1e44c4a24cb6b57de48763c2a`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { useRef } from "react";
+import { useDevice } from "@/lib/responsive";
+import { Compass, Home, PhoneCall, Rocket, Terminal } from "lucide-react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
+gsap.registerPlugin(ScrollTrigger);
+
+const NAV_ITEMS = [
+  { id: "home", label: "Home", icon: Home },
+  { id: "journey", label: "Journey", icon: Compass },
+  { id: "work", label: "Work", icon: Rocket },
+  { id: "connect", label: "Connect", icon: PhoneCall },
+];
+
+const NavigationBar = () => {
+  const { isMobile } = useDevice();
+  const navRef = useRef<HTMLDivElement>(null);
+  const stickyPoint = useRef<HTMLDivElement>(null);
+
+  useGSAP(
+    () => {
+      const nav = navRef.current;
+      if (!nav) return;
+
+      ScrollTrigger.create({
+        trigger: stickyPoint.current,
+        start: "top top",
+        onEnter: () => {
+          gsap.fromTo(
+            nav,
+            { y: -12, opacity: 0.6 },
+            { y: 0, opacity: 1, duration: 0.4, ease: "power3.out" },
+          );
+          nav.classList.add(
+            "backdrop-blur-md",
+            "bg-black/80",
+            "shadow-md",
+            "shadow-black/40",
+          );
+        },
+        onLeaveBack: () => {
+          gsap.to(nav, { y: 0, opacity: 1, duration: 0.3, ease: "power2.out" });
+          nav.classList.remove(
+            "backdrop-blur-md",
+            "bg-black/80",
+            "shadow-md",
+            "shadow-black/40",
+          );
+        },
+      });
+    },
+    { scope: navRef },
+  );
+
+  return (
+    <>
+      <div ref={stickyPoint} className="h-0 w-full" />
+
+      <div
+        ref={navRef}
+        className="w-full h-12 sticky top-0 z-50 bg-black text-zinc-50 text-md text-center flex justify-center items-center border-y border-gray-500/50 mt-2! "
+      >
+        <div className="w-full h-full flex-1"></div>
+        <ul
+          className={` h-full w-[90%] md:w-[80%] lg:w-[40%] flex items-center justify-center lg:gap-6 gap-5 bg-black border-x border-gray-500/50 ${isMobile && `gap-8`} `}
+        >
+          {NAV_ITEMS.map(({ id, label, icon: Icon }) => (
+            <li key={id} className="flex">
+              <a
+                href={`#${id}`}
+                className="flex gap-0.5 items-center cursor-pointer hover:scale-110 transition duration-300 ease-in-out"
+              >
+                <Icon />
+                {!isMobile && <span className="text-[15px]">{label}</span>}
+              </a>
+            </li>
+          ))}
+        </ul>
+        <div className="w-full h-full flex-1"></div>
+      </div>
+    </>
+  );
+};
+
+export default NavigationBar;
+
+```
+
+---
+
+### <a id="📄-src-pages-projects-projectelement-tsx"></a>📄 `src/pages/projects/projectElement.tsx`
+
+**File Info:**
+- **Size**: 1.9 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/projects/projectElement.tsx`
+- **Relative Path**: `src/pages/projects`
+- **Created**: 2026-07-05 11:38:18 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 16:47:00 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9f9113f11143ad92adde0b87052f2f1f`
+- **SHA256**: `a5e53484eb731cac1742992e52c6b236b107a14e5b299b56905325f389140ed5`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { SquareArrowOutUpRight, type LucideIcon } from "lucide-react";
+import gsap from "gsap";
+import { useRef } from "react";
+
+type ProjectElementProps = {
+  title: string;
+  icon: LucideIcon;
+  link?: string;
+  borderLeft?: boolean;
+  borderBottom?: boolean;
+};
+
+export const ProjectElement = ({
+  title,
+  icon: Icon,
+  link,
+  borderLeft = true,
+  borderBottom = true,
+}: ProjectElementProps) => {
+  const iconRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseEnter = () => {
+    gsap.to(iconRef.current, {
+      rotate: 15,
+      scale: 1.15,
+      duration: 0.3,
+      ease: "back.out(2)",
+    });
+  };
+
+  const handleMouseLeave = () => {
+    gsap.to(iconRef.current, {
+      rotate: 0,
+      scale: 1,
+      duration: 0.3,
+      ease: "power2.out",
+    });
+  };
+
+  const content = (
+    <div
+      className={`flex w-full min-w-0 items-center justify-between gap-4 border-t md:${borderBottom ? "border-b" : ""} border-gray-500/50 p-4 transition-colors duration-200 hover:bg-white/[0.03]`}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+    >
+      <div className="flex min-w-0 items-center gap-4">
+        <div ref={iconRef} className="shrink-0">
+          <Icon className="h-6 w-6 text-gray-400" />
+        </div>
+        <span className="truncate text-xs md:text-sm font-medium text-gray-200">
+          {title}
+        </span>
+      </div>
+
+      {link && (
+        <SquareArrowOutUpRight className="h-4 w-4 shrink-0 text-gray-500 transition-colors duration-200 group-hover:text-gray-200" />
+      )}
+    </div>
+  );
+
+  return (
+    <div
+      className={`project-item w-full min-w-0 ${borderLeft ? "border-l" : ""} border-gray-500/50 group`}
+    >
+      {link ? (
+        <a
+          href={link}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="block w-full min-w-0"
+        >
+          {content}
+        </a>
+      ) : (
+        content
+      )}
+    </div>
+  );
+};
+
+```
+
+---
+
+### <a id="📄-src-pages-projects-projects-tsx"></a>📄 `src/pages/projects/Projects.tsx`
+
+**File Info:**
+- **Size**: 2.07 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/projects/Projects.tsx`
+- **Relative Path**: `src/pages/projects`
+- **Created**: 2026-05-31 16:37:48 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 16:16:19 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `bdcdcd3892c8c9ceb8639c7d7eb6b9a2`
+- **SHA256**: `e788dca54fdb9d73f8823a97d3e16d4e28de528ee7362f7a039f754f0018a421`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import {
+  LayoutDashboard,
+  ShoppingCart,
+  Syringe,
+  UtensilsCrossed,
+  type LucideIcon,
+} from "lucide-react";
+import { ProjectElement } from "./projectElement";
+import { useRef } from "react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useDevice } from "@/lib/responsive";
+
+type T_Project = {
+  name: string;
+  Icon: LucideIcon;
+  link?: string;
+};
+
+const ProjectsData: T_Project[] = [
+  {
+    name: "Personal Portfolio",
+    Icon: LayoutDashboard,
+    link: "https://www.youtube.com/",
+  },
+  {
+    name: "Zap Point-Of-Sale",
+    Icon: ShoppingCart,
+    link: "https://www.facebook.com/",
+  },
+  {
+    name: "Restaurent MS",
+    Icon: UtensilsCrossed,
+    link: "https://www.facebook.com/",
+  },
+  { name: "Pharmacy MS", Icon: Syringe, link: "https://www.facebook.com/" },
+];
+
+gsap.registerPlugin(ScrollTrigger);
+
+const Projects = () => {
+  const containerRef = useRef<HTMLDivElement>(null);
+  const { isMobile } = useDevice();
+
+  useGSAP(
+    () => {
+      gsap.from(".project-item", {
+        opacity: 0,
+        y: 30,
+        duration: 0.6,
+        stagger: 0.12,
+        ease: "power3.out",
+        scrollTrigger: {
+          trigger: containerRef.current,
+          start: "top 80%",
+        },
+      });
+    },
+    { scope: containerRef },
+  );
+
+  return (
+    <div className="w-full flex justify-center items-center bg-black border-b border-gray-500/50">
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+      <div
+        ref={containerRef}
+        className="grid grid-cols-1 md:grid-cols-2 min-w-0 w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50"
+      >
+        {ProjectsData.map((project, i) => (
+          <ProjectElement
+            key={project.name}
+            title={project.name}
+            icon={project.Icon}
+            link={project.link}
+            borderLeft={!isMobile && i % 2 !== 0}
+            borderBottom={i < 2}
+          />
+        ))}
+      </div>
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+    </div>
+  );
+};
+
+export default Projects;
+
+```
+
+---
+
+### <a id="📄-src-pages-skeletonloaders-experienceskeleton-tsx"></a>📄 `src/pages/skeletonLoaders/ExperienceSkeleton.tsx`
+
+**File Info:**
+- **Size**: 963 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/skeletonLoaders/ExperienceSkeleton.tsx`
+- **Relative Path**: `src/pages/skeletonLoaders`
+- **Created**: 2026-08-14 12:12:25 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-14 12:12:28 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `1c39ae01703594fbe46df41a7831eaec`
+- **SHA256**: `84487ff76d69985e6edea3123f7207a5f5c556283d262de60afa5459870984a4`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { Skeleton } from "@/components/ui/skeleton";
+
+export default function ExperienceSkeleton() {
+  return (
+    <div className="w-full flex">
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+      <div className="w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50 px-4 py-4 space-y-6">
+        {Array.from({ length: 2 }).map((_, i) => (
+          <div key={i} className="space-y-3">
+            <div className="flex items-center gap-3">
+              <Skeleton className="h-6 w-6 rounded-full" />
+              <Skeleton className="h-4 w-40" />
+            </div>
+            <div className="pl-9 space-y-2">
+              <Skeleton className="h-3 w-24" />
+              <Skeleton className="h-3 w-full" />
+              <Skeleton className="h-3 w-5/6" />
+            </div>
+          </div>
+        ))}
+      </div>
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-pages-skeletonloaders-footerskeleton-tsx"></a>📄 `src/pages/skeletonLoaders/FooterSkeleton.tsx`
+
+**File Info:**
+- **Size**: 229 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/skeletonLoaders/FooterSkeleton.tsx`
+- **Relative Path**: `src/pages/skeletonLoaders`
+- **Created**: 2026-08-14 12:13:11 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-14 12:13:20 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9d3a03ad0afd49c1091867127bdbf149`
+- **SHA256**: `b230ee72e5eace21df41111d1778750f696c3af00dc0720f48082171d991afd4`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { Skeleton } from "@/components/ui/skeleton";
+
+export default function FooterSkeleton() {
+  return (
+    <div className="w-full flex justify-center py-6">
+      <Skeleton className="h-6 w-48" />
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-pages-skeletonloaders-projectsskeleton-tsx"></a>📄 `src/pages/skeletonLoaders/ProjectsSkeleton.tsx`
+
+**File Info:**
+- **Size**: 789 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/skeletonLoaders/ProjectsSkeleton.tsx`
+- **Relative Path**: `src/pages/skeletonLoaders`
+- **Created**: 2026-08-14 12:12:47 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-14 12:12:57 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `5a37ea99fef0cc8ad1cbd93799b54010`
+- **SHA256**: `93b552d71d78dc4096348937d0e1f1069e6b1e591e114b63a429fa30e1686ee0`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { Skeleton } from "@/components/ui/skeleton";
+
+export default function ProjectsSkeleton() {
+  return (
+    <div className="w-full bg-black border-b border-gray-500/50">
+      <div className="mx-auto grid grid-cols-1 sm:grid-cols-2 w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50">
+        {Array.from({ length: 4 }).map((_, i) => (
+          <div
+            key={i}
+            className={`w-full ${i % 2 !== 0 ? "border-l" : ""} border-gray-500/50`}
+          >
+            <div className="flex w-full items-center gap-4 border-b border-gray-500/50 p-4">
+              <Skeleton className="h-6 w-6 shrink-0" />
+              <Skeleton className="h-4 flex-1" />
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-pages-skeletonloaders-stackskeleton-tsx"></a>📄 `src/pages/skeletonLoaders/StackSkeleton.tsx`
+
+**File Info:**
+- **Size**: 740 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/skeletonLoaders/StackSkeleton.tsx`
+- **Relative Path**: `src/pages/skeletonLoaders`
+- **Created**: 2026-08-14 12:11:59 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-14 12:12:03 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `eec893158f75d9fe0213548b9a14d020`
+- **SHA256**: `9cd8fb9ff206482e3fb6cdf5f9cb9d27b7a0300449679df2105a844327acb57e`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { Skeleton } from "@/components/ui/skeleton";
+
+export default function StackSkeleton() {
+  return (
+    <div className="w-full flex justify-center bg-black border-b border-gray-500/50">
+      <div className="w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50 p-4 space-y-6">
+        {Array.from({ length: 4 }).map((_, cat) => (
+          <div key={cat} className="space-y-2">
+            <Skeleton className="h-3 w-24" />
+            <div className="flex flex-wrap gap-3">
+              {Array.from({ length: 5 }).map((_, i) => (
+                <Skeleton key={i} className="h-9 w-9 rounded-full" />
+              ))}
+            </div>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
+}
+
+```
+
+---
+
+### <a id="📄-src-pages-skills-section-stack-tsx"></a>📄 `src/pages/skills-section/Stack.tsx`
+
+**File Info:**
+- **Size**: 5.77 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/skills-section/Stack.tsx`
+- **Relative Path**: `src/pages/skills-section`
+- **Created**: 2026-03-30 18:37:05 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 14:33:17 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `3975fa1bf8758e8a66371569916c0802`
+- **SHA256**: `1af4db6f635ce851a04e68f01cef99c74bb42dd7ec672f6751604a8755028576`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { type IconType } from "react-icons";
+
+import { IoLogoHtml5 } from "react-icons/io5";
+import { IoLogoCss3 } from "react-icons/io";
+import { SiElectron, SiMongodb } from "react-icons/si";
+import { FaGitlab, FaJs, FaNodeJs, FaPhp, FaReact } from "react-icons/fa";
+import {
+  SiTypescript,
+  SiShadcnui,
+  SiExpress,
+  SiPrisma,
+  SiGsap,
+} from "react-icons/si";
+import { TbBrandCpp } from "react-icons/tb";
+import { FaRust } from "react-icons/fa6";
+import { DiMysql } from "react-icons/di";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { RiTailwindCssFill } from "react-icons/ri";
+import { FaJava } from "react-icons/fa";
+import { SiC } from "react-icons/si";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { FaGitAlt } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
+import { SiTauri } from "react-icons/si";
+gsap.registerPlugin(ScrollTrigger);
+
+type T_TechStack = {
+  name: string;
+  icon: IconType;
+  link: string;
+};
+
+type T_StackCategory = {
+  label: string;
+  items: T_TechStack[];
+};
+
+const StackCategories: T_StackCategory[] = [
+  {
+    label: "Markup & Styling",
+    items: [
+      {
+        name: "HTML",
+        icon: IoLogoHtml5,
+        link: "https://developer.mozilla.org/en-US/docs/Web/HTML",
+      },
+      {
+        name: "CSS",
+        icon: IoLogoCss3,
+        link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+      },
+      {
+        name: "TailWindCSS",
+        icon: RiTailwindCssFill,
+        link: "https://tailwindcss.com",
+      },
+    ],
+  },
+  {
+    label: "Language",
+    items: [
+      {
+        name: "JavaScript",
+        icon: FaJs,
+        link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+      },
+      {
+        name: "TypeScript",
+        icon: SiTypescript,
+        link: "https://www.typescriptlang.org",
+      },
+      { name: "Rust", icon: FaRust, link: "https://www.rust-lang.org" },
+      { name: "PHP", icon: FaPhp, link: "https://www.php.net" },
+      {
+        name: "C",
+        icon: SiC,
+        link: "https://en.wikipedia.org/wiki/C_(programming_language)",
+      },
+      { name: "C++", icon: TbBrandCpp, link: "https://isocpp.org" },
+      { name: "Java", icon: FaJava, link: "https://www.java.com" },
+    ],
+  },
+  {
+    label: "Frontend",
+    items: [
+      { name: "React", icon: FaReact, link: "https://react.dev" },
+      { name: "Shadcn UI", icon: SiShadcnui, link: "https://ui.shadcn.com" },
+      { name: "GSAP", icon: SiGsap, link: "https://gsap.com" },
+    ],
+  },
+  {
+    label: "Backend",
+    items: [
+      { name: "Node.js", icon: FaNodeJs, link: "https://nodejs.org" },
+      { name: "Express.js", icon: SiExpress, link: "https://expressjs.com" },
+    ],
+  },
+  {
+    label: "DataBase & ORM",
+    items: [
+      { name: "MySQL", icon: DiMysql, link: "https://www.mysql.com" },
+      {
+        name: "PostgreSQL",
+        icon: BiLogoPostgresql,
+        link: "https://www.postgresql.org",
+      },
+      { name: "MongoDB", icon: SiMongodb, link: "https://www.mongodb.com" },
+      { name: "Prisma", icon: SiPrisma, link: "https://www.prisma.io" },
+    ],
+  },
+  {
+    label: "Version Control",
+    items: [
+      { name: "Git", icon: FaGitAlt, link: "https://git-scm.com" },
+      { name: "Github", icon: FaGithub, link: "https://github.com" },
+      { name: "GitLab", icon: FaGitlab, link: "https://about.gitlab.com" },
+    ],
+  },
+  {
+    label: "Additional",
+    items: [
+      { name: "Tauri", icon: SiTauri, link: "https://tauri.app" },
+      {
+        name: "Electron",
+        icon: SiElectron,
+        link: "https://www.electronjs.org",
+      },
+    ],
+  },
+];
+
+const Stack = () => {
+  useGSAP(() => {
+    gsap.from(".stack-row", {
+      y: 12,
+      opacity: 0,
+      duration: 0.5,
+      stagger: 0.06,
+      ease: "power2.out",
+      scrollTrigger: {
+        trigger: ".stack-section",
+        start: "top 85%",
+        toggleActions: "restart none restart none",
+      },
+    });
+  }, []);
+
+  return (
+    <div className="stack-section flex justify-center items-center border-b border-b-gray-500/50">
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+
+      <div className="w-[90%] md:w-[80%] lg:w-[40%] xl:w-[40%] bg-black border-x border-gray-500/50 min-w-0">
+        <div>
+          {StackCategories.map((category, index) => (
+            <div
+              key={category.label}
+              className={`stack-row grid grid-cols-1 md:grid-cols-[minmax(0,160px)_1fr] gap-2 p-3 md:gap-4 border-gray-500/50
+               ${index === StackCategories.length - 1 ? "" : "border-b"}`}
+            >
+              <div className="flex items-baseline gap-2 text-sm text-white">
+                <span className="tabular-nums">
+                  {String(index + 1).padStart(2, "0")}
+                </span>
+                <span>{category.label}</span>
+              </div>
+
+              <div className="flex flex-wrap gap-x-4 gap-y-2 min-w-0">
+                {category.items.map((item) => {
+                  const Icon = item.icon;
+
+                  return (
+                    <a href={item.link} target="_blank" key={item.name}>
+                      <span className="inline-flex items-center gap-1.5 text-xs md:text-sm text-gray-300 transition-colors hover:text-white cursor-pointer">
+                        <Icon className="text-gray-500" size={20} />
+                        {item.name}
+                      </span>
+                    </a>
+                  );
+                })}
+              </div>
+            </div>
+          ))}
+        </div>
+      </div>
+
+      <div className="hidden md:flex h-full w-full flex-1"></div>
+    </div>
+  );
+};
+
+export default Stack;
+
+```
+
+---
+
+### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
+
+**File Info:**
+- **Size**: 2.06 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/App.tsx`
+- **Relative Path**: `src`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-25 14:46:40 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `8b5cc6b8439b4a2b45075e3bbabf7b0c`
+- **SHA256**: `439f61b107dd09530864a4049e3bfe7d3afa65c463294c089edc4d76a9cf06e1`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+// App.tsx
+import { lazy, Suspense } from "react";
+import NavigationBar from "./pages/navigation/Navigation";
+import BannerSection from "./pages/hero-section/Banner";
+import HeroSection from "./pages/hero-section/HeroSection";
+import Separator from "./lib/reusable/Separator";
+import AboutMe from "./pages/hero-section/AboutMe";
+import Title from "./lib/reusable/Title";
+import StackSkeleton from "./pages/skeletonLoaders/StackSkeleton";
+import ExperienceSkeleton from "./pages/skeletonLoaders/ExperienceSkeleton";
+import ProjectsSkeleton from "./pages/skeletonLoaders/ProjectsSkeleton";
+import FooterSkeleton from "./pages/skeletonLoaders/FooterSkeleton";
+import Connect from "./pages/Connect/Connect";
+import SplashCursor from "./components/SplashCursor";
+
+const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
+const Stack = lazy(() => import("./pages/skills-section/Stack"));
+const Projects = lazy(() => import("./pages/projects/Projects"));
+
+function App() {
+  return (
+    <div className="w-full min-h-screen box-border bg-black absolute">
+      <SplashCursor />
+      <NavigationBar />
+      <section id="home">
+        <BannerSection />
+        <HeroSection />
+        <Separator />
+        <AboutMe />
+      </section>
+
+      <section id="journey">
+        <Title TitleLabel="Experience" TitleSize="md" />
+        <Suspense fallback={<ExperienceSkeleton />}>
+          <Experience />
+        </Suspense>
+        <Separator />
+        <Title TitleLabel="Tech-Stack" TitleSize="md" />
+        <Suspense fallback={<StackSkeleton />}>
+          <Stack />
+        </Suspense>
+      </section>
+
+      {/* Experience isn't in the nav, keep it between sections */}
+
+      <section id="work">
+        <Title TitleLabel="Projects" TitleSize="md" />
+        <Suspense fallback={<ProjectsSkeleton />}>
+          <Projects />
+        </Suspense>
+      </section>
+
+      <section id="connect">
+        <Title TitleLabel="Connect" TitleSize="md" />
+        <Suspense fallback={<FooterSkeleton />}>
+          <Connect />
+        </Suspense>
+      </section>
+    </div>
+  );
+}
+export default App;
+
+```
+
+---
+
+### <a id="📄-src-index-css"></a>📄 `src/index.css`
+
+**File Info:**
+- **Size**: 6.92 KB
+- **Extension**: `.css`
+- **Language**: `css`
+- **Location**: `src/index.css`
+- **Relative Path**: `src`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 16:10:10 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `2ae1dd2b33c94a5cff79baffff3654b4`
+- **SHA256**: `b856b0b2b6f9b4d2aff51dab5a85a8424e3343f1cdd6807c3ef69426799c959d`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```css
+@import "tailwindcss";
+@import "tw-animate-css";
+@import "shadcn/tailwind.css";
+
+@plugin "@tailwindcss/typography";
+
+/* Body */
+html {
+  scroll-behavior: smooth;
+  font-family: "JetBrains Mono", monospace;
+}
+:root {
+  --radius: 0.65rem;
+  --background: oklch(1 0 0);
+  --foreground: oklch(0.145 0 0);
+  --card: oklch(1 0 0);
+  --card-foreground: oklch(0.145 0 0);
+  --popover: oklch(1 0 0);
+  --popover-foreground: oklch(0.145 0 0);
+  --primary: oklch(0.205 0 0);
+  --primary-foreground: oklch(0.985 0 0);
+  --secondary: oklch(0.97 0 0);
+  --secondary-foreground: oklch(0.205 0 0);
+  --muted: oklch(0.97 0 0);
+  --muted-foreground: oklch(0.556 0 0);
+  --accent: oklch(0.97 0 0);
+  --accent-foreground: oklch(0.205 0 0);
+  --destructive: oklch(0.577 0.245 27.325);
+  --border: oklch(0.922 0 0);
+  --input: oklch(0.922 0 0);
+  --ring: oklch(0.708 0 0);
+  --chart-1: oklch(0.646 0.222 41.116);
+  --chart-2: oklch(0.6 0.118 184.704);
+  --chart-3: oklch(0.398 0.07 227.392);
+  --chart-4: oklch(0.828 0.189 84.429);
+  --chart-5: oklch(0.769 0.188 70.08);
+  --radius: 0.625rem;
+  --sidebar: oklch(0.985 0 0);
+  --sidebar-foreground: oklch(0.145 0 0);
+  --sidebar-primary: oklch(0.205 0 0);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.97 0 0);
+  --sidebar-accent-foreground: oklch(0.205 0 0);
+  --sidebar-border: oklch(0.922 0 0);
+  --sidebar-ring: oklch(0.708 0 0);
+}
+
+.dark {
+  --background: oklch(0.145 0 0);
+  --foreground: oklch(0.985 0 0);
+  --card: oklch(0.205 0 0);
+  --card-foreground: oklch(0.985 0 0);
+  --popover: oklch(0.205 0 0);
+  --popover-foreground: oklch(0.985 0 0);
+  --primary: oklch(0.922 0 0);
+  --primary-foreground: oklch(0.205 0 0);
+  --secondary: oklch(0.269 0 0);
+  --secondary-foreground: oklch(0.985 0 0);
+  --muted: oklch(0.269 0 0);
+  --muted-foreground: oklch(0.708 0 0);
+  --accent: oklch(0.269 0 0);
+  --accent-foreground: oklch(0.985 0 0);
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: oklch(1 0 0 / 10%);
+  --input: oklch(1 0 0 / 15%);
+  --ring: oklch(0.556 0 0);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: oklch(0.205 0 0);
+  --sidebar-foreground: oklch(0.985 0 0);
+  --sidebar-primary: oklch(0.488 0.243 264.376);
+  --sidebar-primary-foreground: oklch(0.985 0 0);
+  --sidebar-accent: oklch(0.269 0 0);
+  --sidebar-accent-foreground: oklch(0.985 0 0);
+  --sidebar-border: oklch(1 0 0 / 10%);
+  --sidebar-ring: oklch(0.556 0 0);
+}
+
+@custom-variant retina {
+  @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 2x) {
+    @slot;
+  }
+}
+
+@utility link {
+  @apply decoration-1 underline-offset-3 hover:underline;
+}
+
+@utility link-underline {
+  @apply underline decoration-current/30 decoration-1 underline-offset-3 transition-colors hover:decoration-current;
+}
+
+@utility prose-ncdai {
+  @apply prose-headings:font-medium prose-headings:tracking-tight prose-headings:text-pretty md:prose-headings:text-balance;
+  @apply prose-a:font-normal prose-a:wrap-break-word prose-a:text-foreground prose-a:link-underline;
+  @apply prose-code:rounded-md prose-code:border prose-code:bg-muted/50 prose-code:px-1 prose-code:py-px prose-code:text-sm prose-code:font-normal prose-code:before:content-none prose-code:after:content-none retina:prose-code:border-[0.5px];
+  @apply prose-strong:font-medium;
+  @apply prose-blockquote:border-l prose-blockquote:font-normal prose-blockquote:text-muted-foreground prose-blockquote:not-italic prose-blockquote:[&_p:first-of-type]:before:content-none prose-blockquote:[&_p:last-of-type]:after:content-none;
+}
+@theme inline {
+  --color-background: var(--color-black);
+  --color-foreground: var(--foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+}
+@property --top-mask-height {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --bottom-mask-height {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 64px;
+}
+@property --left-mask-width {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --right-mask-width {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 64px;
+}
+
+@layer base {
+  @keyframes show-top-mask {
+    to {
+      --top-mask-height: var(--mask-height);
+    }
+  }
+
+  @keyframes hide-bottom-mask {
+    to {
+      --bottom-mask-height: 0px;
+    }
+  }
+
+  @keyframes show-left-mask {
+    to {
+      --left-mask-width: var(--mask-width);
+    }
+  }
+
+  @keyframes hide-right-mask {
+    to {
+      --right-mask-width: 0px;
+    }
+  }
+}
+
+@utility scroll-fade-effect-y {
+  --mask-height: 64px;
+  --mask-offset-top: 0px;
+  --mask-offset-bottom: 0px;
+  --scroll-buffer: 2rem;
+  mask-image:
+    linear-gradient(to top, transparent, black 90%),
+    linear-gradient(to bottom, transparent 0%, black 100%),
+    linear-gradient(black, black);
+  mask-size:
+    100% var(--top-mask-height),
+    100% var(--bottom-mask-height),
+    100% 100%;
+  mask-repeat: no-repeat, no-repeat, no-repeat;
+  mask-position:
+    0 var(--mask-offset-top),
+    0 calc(100% - var(--mask-offset-bottom)),
+    0 0;
+  mask-composite: exclude;
+  animation-name: show-top-mask, hide-bottom-mask;
+  animation-timeline: scroll(self), scroll(self);
+  animation-range:
+    0 var(--scroll-buffer),
+    calc(100% - var(--scroll-buffer)) 100%;
+  animation-fill-mode: both;
+}
+
+@utility scroll-fade-effect-x {
+  --mask-width: 64px;
+  --mask-offset-left: 0px;
+  --mask-offset-right: 0px;
+  --scroll-buffer: 2rem;
+  mask-image:
+    linear-gradient(to left, transparent, black 90%),
+    linear-gradient(to right, transparent 0%, black 100%),
+    linear-gradient(black, black);
+  mask-size:
+    var(--left-mask-width) 100%,
+    var(--right-mask-width) 100%,
+    100% 100%;
+  mask-repeat: no-repeat, no-repeat, no-repeat;
+  mask-position:
+    var(--mask-offset-left) 0,
+    calc(100% - var(--mask-offset-right)) 0,
+    0 0;
+  mask-composite: exclude;
+  animation-name: show-left-mask, hide-right-mask;
+  animation-timeline: scroll(self inline), scroll(self inline);
+  animation-range:
+    0 var(--scroll-buffer),
+    calc(100% - var(--scroll-buffer)) 100%;
+  animation-fill-mode: both;
+}
+@property --top-mask-height {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --bottom-mask-height {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 64px;
+}
+@property --left-mask-width {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 0px;
+}
+@property --right-mask-width {
+  syntax: "<length>";
+  inherits: true;
+  initial-value: 64px;
+}
+
+```
+
+---
+
+### <a id="📄-src-main-tsx"></a>📄 `src/main.tsx`
+
+**File Info:**
+- **Size**: 234 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/main.tsx`
+- **Relative Path**: `src`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-03-17 18:00:16 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `45bd0ab9404cdb9f0171bec9d8ecf41f`
+- **SHA256**: `cfceb379e32e1e4b2ece6cc611ae39b11714f147426d203ffed5b200c4b1ed4b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { StrictMode } from "react";
+import { createRoot } from "react-dom/client";
+import "./index.css";
+import App from "./App.tsx";
+createRoot(document.getElementById("root")!).render(
+  <StrictMode>
+    <App />
+  </StrictMode>,
+);
+
+```
+
+---
+
+### <a id="📄-components-json"></a>📄 `components.json`
+
+**File Info:**
+- **Size**: 574 B
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `components.json`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:27:39 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-25 14:36:46 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `305e5c4e16c5dfd906db50820f7e35c2`
+- **SHA256**: `f795655fbfde1328846faf87eebd55b81f53d58c699cd59c6f7266fca81ab8a9`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "new-york",
+  "rsc": false,
+  "tsx": true,
+  "tailwind": {
+    "config": "",
+    "css": "src/index.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "iconLibrary": "lucide",
+  "rtl": false,
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "registries": {
+    "@ncdai": "https://chanhdai.com/r/{name}.json",
+    "@react-bits": "https://reactbits.dev/r/{name}.json"
+  }
+}
+
+```
+
+---
+
+### <a id="📄-eslint-config-js"></a>📄 `eslint.config.js`
+
+**File Info:**
+- **Size**: 616 B
+- **Extension**: `.js`
+- **Language**: `javascript`
+- **Location**: `eslint.config.js`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-02-26 18:12:13 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `b8893da386a89dfd3672dad848f4ec7e`
+- **SHA256**: `4efe97b16d1200fac0eaf07aa00930a8668b1f96a0be1891ace8c1e712ff0ccb`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```javascript
+import js from '@eslint/js'
+import globals from 'globals'
+import reactHooks from 'eslint-plugin-react-hooks'
+import reactRefresh from 'eslint-plugin-react-refresh'
+import tseslint from 'typescript-eslint'
+import { defineConfig, globalIgnores } from 'eslint/config'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      js.configs.recommended,
+      tseslint.configs.recommended,
+      reactHooks.configs.flat.recommended,
+      reactRefresh.configs.vite,
+    ],
+    languageOptions: {
+      ecmaVersion: 2020,
+      globals: globals.browser,
+    },
+  },
+])
+
+```
+
+---
+
+### <a id="📄-index-html"></a>📄 `index.html`
+
+**File Info:**
+- **Size**: 1.07 KB
+- **Extension**: `.html`
+- **Language**: `html`
+- **Location**: `index.html`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-15 16:38:14 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `449984ea1fd0a1ac1a8e143415e93ee1`
+- **SHA256**: `8bba7e4cdc6076fe0d1cc46ab3c421301373f934c930761da588cbff14763247`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```html
+<!doctype html>
+<html lang="en" class="dark">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
+      rel="stylesheet"
+    />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sumit Karki - Portfolio</title>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+
+```
+
+---
+
+### <a id="📄-package-json"></a>📄 `package.json`
+
+**File Info:**
+- **Size**: 1.2 KB
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `package.json`
+- **Relative Path**: `root`
+- **Created**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `6737c9034c99c96011ea471326728555`
+- **SHA256**: `ea91713d86ed5886eed2d046f10996bb02d323aa20e39ee3602fbbd75d6cc241`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "name": "portfolioofsumit",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@gsap/react": "^2.1.2",
+    "@tailwindcss/vite": "^4.2.1",
+    "class-variance-authority": "^0.7.1",
+    "clsx": "^2.1.1",
+    "date-fns": "^4.4.0",
+    "gsap": "^3.15.0",
+    "lucide-react": "^0.575.0",
+    "motion": "^13.1.0",
+    "radix-ui": "^1.4.3",
+    "react": "^19.2.0",
+    "react-dom": "^19.2.0",
+    "react-icons": "^5.6.0",
+    "react-markdown": "^10.1.0",
+    "react-responsive": "^10.0.1",
+    "tailwind-merge": "^3.5.0",
+    "tailwindcss": "^4.2.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.1",
+    "@tailwindcss/typography": "^0.5.20",
+    "@types/node": "^24.10.1",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^5.1.1",
+    "eslint": "^9.39.1",
+    "eslint-plugin-react-hooks": "^7.0.1",
+    "eslint-plugin-react-refresh": "^0.4.24",
+    "globals": "^16.5.0",
+    "shadcn": "^3.8.5",
+    "tw-animate-css": "^1.4.0",
+    "typescript": "~5.9.3",
+    "typescript-eslint": "^8.48.0",
+    "vite": "^7.3.1"
+  }
+}
+
+```
+
+---
+
+### <a id="📄-pnpm-lock-yaml"></a>📄 `pnpm-lock.yaml`
+
+**File Info:**
+- **Size**: 262.81 KB
+- **Extension**: `.yaml`
+- **Language**: `yaml`
+- **Location**: `pnpm-lock.yaml`
+- **Relative Path**: `root`
+- **Created**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `b2f6513f90631ff4bc1055c8460a37cb`
+- **SHA256**: `1ca198bc2f8e4148d4bab2be6024e5ed97e26383135bdf5a194212d84e5c865f`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```yaml
 lockfileVersion: '9.0'
 
 settings:
@@ -7181,3 +13196,289 @@ snapshots:
   zod@4.3.6: {}
 
   zwitch@2.0.4: {}
+
+```
+
+---
+
+### <a id="📄-readme-md"></a>📄 `README.md`
+
+**File Info:**
+- **Size**: 2.5 KB
+- **Extension**: `.md`
+- **Language**: `text`
+- **Location**: `README.md`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-02-26 18:12:13 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `cac141da861c855e069a9c32557458ac`
+- **SHA256**: `f58b5b17f83db63c09a9f2c059ec435ac8a3feb66f9337391ed5f3f62cff4e63`
+- **Encoding**: ASCII
+
+**File code content:**
+
+````markdown
+# React + TypeScript + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+
+## React Compiler
+
+The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+
+## Expanding the ESLint configuration
+
+If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+
+~~~~js
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+
+      // Remove tseslint.configs.recommended and replace with this
+      tseslint.configs.recommendedTypeChecked,
+      // Alternatively, use this for stricter rules
+      tseslint.configs.strictTypeChecked,
+      // Optionally, add this for stylistic rules
+      tseslint.configs.stylisticTypeChecked,
+
+      // Other configs...
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+~~~~
+
+You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+
+~~~~js
+// eslint.config.js
+import reactX from 'eslint-plugin-react-x'
+import reactDom from 'eslint-plugin-react-dom'
+
+export default defineConfig([
+  globalIgnores(['dist']),
+  {
+    files: ['**/*.{ts,tsx}'],
+    extends: [
+      // Other configs...
+      // Enable lint rules for React
+      reactX.configs['recommended-typescript'],
+      // Enable lint rules for React DOM
+      reactDom.configs.recommended,
+    ],
+    languageOptions: {
+      parserOptions: {
+        project: ['./tsconfig.node.json', './tsconfig.app.json'],
+        tsconfigRootDir: import.meta.dirname,
+      },
+      // other options...
+    },
+  },
+])
+~~~~
+
+````
+
+---
+
+### <a id="📄-tsconfig-app-json"></a>📄 `tsconfig.app.json`
+
+**File Info:**
+- **Size**: 880 B
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `tsconfig.app.json`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-25 14:46:06 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `fdd509dd80362fbb26d0724106abbade`
+- **SHA256**: `1cbf565f63b5ab601422011ee39e14c746327b0a20a5b2ee69df68e720afe682`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.app.tsbuildinfo",
+    "target": "ES2022",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2022",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "types": [
+      "vite/client"
+    ],
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true,
+    "allowJs": true,
+    "checkJs": false,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true,
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    },
+  },
+  "include": [
+    "src"
+  ]
+}
+```
+
+---
+
+### <a id="📄-tsconfig-json"></a>📄 `tsconfig.json`
+
+**File Info:**
+- **Size**: 248 B
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `tsconfig.json`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-08-02 13:56:26 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `8b8e68f9f64cc18dd3540f5723c12c66`
+- **SHA256**: `b6f0ab17a155de3cd71310ed5d7213a1283fcaa95c603b9cda4c8149da33e557`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "files": [],
+  "references": [
+    {
+      "path": "./tsconfig.app.json"
+    },
+    {
+      "path": "./tsconfig.node.json"
+    }
+  ],
+  "compilerOptions": {
+    "baseUrl": ".",
+    "paths": {
+      "@/*": [
+        "./src/*"
+      ]
+    }
+  }
+}
+```
+
+---
+
+### <a id="📄-tsconfig-node-json"></a>📄 `tsconfig.node.json`
+
+**File Info:**
+- **Size**: 653 B
+- **Extension**: `.json`
+- **Language**: `json`
+- **Location**: `tsconfig.node.json`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-02-26 18:12:13 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `eec85c9d7c6b599801557f1afd86672c`
+- **SHA256**: `c3dd0fb522feba3596713f51b95bd53d781d845d24aedbfa2ac093d8b39c5120`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```json
+{
+  "compilerOptions": {
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "target": "ES2023",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "types": ["node"],
+    "skipLibCheck": true,
+
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "verbatimModuleSyntax": true,
+    "moduleDetection": "force",
+    "noEmit": true,
+
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "erasableSyntaxOnly": true,
+    "noFallthroughCasesInSwitch": true,
+    "noUncheckedSideEffectImports": true
+  },
+  "include": ["vite.config.ts"]
+}
+
+```
+
+---
+
+### <a id="📄-vite-config-ts"></a>📄 `vite.config.ts`
+
+**File Info:**
+- **Size**: 332 B
+- **Extension**: `.ts`
+- **Language**: `typescript`
+- **Location**: `vite.config.ts`
+- **Relative Path**: `root`
+- **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-02-26 18:26:25 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `d51cd994950ebadcf84fc7fa82021ceb`
+- **SHA256**: `41576e6b777b7b00b61127e55846f118e52f1d9563f08b19132489a740693f2b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import path from "path";
+import tailwindcss from "@tailwindcss/vite";
+import react from "@vitejs/plugin-react";
+import { defineConfig } from "vite";
+
+// https://vite.dev/config/
+export default defineConfig({
+  plugins: [react(), tailwindcss()],
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+  },
+});
+
+```
+
+---
+

@@ -8,7 +8,7 @@ type ComponentEleProps = {
 
 const ComponentEle = (args: ComponentEleProps) => {
   return (
-    <div className="w-[40%] flex justify-around items-center ">
+    <div className="w-full flex justify-around items-center ">
       <args.icon />
       <div>
         <div className="text-3xl">{args.title}</div>

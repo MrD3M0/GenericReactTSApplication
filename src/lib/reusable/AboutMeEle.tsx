@@ -20,7 +20,7 @@ const AboutMeEle = ({
   className,
   disableAnchor = false,
 }: T_AboutMeProps) => {
-  const { isMobile } = useDevice();
+  const { isMobile, isTablet } = useDevice();
   return (
     <div
       className={`w-full h-8 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
@@ -32,11 +32,14 @@ const AboutMeEle = ({
                     shadow-inner shadow-black/40
                     flex items-center justify-center "
         >
-          <Icon size={isMobile ? 15 : 24} className="text-gray-400" />
+          <Icon
+            size={isMobile ? 16 : isTablet ? 20 : 24}
+            className="text-gray-400"
+          />
         </span>
       )}
       {label && (
-        <span className=" text-[10px] md:text-sm font-medium flex text-white cursor-default">
+        <span className="text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-medium flex text-white cursor-default">
           {label}
         </span>
       )}
@@ -45,7 +48,7 @@ const AboutMeEle = ({
         <a
           target="_blank"
           href={companyLink ? companyLink : "#"}
-          className={`text-white text-[10px]  md:text-sm font-bold ${!disableAnchor && "hover:underline hover:underline-offset-4 cursor-pointer"} cursor-default  text-left`}
+          className={`text-white text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-bold ${!disableAnchor && "hover:underline hover:underline-offset-4 cursor-pointer"} cursor-default  text-left`}
           onClick={(e) => disableAnchor && e.preventDefault()}
         >
           {companyName}
