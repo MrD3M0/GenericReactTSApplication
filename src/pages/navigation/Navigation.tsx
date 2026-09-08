@@ -1,6 +1,6 @@
 import { useRef } from "react";
 import { useDevice } from "@/lib/responsive";
-import { Compass, Home, PhoneCall, Rocket, Terminal } from "lucide-react";
+import { Compass, Home, PhoneCall, Rocket } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";

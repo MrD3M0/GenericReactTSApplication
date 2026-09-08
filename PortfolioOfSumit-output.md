@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-08-29 16:36:23 (Asia/Katmandu / GMT+06:45)
+- **Generated On**: 2026-09-08 17:32:03 (Asia/Katmandu / GMT+06:45)
 - **Total Files Processed**: 69
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -83,7 +83,7 @@
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
 │   │   │   └── 📄 HeroSection.tsx (3.38 KB)
 │   │   ├── 📁 navigation/
-│   │   │   └── 📄 Navigation.tsx (2.66 KB)
+│   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
 │   │   │   ├── 📄 projectElement.tsx (1.9 KB)
 │   │   │   └── 📄 Projects.tsx (2.07 KB)
@@ -1526,9 +1526,9 @@ export function DotGridSpotlight({
 - **Location**: `src/components/ElectricBorder.jsx`
 - **Relative Path**: `src/components`
 - **Created**: 2026-08-25 15:05:20 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-25 15:05:20 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `17f9a6c928bab06832d6aa01c9aab761`
-- **SHA256**: `455f90f5182804434d80ff167a928b40105f7eebb99d2dec4bf96869e0f496ae`
+- **Modified**: 2026-09-08 17:31:14 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `ec2846d2896be9f8063074a3805f7313`
+- **SHA256**: `d1b383d3d64abff219c9a795dc8cace4a95e9af99f65b771da68b65325b5d789`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -1544,7 +1544,7 @@ const ElectricBorder = ({
   chaos = 0.12,
   borderRadius = 24,
   className,
-  style
+  style= {},
 }) => {
   const canvasRef = useRef(null);
   const containerRef = useRef(null);
@@ -4713,15 +4713,15 @@ export default HeroSection;
 ### <a id="📄-src-pages-navigation-navigation-tsx"></a>📄 `src/pages/navigation/Navigation.tsx`
 
 **File Info:**
-- **Size**: 2.66 KB
+- **Size**: 2.65 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/navigation/Navigation.tsx`
 - **Relative Path**: `src/pages/navigation`
 - **Created**: 2026-02-26 18:22:30 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-15 17:57:51 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `1c9c6aef3dac670239145bd2e7db0841`
-- **SHA256**: `cf2021ad6c107d9d85d95eaa5fbc6e4def27eea1e44c4a24cb6b57de48763c2a`
+- **Modified**: 2026-09-08 17:32:02 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9af3032c16163557d35897089bfeae55`
+- **SHA256**: `b2e34382413b658b8177ea859a036087f3a51bb958bbcfc5fb579f6917946731`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4729,7 +4729,7 @@ export default HeroSection;
 ```typescript
 import { useRef } from "react";
 import { useDevice } from "@/lib/responsive";
-import { Compass, Home, PhoneCall, Rocket, Terminal } from "lucide-react";
+import { Compass, Home, PhoneCall, Rocket } from "lucide-react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
