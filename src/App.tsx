@@ -28,7 +28,7 @@ function App() {
       {/* Prevent scroll/interaction with the real page until the gate is
           dismissed — also avoids double-mounting animated sections behind it. */}
       <div
-        className={entered ? "" : "h-screen overflow-hidden"}
+        className={entered ? "" : "h-screen overflow-y-hidden"}
         aria-hidden={!entered}
       >
         <SplashCursor />

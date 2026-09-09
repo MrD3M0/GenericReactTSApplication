@@ -5,7 +5,7 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: PortfolioOfSumit
-Generated On: 2026-09-09 10:36:08 (Asia/Katmandu / GMT+06:45)
+Generated On: 2026-09-09 12:43:55 (Asia/Katmandu / GMT+06:45)
 Total Files Processed: 72
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
@@ -85,9 +85,9 @@ PROJECT STRUCTURE
 │   │   ├── 📁 Footer/
 │   │   │   └── 📄 Footer.tsx (635 B)
 │   │   ├── 📁 hero-section/
-│   │   │   ├── 📄 AboutMe.tsx (1.63 KB)
+│   │   │   ├── 📄 AboutMe.tsx (1.77 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
-│   │   │   └── 📄 HeroSection.tsx (4 KB)
+│   │   │   └── 📄 HeroSection.tsx (3.95 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
@@ -4668,15 +4668,15 @@ FILE: src/pages/hero-section/AboutMe.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.63 KB
+Size: 1.77 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/hero-section/AboutMe.tsx
 Relative Path: src/pages/hero-section
 Created: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 06:36:56 (Asia/Katmandu / GMT+06:45)
-MD5: 9807e962d4d95828da1be2560b20243a
-SHA256: 3b1ce3e850182ae29530df5d71cba358ccc60a7b061e271e3dd71a9e07f8647f
+Modified: 2026-09-09 10:56:43 (Asia/Katmandu / GMT+06:45)
+MD5: f0191cbee3ecca9d0e730d086668ba8e
+SHA256: 84fee052c6766cc423752065b80811ee19178e2b1ff71c1e29f690c29c55e5ef
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4695,53 +4695,54 @@ import {
 const AboutMe = () => {
   return (
     <div className="w-full bg-black border-b border-gray-500/50 flex justify-center items-center">
-      <div className="h-full w-[90%] md:w-[80%] lg:w-[40%] grid grid-cols-1 sm:grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
-        {" "}
-        <AboutMeEle
-          icon={BriefcaseBusiness}
-          label={"Full Stack Developer"}
-          isCompany={false}
-          className="col-span-2"
-        />
-        <AboutMeEle
-          icon={MapPin}
-          isCompany={true}
-          companyName={"Nepal"}
-          companyLink="https://maps.app.goo.gl/GRVr8kPD7VHJLjwW7"
-        />
-        <AboutMeEle
-          icon={Mail}
-          isCompany={true}
-          companyName={"sumitkarki1000@gmail.com"}
-          companyLink="mailto:sumitkarki1000@gmail.com"
-        />
-        <AboutMeEle
-          icon={Lightbulb}
-          isCompany={true}
-          label="Founder "
-          companyName={"@Zippos"}
-          companyLink="https://github.com/MrD3M0"
-        />
-        <AboutMeEle
-          icon={FileUser}
-          isCompany={true}
-          companyName={"Find My Resume"}
-          companyLink="https://github.com/MrD3M0"
-        />
-        <AboutMeEle
-          icon={Link}
-          isCompany={true}
-          companyName={"sumitkarki1.com.np"}
-          companyLink="https://sumitkarki1.com.np/"
-        />
-        <AboutMeEle icon={Clock2} label="GMT+5:45" />
+      <div className="@container min-w-0 h-full w-[90%] md:w-[80%] lg:w-[40%]">
+        <div className="grid grid-cols-1 @md:grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
+          {" "}
+          <AboutMeEle
+            icon={BriefcaseBusiness}
+            label={"Full Stack Developer"}
+            isCompany={false}
+            className="col-span-2"
+          />
+          <AboutMeEle
+            icon={MapPin}
+            isCompany={true}
+            companyName={"Nepal"}
+            companyLink="https://maps.app.goo.gl/GRVr8kPD7VHJLjwW7"
+          />
+          <AboutMeEle
+            icon={Mail}
+            isCompany={true}
+            companyName={"sumitkarki1000@gmail.com"}
+            companyLink="mailto:sumitkarki1000@gmail.com"
+          />
+          <AboutMeEle
+            icon={Lightbulb}
+            isCompany={true}
+            label="Founder "
+            companyName={"@Zippos"}
+            companyLink="https://github.com/MrD3M0"
+          />
+          <AboutMeEle
+            icon={FileUser}
+            isCompany={true}
+            companyName={"Find My Resume"}
+            companyLink="https://github.com/MrD3M0"
+          />
+          <AboutMeEle
+            icon={Link}
+            isCompany={true}
+            companyName={"sumitkarki1.com.np"}
+            companyLink="https://sumitkarki1.com.np/"
+          />
+          <AboutMeEle icon={Clock2} label="GMT+5:45" />
+        </div>
       </div>
     </div>
   );
 };
 
 export default AboutMe;
-
 ================================================================================
 
 
@@ -4853,15 +4854,15 @@ FILE: src/pages/hero-section/HeroSection.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 4 KB
+Size: 3.95 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/hero-section/HeroSection.tsx
 Relative Path: src/pages/hero-section
 Created: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 06:47:56 (Asia/Katmandu / GMT+06:45)
-MD5: e074feabfb8f08e244d173f5847f89f4
-SHA256: b41b0a177d703247a7ac045dbaceb337d455f6409e15a20a203c001da19eb592
+Modified: 2026-09-09 12:43:54 (Asia/Katmandu / GMT+06:45)
+MD5: 4984432beb6b92e19850b0be0a07cde7
+SHA256: 365caf51fc68f693324450ad28b8b16466848e7062f61942478f9085906f4d0e
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4956,8 +4957,7 @@ const HeroSection = () => {
 
           <div className=" min-w-0 px-1 text-xl sm:text-xl  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
             <h1 className="m-0 min-w-0 truncate">
-              <ShimmeringText text="Sumit" duration={10} />
-              <ShimmeringText text="Karki" duration={10} />
+              <ShimmeringText text="Sumit Karki" duration={10} />
             </h1>
             <div className="flex shrink-0">
               <img
@@ -5709,9 +5709,9 @@ Language: typescript
 Location: src/App.tsx
 Relative Path: src
 Created: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 10:33:59 (Asia/Katmandu / GMT+06:45)
-MD5: 1aef26c5875aae29059d461cea66e90e
-SHA256: c5b85d6df1dc02973f9443c16efa3cd017aadf4da8193861682401ed4e599e3e
+Modified: 2026-09-09 11:19:30 (Asia/Katmandu / GMT+06:45)
+MD5: 03b3dbe8357a05fb3411cb16b2ca09bb
+SHA256: c0ba191e709cfed29a31e3b565fc08a8669160f9bbf3535e386fe7acda604c9a
 Encoding: ASCII
 
 FILE CONTENT:
@@ -5746,7 +5746,7 @@ function App() {
       {/* Prevent scroll/interaction with the real page until the gate is
           dismissed — also avoids double-mounting animated sections behind it. */}
       <div
-        className={entered ? "" : "h-screen overflow-hidden"}
+        className={entered ? "" : "h-screen overflow-y-hidden"}
         aria-hidden={!entered}
       >
         <SplashCursor />

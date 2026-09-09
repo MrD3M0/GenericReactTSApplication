@@ -88,8 +88,7 @@ const HeroSection = () => {
 
           <div className=" min-w-0 px-1 text-xl sm:text-xl  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
             <h1 className="m-0 min-w-0 truncate">
-              <ShimmeringText text="Sumit" duration={10} />
-              <ShimmeringText text="Karki" duration={10} />
+              <ShimmeringText text="Sumit Karki" duration={10} />
             </h1>
             <div className="flex shrink-0">
               <img
