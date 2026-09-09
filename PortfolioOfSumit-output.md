@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-08 17:32:03 (Asia/Katmandu / GMT+06:45)
+- **Generated On**: 2026-09-09 05:55:55 (Asia/Katmandu / GMT+06:45)
 - **Total Files Processed**: 69
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -62,7 +62,7 @@
 │   │   └── 📄 work-experience.tsx (10.05 KB)
 │   ├── 📁 lib/
 │   │   ├── 📁 reusable/
-│   │   │   ├── 📄 AboutMeEle.tsx (1.6 KB)
+│   │   │   ├── 📄 AboutMeEle.tsx (1.64 KB)
 │   │   │   ├── 📄 AutoScrollText.tsx (977 B)
 │   │   │   ├── 📄 Component-Ele.tsx (447 B)
 │   │   │   ├── 📄 Separator.tsx (734 B)
@@ -73,20 +73,20 @@
 │   │   ├── 📁 components-section/
 │   │   │   └── 📄 Component.tsx (245 B)
 │   │   ├── 📁 Connect/
-│   │   │   └── 📄 Connect.tsx (3.42 KB)
+│   │   │   └── 📄 Connect.tsx (5.78 KB)
 │   │   ├── 📁 Experience/
 │   │   │   └── 📄 WorkExperience.tsx (2.98 KB)
 │   │   ├── 📁 Footer/
 │   │   │   └── 📄 Footer.tsx (635 B)
 │   │   ├── 📁 hero-section/
-│   │   │   ├── 📄 AboutMe.tsx (1.61 KB)
+│   │   │   ├── 📄 AboutMe.tsx (1.64 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
 │   │   │   └── 📄 HeroSection.tsx (3.38 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
-│   │   │   ├── 📄 projectElement.tsx (1.9 KB)
-│   │   │   └── 📄 Projects.tsx (2.07 KB)
+│   │   │   ├── 📄 projectElement.tsx (1.96 KB)
+│   │   │   └── 📄 Projects.tsx (2.14 KB)
 │   │   ├── 📁 skeletonLoaders/
 │   │   │   ├── 📄 ExperienceSkeleton.tsx (963 B)
 │   │   │   ├── 📄 FooterSkeleton.tsx (229 B)
@@ -94,12 +94,12 @@
 │   │   │   └── 📄 StackSkeleton.tsx (740 B)
 │   │   └── 📁 skills-section/
 │   │       └── 📄 Stack.tsx (5.77 KB)
-│   ├── 📄 App.tsx (2.06 KB)
-│   ├── 📄 index.css (6.92 KB)
+│   ├── 📄 App.tsx (2.07 KB)
+│   ├── 📄 index.css (6.63 KB)
 │   └── 📄 main.tsx (234 B)
 ├── 📄 components.json (574 B)
 ├── 📄 eslint.config.js (616 B)
-├── 📄 index.html (1.07 KB)
+├── 📄 index.html (3.52 KB)
 ├── 📄 package.json (1.2 KB)
 ├── 📄 pnpm-lock.yaml (262.81 KB)
 ├── 📄 README.md (2.5 KB)
@@ -176,7 +176,7 @@
 | Total Directories | 18 |
 | Text Files | 52 |
 | Binary Files | 17 |
-| Total Size | 3.79 MB |
+| Total Size | 3.8 MB |
 
 ### 📄 File Types Distribution
 
@@ -3753,15 +3753,15 @@ function parsePeriodDate(str: string, fallbackMonth: "first" | "last"): Date {
 ### <a id="📄-src-lib-reusable-aboutmeele-tsx"></a>📄 `src/lib/reusable/AboutMeEle.tsx`
 
 **File Info:**
-- **Size**: 1.6 KB
+- **Size**: 1.64 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/lib/reusable/AboutMeEle.tsx`
 - **Relative Path**: `src/lib/reusable`
 - **Created**: 2026-02-26 18:56:36 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-15 14:34:52 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `db9d33103bbfa36ae6e9fba5c14f3057`
-- **SHA256**: `fe119e2409d487e0032aa929ee5f908454c8ea4faef3a7abb9b97a676aec9fed`
+- **Modified**: 2026-09-09 05:48:13 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `c3084453cac3239a8b50fbc742b2fbb7`
+- **SHA256**: `a0139ee61d103147f2e270ba6f41d4280f033d6e7c08b0b2f1c37d5c431f919a`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -3792,7 +3792,7 @@ const AboutMeEle = ({
   const { isMobile, isTablet } = useDevice();
   return (
     <div
-      className={`w-full h-8 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
+      className={`w-full h-8 min-w-0 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
     >
       {Icon && (
         <span
@@ -3808,7 +3808,7 @@ const AboutMeEle = ({
         </span>
       )}
       {label && (
-        <span className="text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-medium flex text-white cursor-default">
+        <span className="text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-medium flex text-white cursor-default truncate min-w-0">
           {label}
         </span>
       )}
@@ -3817,7 +3817,7 @@ const AboutMeEle = ({
         <a
           target="_blank"
           href={companyLink ? companyLink : "#"}
-          className={`text-white text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-bold ${!disableAnchor && "hover:underline hover:underline-offset-4 cursor-pointer"} cursor-default  text-left`}
+          className={`text-white text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-bold truncate min-w-0 ${!disableAnchor && "hover:underline hover:underline-offset-4 cursor-pointer"} cursor-default text-left`}
           onClick={(e) => disableAnchor && e.preventDefault()}
         >
           {companyName}
@@ -4122,38 +4122,32 @@ export default Component;
 ### <a id="📄-src-pages-connect-connect-tsx"></a>📄 `src/pages/Connect/Connect.tsx`
 
 **File Info:**
-- **Size**: 3.42 KB
+- **Size**: 5.78 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/Connect/Connect.tsx`
 - **Relative Path**: `src/pages/Connect`
 - **Created**: 2026-08-15 17:44:54 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-15 17:47:45 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `52d6cd56636481f9d680d08c83b6745b`
-- **SHA256**: `8533c2011e10b1110fa4e74e577c2275fd72590351a354d266cddcb6feb80c5c`
+- **Modified**: 2026-09-08 18:26:17 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `6b749f6e817b63b2cd73de6ba2f3135f`
+- **SHA256**: `9dff81fd407e99a3c32c4a1b4ab8801eeb7867b8da09c50862d3c724bd344781`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import { FluidGradientText } from "@/components/fluid-gradient-text";
-import { Button } from "@/components/ui/button";
-import {
-  Tooltip,
-  TooltipContent,
-  TooltipTrigger,
-} from "@/components/ui/tooltip";
-import { useRef } from "react";
+import { useMemo, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import {
   SiGithub,
-  SiLinkerd,
   SiDiscord,
   SiYoutube,
   SiInstagram,
   SiX,
+  SiInsta360,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 
@@ -4168,22 +4162,65 @@ type SocialLink = {
 const SOCIAL_LINKS: SocialLink[] = [
   { label: "X (Twitter)", href: "https://x.com/", icon: SiX },
   { label: "GitHub", href: "https://github.com/", icon: SiGithub },
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: SiLinkerd },
+  // NOTE: original file imported `SiLinkerd` (the Linkerd logo) for this row.
+  // Swapped to `SiLinkedin` since that's clearly what was intended.
+  { label: "LinkedIn", href: "https://linkedin.com/", icon: SiInsta360 },
   { label: "Discord", href: "https://discord.com/", icon: SiDiscord },
   { label: "YouTube", href: "https://youtube.com/", icon: SiYoutube },
   { label: "Instagram", href: "https://instagram.com/", icon: SiInstagram },
 ];
 
+// ---------------------------------------------------------------------------
+// DUMMY SFX — drop your own GTA San Andreas menu sounds into /public/sounds/
+// using these exact filenames and it'll work with zero code changes.
+//   - gta-sa-menu-blip.mp3    -> plays while hovering/navigating a tab
+//   - gta-sa-menu-select.mp3  -> plays when a tab is clicked/selected
+// Until real files exist there, playback simply fails silently (404),
+// which is expected and harmless.
+// ---------------------------------------------------------------------------
+const SFX = {
+  hover: "/sounds/gta-sa-menu-blip.mp3",
+  select: "/sounds/gta-sa-menu-select.mp3",
+};
+
+// How long to hold before actually navigating, so the select SFX above
+// isn't cut off mid-playback. Tweak to match the length of your real file.
+const NAV_DELAY_MS = 350;
+
 export default function Connect() {
   const containerRef = useRef<HTMLDivElement>(null);
+
+  const hoverSfx = useMemo(() => {
+    if (typeof Audio === "undefined") return null;
+    const audio = new Audio(SFX.hover);
+    audio.volume = 0.45;
+    audio.preload = "auto";
+    return audio;
+  }, []);
+
+  const selectSfx = useMemo(() => {
+    if (typeof Audio === "undefined") return null;
+    const audio = new Audio(SFX.select);
+    audio.volume = 0.6;
+    audio.preload = "auto";
+    return audio;
+  }, []);
+
+  const playSfx = (audio: HTMLAudioElement | null) => {
+    if (!audio) return;
+    audio.currentTime = 0;
+    audio.play().catch(() => {
+      // Swallow errors from the dummy placeholder files above.
+    });
+  };
 
   useGSAP(
     () => {
       gsap.from(".connect-item", {
         opacity: 0,
-        y: 20,
-        duration: 0.5,
-        stagger: 0.08,
+        y: 16,
+        duration: 0.45,
+        stagger: 0.07,
         ease: "power3.out",
         scrollTrigger: {
           trigger: containerRef.current,
@@ -4198,33 +4235,44 @@ export default function Connect() {
     <div className="w-full bg-black">
       <div className="w-full flex justify-center items-center border-b border-gray-500/50">
         <div className="hidden md:flex h-full w-full flex-1"></div>
+
         <div
           ref={containerRef}
-          className="flex min-w-0 flex-wrap items-center justify-center gap-4 w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50 p-6"
+          className="relative flex min-w-0 flex-col items-center w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50 py-10"
         >
-          {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
-            <Tooltip key={label}>
-              <TooltipTrigger asChild>
-                <Button
-                  asChild
-                  variant="outline"
-                  size="icon-lg"
-                  className="connect-item bg-[#0f1117] border-white/10 hover:bg-white/[0.06] hover:scale-110 transition-transform duration-200"
-                >
-                  <a
-                    href={href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    aria-label={label}
-                  >
-                    <Icon className="size-5 text-gray-300" />
-                  </a>
-                </Button>
-              </TooltipTrigger>
-              <TooltipContent variant="dark">{label}</TooltipContent>
-            </Tooltip>
-          ))}
+          {/* vertical GTA SA-style menu list */}
+          <div className="flex flex-col items-center gap-1">
+            {SOCIAL_LINKS.map(({ label, href, icon: Icon }) => (
+              <a
+                key={label}
+                href={href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={label}
+                onMouseEnter={() => playSfx(hoverSfx)}
+                onFocus={() => playSfx(hoverSfx)}
+                onClick={(e) => {
+                  // Let the "select" SFX finish playing before we actually
+                  // navigate — same beat GTA SA's menu confirm has.
+                  e.preventDefault();
+                  playSfx(selectSfx);
+                  window.setTimeout(() => {
+                    window.open(href, "_blank", "noopener,noreferrer");
+                  }, NAV_DELAY_MS);
+                }}
+                className="connect-item group mx-auto inline-flex items-center gap-0 px-3 py-1.5 outline-none"
+              >
+                {/* icon appears to the left on hover/focus, like the SA cursor marker */}
+                <Icon className="size-0 shrink-0 -translate-x-2 text-gray-400 opacity-0 transition-all duration-150 ease-out group-hover:mr-2 group-hover:size-5 group-hover:translate-x-0 group-hover:opacity-100 group-focus-visible:mr-2 group-focus-visible:size-5 group-focus-visible:translate-x-0 group-focus-visible:opacity-100" />
+
+                <span className="text-base md:text-lg font-semibold uppercase tracking-[0.14em] text-gray-300 transition-colors duration-150 group-hover:text-white group-focus-visible:text-white">
+                  {label}
+                </span>
+              </a>
+            ))}
+          </div>
         </div>
+
         <div className="hidden md:flex h-full w-full flex-1"></div>
       </div>
 
@@ -4243,6 +4291,7 @@ export default function Connect() {
     </div>
   );
 }
+
 ```
 
 ---
@@ -4400,15 +4449,15 @@ export default function Footer() {
 ### <a id="📄-src-pages-hero-section-aboutme-tsx"></a>📄 `src/pages/hero-section/AboutMe.tsx`
 
 **File Info:**
-- **Size**: 1.61 KB
+- **Size**: 1.64 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/hero-section/AboutMe.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-13 15:26:32 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `bf95bfe5f9ade4dadbe0162cf55db37d`
-- **SHA256**: `8830585cc59a0e920a5cbf332a74f63e61fb287d08d0b78cada5d49776bf5393`
+- **Modified**: 2026-09-09 05:44:55 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `922a2fd179102a97435dc24f28b1008a`
+- **SHA256**: `f93f9afe55f4acc62089400ccd1742339ce2491cc63eede5861011826188bfc7`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4428,7 +4477,8 @@ import {
 const AboutMe = () => {
   return (
     <div className="w-full bg-black border-b border-gray-500/50 flex justify-center items-center">
-      <div className="h-full w-[90%] md:w-[80%] lg:w-[40%] grid grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
+      <div className="h-full w-[90%] md:w-[80%] lg:w-[40%] grid grid-cols-1 sm:grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
+        {" "}
         <AboutMeEle
           icon={BriefcaseBusiness}
           label={"Full Stack Developer"}
@@ -4822,15 +4872,15 @@ export default NavigationBar;
 ### <a id="📄-src-pages-projects-projectelement-tsx"></a>📄 `src/pages/projects/projectElement.tsx`
 
 **File Info:**
-- **Size**: 1.9 KB
+- **Size**: 1.96 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/projects/projectElement.tsx`
 - **Relative Path**: `src/pages/projects`
 - **Created**: 2026-07-05 11:38:18 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-15 16:47:00 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `9f9113f11143ad92adde0b87052f2f1f`
-- **SHA256**: `a5e53484eb731cac1742992e52c6b236b107a14e5b299b56905325f389140ed5`
+- **Modified**: 2026-09-09 05:50:37 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `88c2359164718f149395cb121c45ee45`
+- **SHA256**: `feeae3afd5e64887f172bdbe688597015160bf515d6fd8c9fee7babbc0e18880`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4846,6 +4896,7 @@ type ProjectElementProps = {
   link?: string;
   borderLeft?: boolean;
   borderBottom?: boolean;
+  borderTop?: boolean;
 };
 
 export const ProjectElement = ({
@@ -4854,6 +4905,7 @@ export const ProjectElement = ({
   link,
   borderLeft = true,
   borderBottom = true,
+  borderTop = true,
 }: ProjectElementProps) => {
   const iconRef = useRef<HTMLDivElement>(null);
 
@@ -4877,7 +4929,7 @@ export const ProjectElement = ({
 
   const content = (
     <div
-      className={`flex w-full min-w-0 items-center justify-between gap-4 border-t md:${borderBottom ? "border-b" : ""} border-gray-500/50 p-4 transition-colors duration-200 hover:bg-white/[0.03]`}
+      className={`flex w-full min-w-0 items-center justify-between gap-4 ${borderTop ? "border-t" : ""} md:${borderBottom ? "border-b" : ""} border-gray-500/50 p-4 transition-colors duration-200 hover:bg-white/[0.03]`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
@@ -4915,7 +4967,6 @@ export const ProjectElement = ({
     </div>
   );
 };
-
 ```
 
 ---
@@ -4923,15 +4974,15 @@ export const ProjectElement = ({
 ### <a id="📄-src-pages-projects-projects-tsx"></a>📄 `src/pages/projects/Projects.tsx`
 
 **File Info:**
-- **Size**: 2.07 KB
+- **Size**: 2.14 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/projects/Projects.tsx`
 - **Relative Path**: `src/pages/projects`
 - **Created**: 2026-05-31 16:37:48 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-15 16:16:19 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `bdcdcd3892c8c9ceb8639c7d7eb6b9a2`
-- **SHA256**: `e788dca54fdb9d73f8823a97d3e16d4e28de528ee7362f7a039f754f0018a421`
+- **Modified**: 2026-09-09 05:50:50 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9ebad9dad6d623250f3b9268ba6f5ec6`
+- **SHA256**: `e0d189ffbaa97fb496f7482bf576fe46904c2d662d27988d3d43621a63a30b7d`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4981,6 +5032,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { isMobile } = useDevice();
+  const columns = isMobile ? 1 : 2;
 
   useGSAP(
     () => {
@@ -5014,6 +5066,7 @@ const Projects = () => {
             link={project.link}
             borderLeft={!isMobile && i % 2 !== 0}
             borderBottom={i < 2}
+            borderTop={i >= columns}
           />
         ))}
       </div>
@@ -5409,15 +5462,15 @@ export default Stack;
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 2.06 KB
+- **Size**: 2.07 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-25 14:46:40 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `8b5cc6b8439b4a2b45075e3bbabf7b0c`
-- **SHA256**: `439f61b107dd09530864a4049e3bfe7d3afa65c463294c089edc4d76a9cf06e1`
+- **Modified**: 2026-09-09 05:43:25 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `284ae83b9c33a4c5afc73ed09b162c41`
+- **SHA256**: `9cb9d9733f1d49d972d8275220d24770eed52aed877e912537623b7332e6a856`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5444,7 +5497,7 @@ const Projects = lazy(() => import("./pages/projects/Projects"));
 
 function App() {
   return (
-    <div className="w-full min-h-screen box-border bg-black absolute">
+    <div className="dark w-full min-h-screen box-border bg-black absolute">
       <SplashCursor />
       <NavigationBar />
       <section id="home">
@@ -5493,15 +5546,15 @@ export default App;
 ### <a id="📄-src-index-css"></a>📄 `src/index.css`
 
 **File Info:**
-- **Size**: 6.92 KB
+- **Size**: 6.63 KB
 - **Extension**: `.css`
 - **Language**: `css`
 - **Location**: `src/index.css`
 - **Relative Path**: `src`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-15 16:10:10 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `2ae1dd2b33c94a5cff79baffff3654b4`
-- **SHA256**: `b856b0b2b6f9b4d2aff51dab5a85a8424e3343f1cdd6807c3ef69426799c959d`
+- **Modified**: 2026-09-09 05:32:59 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `bab709b1b0bc8c4ae18edc9c5c4a0109`
+- **SHA256**: `9b809b000a75bf83e97d84d977914342982a8dd4a20fc4c775fb5e2a7c79cb61`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5520,72 +5573,72 @@ html {
 }
 :root {
   --radius: 0.65rem;
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
-  --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.646 0.222 41.116);
-  --chart-2: oklch(0.6 0.118 184.704);
-  --chart-3: oklch(0.398 0.07 227.392);
-  --chart-4: oklch(0.828 0.189 84.429);
-  --chart-5: oklch(0.769 0.188 70.08);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-}
-
-.dark {
-  --background: oklch(0.145 0 0);
-  --foreground: oklch(0.985 0 0);
-  --card: oklch(0.205 0 0);
-  --card-foreground: oklch(0.985 0 0);
-  --popover: oklch(0.205 0 0);
-  --popover-foreground: oklch(0.985 0 0);
-  --primary: oklch(0.922 0 0);
-  --primary-foreground: oklch(0.205 0 0);
-  --secondary: oklch(0.269 0 0);
-  --secondary-foreground: oklch(0.985 0 0);
-  --muted: oklch(0.269 0 0);
-  --muted-foreground: oklch(0.708 0 0);
-  --accent: oklch(0.269 0 0);
-  --accent-foreground: oklch(0.985 0 0);
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #0a0a0a;
+  --card-foreground: #ffffff;
+  --popover: #0a0a0a;
+  --popover-foreground: #ffffff;
+  --primary: #e5e7eb;
+  --primary-foreground: #000000;
+  --secondary: #27272a;
+  --secondary-foreground: #ffffff;
+  --muted: #18181b;
+  --muted-foreground: #9ca3af;
+  --accent: #27272a;
+  --accent-foreground: #ffffff;
   --destructive: oklch(0.704 0.191 22.216);
-  --border: oklch(1 0 0 / 10%);
-  --input: oklch(1 0 0 / 15%);
-  --ring: oklch(0.556 0 0);
+  --border: rgb(107 114 128 / 0.5);
+  --input: rgb(107 114 128 / 0.5);
+  --ring: rgb(107 114 128 / 0.5);
   --chart-1: oklch(0.488 0.243 264.376);
   --chart-2: oklch(0.696 0.17 162.48);
   --chart-3: oklch(0.769 0.188 70.08);
   --chart-4: oklch(0.627 0.265 303.9);
   --chart-5: oklch(0.645 0.246 16.439);
-  --sidebar: oklch(0.205 0 0);
-  --sidebar-foreground: oklch(0.985 0 0);
-  --sidebar-primary: oklch(0.488 0.243 264.376);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.269 0 0);
-  --sidebar-accent-foreground: oklch(0.985 0 0);
-  --sidebar-border: oklch(1 0 0 / 10%);
-  --sidebar-ring: oklch(0.556 0 0);
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #e5e7eb;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #27272a;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgb(107 114 128 / 0.5);
+  --sidebar-ring: rgb(107 114 128 / 0.5);
+}
+
+.dark {
+  --radius: 0.65rem;
+  --background: #000000;
+  --foreground: #ffffff;
+  --card: #0a0a0a;
+  --card-foreground: #ffffff;
+  --popover: #0a0a0a;
+  --popover-foreground: #ffffff;
+  --primary: #e5e7eb;
+  --primary-foreground: #000000;
+  --secondary: #27272a;
+  --secondary-foreground: #ffffff;
+  --muted: #18181b;
+  --muted-foreground: #9ca3af;
+  --accent: #27272a;
+  --accent-foreground: #ffffff;
+  --destructive: oklch(0.704 0.191 22.216);
+  --border: rgb(107 114 128 / 0.5);
+  --input: rgb(107 114 128 / 0.5);
+  --ring: rgb(107 114 128 / 0.5);
+  --chart-1: oklch(0.488 0.243 264.376);
+  --chart-2: oklch(0.696 0.17 162.48);
+  --chart-3: oklch(0.769 0.188 70.08);
+  --chart-4: oklch(0.627 0.265 303.9);
+  --chart-5: oklch(0.645 0.246 16.439);
+  --sidebar: #0a0a0a;
+  --sidebar-foreground: #ffffff;
+  --sidebar-primary: #e5e7eb;
+  --sidebar-primary-foreground: #000000;
+  --sidebar-accent: #27272a;
+  --sidebar-accent-foreground: #ffffff;
+  --sidebar-border: rgb(107 114 128 / 0.5);
+  --sidebar-ring: rgb(107 114 128 / 0.5);
 }
 
 @custom-variant retina {
@@ -5610,7 +5663,7 @@ html {
   @apply prose-blockquote:border-l prose-blockquote:font-normal prose-blockquote:text-muted-foreground prose-blockquote:not-italic prose-blockquote:[&_p:first-of-type]:before:content-none prose-blockquote:[&_p:last-of-type]:after:content-none;
 }
 @theme inline {
-  --color-background: var(--color-black);
+  --color-background: var(--background);
   --color-foreground: var(--foreground);
   --color-popover: var(--popover);
   --color-popover-foreground: var(--popover-foreground);
@@ -5878,15 +5931,15 @@ export default defineConfig([
 ### <a id="📄-index-html"></a>📄 `index.html`
 
 **File Info:**
-- **Size**: 1.07 KB
+- **Size**: 3.52 KB
 - **Extension**: `.html`
 - **Language**: `html`
 - **Location**: `index.html`
 - **Relative Path**: `root`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-15 16:38:14 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `449984ea1fd0a1ac1a8e143415e93ee1`
-- **SHA256**: `8bba7e4cdc6076fe0d1cc46ab3c421301373f934c930761da588cbff14763247`
+- **Modified**: 2026-09-09 05:55:54 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `42a9a1b81441a70646473aef8e517097`
+- **SHA256**: `9c87d0772a267a6320103d471a400a0f68534f35a3d419b4d3db0af25fcd942f`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5916,6 +5969,70 @@ export default defineConfig([
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sumit Karki - Portfolio</title>
+    <meta
+      name="description"
+      content="Sumit Karki (MrD3M0) is a full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
+    />
+    <meta
+      name="keywords"
+      content="Sumit Karki, MrD3M0, full stack developer, PERN stack developer Nepal, React developer Nepal, Node.js developer, TypeScript developer, web developer Nepal"
+    />
+    <meta name="author" content="Sumit Karki" />
+    <meta name="robots" content="index, follow" />
+    <link rel="canonical" href="https://sumitkarki2061.com.np/" />
+    <meta name="theme-color" content="#000000" />
+
+    <!-- Open Graph / Facebook / LinkedIn -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://sumitkarki2061.com.np/" />
+    <meta
+      property="og:title"
+      content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
+    />
+    <meta
+      property="og:description"
+      content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
+    />
+    <meta
+      property="og:image"
+      content="https://sumitkarki2061.com.np/banner.png"
+    />
+    <meta property="og:locale" content="en_US" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content="https://sumitkarki2061.com.np/" />
+    <meta
+      name="twitter:title"
+      content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
+    />
+    <meta
+      name="twitter:description"
+      content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
+    />
+    <meta
+      name="twitter:image"
+      content="https://sumitkarki2061.com.np/banner.png"
+    />
+
+    <!-- Structured data for search engines -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Sumit Karki",
+        "alternateName": "MrD3M0",
+        "url": "https://sumitkarki2061.com.np/",
+        "image": "https://sumitkarki2061.com.np/profile.png",
+        "jobTitle": "Full Stack Developer",
+        "email": "mailto:sumitkarki1000@gmail.com",
+        "address": {
+          "@type": "PostalAddress",
+          "addressCountry": "Nepal"
+        },
+        "sameAs": ["https://github.com/MrD3M0"]
+      }
+    </script>
   </head>
   <body>
     <div id="root"></div>

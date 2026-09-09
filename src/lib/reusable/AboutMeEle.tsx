@@ -23,7 +23,7 @@ const AboutMeEle = ({
   const { isMobile, isTablet } = useDevice();
   return (
     <div
-      className={`w-full h-8 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
+      className={`w-full h-8 min-w-0 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
     >
       {Icon && (
         <span
@@ -39,7 +39,7 @@ const AboutMeEle = ({
         </span>
       )}
       {label && (
-        <span className="text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-medium flex text-white cursor-default">
+        <span className="text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-medium flex text-white cursor-default truncate min-w-0">
           {label}
         </span>
       )}
@@ -48,7 +48,7 @@ const AboutMeEle = ({
         <a
           target="_blank"
           href={companyLink ? companyLink : "#"}
-          className={`text-white text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-bold ${!disableAnchor && "hover:underline hover:underline-offset-4 cursor-pointer"} cursor-default  text-left`}
+          className={`text-white text-[11px] sm:text-xs md:text-sm lg:text-[15px] font-bold truncate min-w-0 ${!disableAnchor && "hover:underline hover:underline-offset-4 cursor-pointer"} cursor-default text-left`}
           onClick={(e) => disableAnchor && e.preventDefault()}
         >
           {companyName}

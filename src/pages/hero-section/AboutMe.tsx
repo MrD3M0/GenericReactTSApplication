@@ -12,7 +12,8 @@ import {
 const AboutMe = () => {
   return (
     <div className="w-full bg-black border-b border-gray-500/50 flex justify-center items-center">
-      <div className="h-full w-[90%] md:w-[80%] lg:w-[40%] grid grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
+      <div className="h-full w-[90%] md:w-[80%] lg:w-[40%] grid grid-cols-1 sm:grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
+        {" "}
         <AboutMeEle
           icon={BriefcaseBusiness}
           label={"Full Stack Developer"}

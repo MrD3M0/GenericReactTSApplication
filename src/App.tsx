@@ -19,7 +19,7 @@ const Projects = lazy(() => import("./pages/projects/Projects"));
 
 function App() {
   return (
-    <div className="w-full min-h-screen box-border bg-black absolute">
+    <div className="dark w-full min-h-screen box-border bg-black absolute">
       <SplashCursor />
       <NavigationBar />
       <section id="home">

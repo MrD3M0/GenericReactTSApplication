@@ -42,6 +42,7 @@ gsap.registerPlugin(ScrollTrigger);
 const Projects = () => {
   const containerRef = useRef<HTMLDivElement>(null);
   const { isMobile } = useDevice();
+  const columns = isMobile ? 1 : 2;
 
   useGSAP(
     () => {
@@ -75,6 +76,7 @@ const Projects = () => {
             link={project.link}
             borderLeft={!isMobile && i % 2 !== 0}
             borderBottom={i < 2}
+            borderTop={i >= columns}
           />
         ))}
       </div>

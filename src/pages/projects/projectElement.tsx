@@ -8,6 +8,7 @@ type ProjectElementProps = {
   link?: string;
   borderLeft?: boolean;
   borderBottom?: boolean;
+  borderTop?: boolean;
 };
 
 export const ProjectElement = ({
@@ -16,6 +17,7 @@ export const ProjectElement = ({
   link,
   borderLeft = true,
   borderBottom = true,
+  borderTop = true,
 }: ProjectElementProps) => {
   const iconRef = useRef<HTMLDivElement>(null);
 
@@ -39,7 +41,7 @@ export const ProjectElement = ({
 
   const content = (
     <div
-      className={`flex w-full min-w-0 items-center justify-between gap-4 border-t md:${borderBottom ? "border-b" : ""} border-gray-500/50 p-4 transition-colors duration-200 hover:bg-white/[0.03]`}
+      className={`flex w-full min-w-0 items-center justify-between gap-4 ${borderTop ? "border-t" : ""} md:${borderBottom ? "border-b" : ""} border-gray-500/50 p-4 transition-colors duration-200 hover:bg-white/[0.03]`}
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
