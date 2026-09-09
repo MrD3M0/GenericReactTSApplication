@@ -14,10 +14,17 @@ import gsap from "gsap";
 // Since it fires a real pointerdown on window, it also satisfies the
 // "unlockAudio" listener in Connect.tsx — so by the time someone reaches the
 // GTA SA menu, hover sound already works on the very first hover.
+//
+// IMPORTANT: SESSION_KEY is exported so App.tsx can check it too. On a
+// refresh where the gate has already been opened this session, this
+// component correctly skips rendering itself — but App.tsx needs to know
+// that up front (not via onEnter(), which only fires from a real click) or
+// the real page stays stuck behind its "not entered yet" lock forever.
 // ---------------------------------------------------------------------------
 
+export const SESSION_KEY = "entry-gate:opened";
+
 const MONO = "'JetBrains Mono','Courier New',monospace";
-const SESSION_KEY = "entry-gate:opened";
 
 type EntryGateProps = {
   onEnter: () => void;
@@ -212,7 +219,7 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
         style={{ fontFamily: MONO }}
         aria-hidden="true"
       >
-        Click To Enter Sumit's World
+        click to enter
         <span className="ml-0.5 inline-block animate-pulse">_</span>
       </p>
     </div>

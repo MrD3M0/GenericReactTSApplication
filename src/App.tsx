@@ -12,14 +12,21 @@ import ProjectsSkeleton from "./pages/skeletonLoaders/ProjectsSkeleton";
 import FooterSkeleton from "./pages/skeletonLoaders/FooterSkeleton";
 import Connect from "./pages/Connect/Connect";
 import SplashCursor from "./components/SplashCursor";
-import EntryGate from "./pages/entry-gate/entry-gate";
+import EntryGate, { SESSION_KEY as ENTRY_GATE_SESSION_KEY } from "./pages/entry-gate/entry-gate";
 
 const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
 const Stack = lazy(() => import("./pages/skills-section/Stack"));
 const Projects = lazy(() => import("./pages/projects/Projects"));
 
 function App() {
-  const [entered, setEntered] = useState(false);
+  // Mirror EntryGate's own "have I already opened this session" check here,
+  // synchronously, on first render. Without this, a refresh where the gate
+  // correctly decides to stay hidden would leave `entered` stuck at `false`
+  // forever, since onEnter() only ever fires from a real click.
+  const [entered, setEntered] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return window.sessionStorage.getItem(ENTRY_GATE_SESSION_KEY) === "1";
+  });
 
   return (
     <div className="dark w-full min-h-screen box-border bg-black absolute">
