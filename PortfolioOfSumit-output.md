@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-09 10:19:35 (Asia/Katmandu / GMT+06:45)
-- **Total Files Processed**: 71
+- **Generated On**: 2026-09-09 10:36:08 (Asia/Katmandu / GMT+06:45)
+- **Total Files Processed**: 72
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -76,6 +76,8 @@
 │   │   │   └── 📄 Component.tsx (245 B)
 │   │   ├── 📁 Connect/
 │   │   │   └── 📄 Connect.tsx (5.81 KB)
+│   │   ├── 📁 entry-gate/
+│   │   │   └── 📄 entry-gate.tsx (7.06 KB)
 │   │   ├── 📁 Experience/
 │   │   │   └── 📄 WorkExperience.tsx (2.98 KB)
 │   │   ├── 📁 Footer/
@@ -96,7 +98,7 @@
 │   │   │   └── 📄 StackSkeleton.tsx (740 B)
 │   │   └── 📁 skills-section/
 │   │       └── 📄 Stack.tsx (5.77 KB)
-│   ├── 📄 App.tsx (2.07 KB)
+│   ├── 📄 App.tsx (2.57 KB)
 │   ├── 📄 index.css (6.63 KB)
 │   └── 📄 main.tsx (234 B)
 ├── 📄 components.json (574 B)
@@ -141,6 +143,7 @@
 - [📄 src/lib/utils.ts](#📄-src-lib-utils-ts)
 - [📄 src/pages/components-section/Component.tsx](#📄-src-pages-components-section-component-tsx)
 - [📄 src/pages/Connect/Connect.tsx](#📄-src-pages-connect-connect-tsx)
+- [📄 src/pages/entry-gate/entry-gate.tsx](#📄-src-pages-entry-gate-entry-gate-tsx)
 - [📄 src/pages/Experience/WorkExperience.tsx](#📄-src-pages-experience-workexperience-tsx)
 - [📄 src/pages/Footer/Footer.tsx](#📄-src-pages-footer-footer-tsx)
 - [📄 src/pages/hero-section/AboutMe.tsx](#📄-src-pages-hero-section-aboutme-tsx)
@@ -174,17 +177,17 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 71 |
-| Total Directories | 18 |
-| Text Files | 52 |
+| Total Files | 72 |
+| Total Directories | 19 |
+| Text Files | 53 |
 | Binary Files | 19 |
-| Total Size | 3.85 MB |
+| Total Size | 3.86 MB |
 
 ### 📄 File Types Distribution
 
 | Extension | Count |
 |-----------|-------|
-| `.tsx` | 35 |
+| `.tsx` | 36 |
 | `.png` | 9 |
 | `.json` | 5 |
 | `.svg` | 4 |
@@ -4297,6 +4300,248 @@ export default function Connect() {
 
 ---
 
+### <a id="📄-src-pages-entry-gate-entry-gate-tsx"></a>📄 `src/pages/entry-gate/entry-gate.tsx`
+
+**File Info:**
+- **Size**: 7.06 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/pages/entry-gate/entry-gate.tsx`
+- **Relative Path**: `src/pages/entry-gate`
+- **Created**: 2026-09-09 10:33:05 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-09 10:36:07 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `5a8446e4b1d20f7c5aeb354495685c91`
+- **SHA256**: `50bb739322427c540869431a791fa359f2519ae17125a884676498ca8d7bdbc7`
+- **Encoding**: UTF-8
+
+**File code content:**
+
+```typescript
+import { useEffect, useRef, useState } from "react";
+import gsap from "gsap";
+
+// ---------------------------------------------------------------------------
+// EntryGate — full-screen "click to enter" splash shown once per session.
+// Two wireframe panels (matching the site's existing border-gray-500/50 /
+// rounded-corner blueprint style) sit stacked with a small gap. A pokeball
+// sits on the seam. Clicking (or pressing Enter/Space on) the pokeball plays
+// a quick capture-shake, then the panels slide apart like double doors to
+// reveal the real page underneath.
+//
+// Bonus: this click is a genuine user gesture, which is exactly what the
+// browser's autoplay policy requires before <audio> is allowed to play.
+// Since it fires a real pointerdown on window, it also satisfies the
+// "unlockAudio" listener in Connect.tsx — so by the time someone reaches the
+// GTA SA menu, hover sound already works on the very first hover.
+// ---------------------------------------------------------------------------
+
+const MONO = "'JetBrains Mono','Courier New',monospace";
+const SESSION_KEY = "entry-gate:opened";
+
+type EntryGateProps = {
+  onEnter: () => void;
+};
+
+export default function EntryGate({ onEnter }: EntryGateProps) {
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") return true;
+    return window.sessionStorage.getItem(SESSION_KEY) !== "1";
+  });
+
+  const rootRef = useRef<HTMLDivElement>(null);
+  const topPanelRef = useRef<HTMLDivElement>(null);
+  const bottomPanelRef = useRef<HTMLDivElement>(null);
+  const pokeballRef = useRef<HTMLButtonElement>(null);
+  const idleTweenRef = useRef<gsap.core.Tween | null>(null);
+  const [isOpening, setIsOpening] = useState(false);
+
+  const prefersReducedMotion =
+    typeof window !== "undefined" &&
+    window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  // Idle "breathing" pulse — the one ambient motion on this screen, inviting
+  // the click. Skipped entirely for reduced-motion users.
+  useEffect(() => {
+    if (!visible || prefersReducedMotion || !pokeballRef.current) return;
+    idleTweenRef.current = gsap.to(pokeballRef.current, {
+      scale: 1.045,
+      duration: 1.1,
+      ease: "sine.inOut",
+      yoyo: true,
+      repeat: -1,
+    });
+    return () => {
+      idleTweenRef.current?.kill();
+    };
+  }, [visible, prefersReducedMotion]);
+
+  const handleEnter = () => {
+    if (isOpening) return;
+    setIsOpening(true);
+    window.sessionStorage.setItem(SESSION_KEY, "1");
+    idleTweenRef.current?.kill();
+
+    if (prefersReducedMotion) {
+      setVisible(false);
+      onEnter();
+      return;
+    }
+
+    const tl = gsap.timeline({
+      onComplete: () => {
+        setVisible(false);
+        onEnter();
+      },
+    });
+
+    // Capture-style shake, then the doors open.
+    tl.to(pokeballRef.current, {
+      rotate: -12,
+      duration: 0.07,
+      ease: "power1.inOut",
+    })
+      .to(pokeballRef.current, {
+        rotate: 10,
+        duration: 0.09,
+        ease: "power1.inOut",
+      })
+      .to(pokeballRef.current, {
+        rotate: -7,
+        duration: 0.08,
+        ease: "power1.inOut",
+      })
+      .to(pokeballRef.current, {
+        rotate: 0,
+        scale: 1.15,
+        duration: 0.12,
+        ease: "back.out(3)",
+      })
+      .to(
+        pokeballRef.current,
+        { scale: 0, opacity: 0, duration: 0.25, ease: "power2.in" },
+        "-=0.02",
+      )
+      .to(
+        topPanelRef.current,
+        { yPercent: -120, duration: 0.7, ease: "power3.inOut" },
+        "-=0.15",
+      )
+      .to(
+        bottomPanelRef.current,
+        { yPercent: 120, duration: 0.7, ease: "power3.inOut" },
+        "<",
+      )
+      .to(rootRef.current, { opacity: 0, duration: 0.2 }, "-=0.15");
+  };
+
+  if (!visible) return null;
+
+  return (
+    <div
+      ref={rootRef}
+      className="fixed inset-0 z-[9999] flex flex-col items-center justify-center bg-black"
+      role="dialog"
+      aria-modal="true"
+      aria-label="Site entry"
+    >
+      <div className="relative flex w-[92%] sm:w-[85%] md:w-[70%] lg:w-[50%] max-w-[760px] flex-col h-[62vh] sm:h-[56vh]">
+        {/* top panel */}
+        <div
+          ref={topPanelRef}
+          className="flex-1 rounded-t-3xl border border-b-0 border-gray-500/50"
+        />
+        {/* seam gap */}
+        <div className="h-[3px] shrink-0 bg-gray-500/50" />
+        {/* bottom panel */}
+        <div
+          ref={bottomPanelRef}
+          className="flex-1 rounded-b-3xl border border-t-0 border-gray-500/50"
+        />
+
+        {/* pokeball, centered on the seam */}
+        <button
+          ref={pokeballRef}
+          type="button"
+          onClick={handleEnter}
+          aria-label="Click to enter the site"
+          className="group absolute left-1/2 top-1/2 size-24 sm:size-28 md:size-32 -translate-x-1/2 -translate-y-1/2 cursor-pointer rounded-full outline-none"
+        >
+          <svg
+            viewBox="0 0 100 100"
+            className="h-full w-full drop-shadow-[0_0_0_rgba(0,0,0,0)] transition-[filter] duration-300 group-hover:drop-shadow-[0_0_18px_rgba(253,216,53,0.45)] group-focus-visible:drop-shadow-[0_0_18px_rgba(253,216,53,0.45)]"
+          >
+            <defs>
+              <clipPath id="pokeball-top-clip">
+                <path d="M2,50 A48,48 0 0 1 98,50 Z" />
+              </clipPath>
+            </defs>
+
+            {/* outer circle, filled with page bg so panel edges don't show through */}
+            <circle cx="50" cy="50" r="47" fill="#000" />
+
+            {/* top half fill — transparent by default, accent on hover/focus */}
+            <g clipPath="url(#pokeball-top-clip)">
+              <rect
+                x="0"
+                y="0"
+                width="100"
+                height="52"
+                className="fill-transparent transition-colors duration-300 group-hover:fill-[#FDD835]/90 group-focus-visible:fill-[#FDD835]/90"
+              />
+            </g>
+
+            <circle
+              cx="50"
+              cy="50"
+              r="47"
+              fill="none"
+              stroke="#cfd3d6"
+              strokeWidth="2"
+            />
+            <line
+              x1="4"
+              y1="50"
+              x2="96"
+              y2="50"
+              stroke="#cfd3d6"
+              strokeWidth="2"
+            />
+            <circle
+              cx="50"
+              cy="50"
+              r="12"
+              fill="#000"
+              stroke="#cfd3d6"
+              strokeWidth="2"
+            />
+            <circle
+              cx="50"
+              cy="50"
+              r="5"
+              fill="#000"
+              stroke="#cfd3d6"
+              strokeWidth="1.5"
+            />
+          </svg>
+        </button>
+      </div>
+
+      <p
+        className="mt-8 text-xs sm:text-sm text-gray-500 select-none"
+        style={{ fontFamily: MONO }}
+        aria-hidden="true"
+      >
+        Click To Enter Sumit's World
+        <span className="ml-0.5 inline-block animate-pulse">_</span>
+      </p>
+    </div>
+  );
+}
+
+```
+
+---
+
 ### <a id="📄-src-pages-experience-workexperience-tsx"></a>📄 `src/pages/Experience/WorkExperience.tsx`
 
 **File Info:**
@@ -5474,22 +5719,22 @@ export default Stack;
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 2.07 KB
+- **Size**: 2.57 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 05:43:25 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `284ae83b9c33a4c5afc73ed09b162c41`
-- **SHA256**: `9cb9d9733f1d49d972d8275220d24770eed52aed877e912537623b7332e6a856`
+- **Modified**: 2026-09-09 10:33:59 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `1aef26c5875aae29059d461cea66e90e`
+- **SHA256**: `c5b85d6df1dc02973f9443c16efa3cd017aadf4da8193861682401ed4e599e3e`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 // App.tsx
-import { lazy, Suspense } from "react";
+import { lazy, Suspense, useState } from "react";
 import NavigationBar from "./pages/navigation/Navigation";
 import BannerSection from "./pages/hero-section/Banner";
 import HeroSection from "./pages/hero-section/HeroSection";
@@ -5502,50 +5747,62 @@ import ProjectsSkeleton from "./pages/skeletonLoaders/ProjectsSkeleton";
 import FooterSkeleton from "./pages/skeletonLoaders/FooterSkeleton";
 import Connect from "./pages/Connect/Connect";
 import SplashCursor from "./components/SplashCursor";
+import EntryGate from "./pages/entry-gate/entry-gate";
 
 const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
 const Stack = lazy(() => import("./pages/skills-section/Stack"));
 const Projects = lazy(() => import("./pages/projects/Projects"));
 
 function App() {
+  const [entered, setEntered] = useState(false);
+
   return (
     <div className="dark w-full min-h-screen box-border bg-black absolute">
-      <SplashCursor />
-      <NavigationBar />
-      <section id="home">
-        <BannerSection />
-        <HeroSection />
-        <Separator />
-        <AboutMe />
-      </section>
+      <EntryGate onEnter={() => setEntered(true)} />
 
-      <section id="journey">
-        <Title TitleLabel="Experience" TitleSize="md" />
-        <Suspense fallback={<ExperienceSkeleton />}>
-          <Experience />
-        </Suspense>
-        <Separator />
-        <Title TitleLabel="Tech-Stack" TitleSize="md" />
-        <Suspense fallback={<StackSkeleton />}>
-          <Stack />
-        </Suspense>
-      </section>
+      {/* Prevent scroll/interaction with the real page until the gate is
+          dismissed — also avoids double-mounting animated sections behind it. */}
+      <div
+        className={entered ? "" : "h-screen overflow-hidden"}
+        aria-hidden={!entered}
+      >
+        <SplashCursor />
+        <NavigationBar />
+        <section id="home">
+          <BannerSection />
+          <HeroSection />
+          <Separator />
+          <AboutMe />
+        </section>
 
-      {/* Experience isn't in the nav, keep it between sections */}
+        <section id="journey">
+          <Title TitleLabel="Experience" TitleSize="md" />
+          <Suspense fallback={<ExperienceSkeleton />}>
+            <Experience />
+          </Suspense>
+          <Separator />
+          <Title TitleLabel="Tech-Stack" TitleSize="md" />
+          <Suspense fallback={<StackSkeleton />}>
+            <Stack />
+          </Suspense>
+        </section>
 
-      <section id="work">
-        <Title TitleLabel="Projects" TitleSize="md" />
-        <Suspense fallback={<ProjectsSkeleton />}>
-          <Projects />
-        </Suspense>
-      </section>
+        {/* Experience isn't in the nav, keep it between sections */}
 
-      <section id="connect">
-        <Title TitleLabel="Connect" TitleSize="md" />
-        <Suspense fallback={<FooterSkeleton />}>
-          <Connect />
-        </Suspense>
-      </section>
+        <section id="work">
+          <Title TitleLabel="Projects" TitleSize="md" />
+          <Suspense fallback={<ProjectsSkeleton />}>
+            <Projects />
+          </Suspense>
+        </section>
+
+        <section id="connect">
+          <Title TitleLabel="Connect" TitleSize="md" />
+          <Suspense fallback={<FooterSkeleton />}>
+            <Connect />
+          </Suspense>
+        </section>
+      </div>
     </div>
   );
 }
