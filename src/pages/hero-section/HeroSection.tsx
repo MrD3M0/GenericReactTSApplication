@@ -59,19 +59,19 @@ const HeroSection = () => {
               <img
                 className="w-40 h-40 rounded-full border border-gray-500/50  "
                 src="profile.png"
-                alt=""
+                alt="Sumit Karki - Full Stack Developer"
               />
             </ElectricBorder>
           ) : (
             <img
               className="w-40 h-40 rounded-full border border-gray-500/50  "
               src="profile.png"
-              alt=""
+              alt="Sumit Karki - Full Stack Developer"
             />
           )}
           <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
-        <div className="w-full">
+        <div className="w-full min-w-0">
           <div className="w-full h-10 border-gray-500/50 border-b text-gray-500">
             <TooltipProvider>
               <Tooltip>
@@ -83,12 +83,18 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className=" text-2xl md:text-4xl border-gray-500/50 border-b font-light  text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
-            <ShimmeringText text="Sumit Karki" duration={10} />
-            <div className="flex">
-              <img src="./verified.svg" />
+          <div className="min-w-0 px-1 text-lg sm:text-lg md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
+            <h1 className="m-0 min-w-0 truncate">
+              <ShimmeringText text="Sumit Karki" duration={10} />
+            </h1>
+            <div className="flex shrink-0">
               <img
-                className="ml-1 w-6 cursor-pointer rounded-2xl "
+                src="./verified.svg"
+                className="w-4 h-4 sm:w-5 sm:h-5 shrink-0"
+                alt=""
+              />
+              <img
+                className="ml-1 w-4 h-4 sm:w-6 sm:h-6 shrink-0 cursor-pointer rounded-2xl"
                 src="./Pronounciation.svg"
                 alt="Play pronunciation"
                 onClick={playAudio}

@@ -5,7 +5,7 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: PortfolioOfSumit
-Generated On: 2026-09-09 05:55:55 (Asia/Katmandu / GMT+06:45)
+Generated On: 2026-09-09 06:30:56 (Asia/Katmandu / GMT+06:45)
 Total Files Processed: 69
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
@@ -83,7 +83,7 @@ PROJECT STRUCTURE
 │   │   ├── 📁 hero-section/
 │   │   │   ├── 📄 AboutMe.tsx (1.64 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
-│   │   │   └── 📄 HeroSection.tsx (3.38 KB)
+│   │   │   └── 📄 HeroSection.tsx (3.7 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
@@ -3912,7 +3912,7 @@ Language: typescript
 Location: src/lib/reusable/Separator.tsx
 Relative Path: src/lib/reusable
 Created: 2026-02-26 18:42:33 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-03-14 18:55:33 (Asia/Katmandu / GMT+06:45)
+Modified: 2026-09-09 06:12:51 (Asia/Katmandu / GMT+06:45)
 MD5: 84d6dcca26780fc708e56cc00712db91
 SHA256: 29e5c956c521ec4e5f2f043e7d0c0c6f5ce4e58b986ec49b33dcad7d62e12a2c
 Encoding: ASCII
@@ -4607,15 +4607,15 @@ FILE: src/pages/hero-section/HeroSection.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 3.38 KB
+Size: 3.7 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/hero-section/HeroSection.tsx
 Relative Path: src/pages/hero-section
 Created: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-08-29 16:36:22 (Asia/Katmandu / GMT+06:45)
-MD5: 8860eeed0cfaa235d39ff10f5271f251
-SHA256: 4d7357c3ef154492de665f274c29df0dd2563947093c8701b4918f5ced2296fd
+Modified: 2026-09-09 06:30:56 (Asia/Katmandu / GMT+06:45)
+MD5: e24036c53b03535df3beb7cffa824165
+SHA256: b8fda8c1c00195e13f24aed4456fd86dd031d8cd178a0a85361fca530ce9ba3d
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4681,19 +4681,19 @@ const HeroSection = () => {
               <img
                 className="w-40 h-40 rounded-full border border-gray-500/50  "
                 src="profile.png"
-                alt=""
+                alt="Sumit Karki - Full Stack Developer"
               />
             </ElectricBorder>
           ) : (
             <img
               className="w-40 h-40 rounded-full border border-gray-500/50  "
               src="profile.png"
-              alt=""
+              alt="Sumit Karki - Full Stack Developer"
             />
           )}
           <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
-        <div className="w-full">
+        <div className="w-full min-w-0">
           <div className="w-full h-10 border-gray-500/50 border-b text-gray-500">
             <TooltipProvider>
               <Tooltip>
@@ -4705,12 +4705,18 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className=" text-2xl md:text-4xl border-gray-500/50 border-b font-light  text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
-            <ShimmeringText text="Sumit Karki" duration={10} />
-            <div className="flex">
-              <img src="./verified.svg" />
+          <div className="min-w-0 px-1 text-lg sm:text-lg md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
+            <h1 className="m-0 min-w-0 truncate">
+              <ShimmeringText text="Sumit Karki" duration={10} />
+            </h1>
+            <div className="flex shrink-0">
               <img
-                className="ml-1 w-6 cursor-pointer rounded-2xl "
+                src="./verified.svg"
+                className="w-4 h-4 sm:w-5 sm:h-5 shrink-0"
+                alt=""
+              />
+              <img
+                className="ml-1 w-4 h-4 sm:w-6 sm:h-6 shrink-0 cursor-pointer rounded-2xl"
                 src="./Pronounciation.svg"
                 alt="Play pronunciation"
                 onClick={playAudio}
