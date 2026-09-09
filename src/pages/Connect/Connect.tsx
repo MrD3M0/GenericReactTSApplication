@@ -1,5 +1,5 @@
 import { FluidGradientText } from "@/components/fluid-gradient-text";
-import { useMemo, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -32,18 +32,11 @@ const SOCIAL_LINKS: SocialLink[] = [
   { label: "Instagram", href: "https://instagram.com/", icon: SiInstagram },
 ];
 
-// ---------------------------------------------------------------------------
-// DUMMY SFX — drop your own GTA San Andreas menu sounds into /public/sounds/
-// using these exact filenames and it'll work with zero code changes.
-//   - gta-sa-menu-blip.mp3    -> plays while hovering/navigating a tab
-//   - gta-sa-menu-select.mp3  -> plays when a tab is clicked/selected
-// Until real files exist there, playback simply fails silently (404),
-// which is expected and harmless.
-// ---------------------------------------------------------------------------
-const SFX = {
-  hover: "/sounds/gta-sa-menu-blip.mp3",
-  select: "/sounds/gta-sa-menu-select.mp3",
-};
+// The <audio> elements below live in /public and are referenced with a
+// root-relative path (e.g. "/gta-san-menu-hover-sound.mp3"), the same way
+// zapSound.mp3 is referenced in HeroSection.tsx. A "./..." relative path
+// resolves against the current page URL instead of the site root, so it
+// would silently 404 on any route other than "/" — that was the original bug.
 
 // How long to hold before actually navigating, so the select SFX above
 // isn't cut off mid-playback. Tweak to match the length of your real file.
@@ -51,28 +44,21 @@ const NAV_DELAY_MS = 350;
 
 export default function Connect() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const hoverAudioRef = useRef<HTMLAudioElement | null>(null);
+  const selectAudioRef = useRef<HTMLAudioElement | null>(null);
 
-  const hoverSfx = useMemo(() => {
-    if (typeof Audio === "undefined") return null;
-    const audio = new Audio(SFX.hover);
-    audio.volume = 0.45;
-    audio.preload = "auto";
-    return audio;
-  }, []);
-
-  const selectSfx = useMemo(() => {
-    if (typeof Audio === "undefined") return null;
-    const audio = new Audio(SFX.select);
-    audio.volume = 0.6;
-    audio.preload = "auto";
-    return audio;
+  useEffect(() => {
+    if (hoverAudioRef.current) hoverAudioRef.current.volume = 0.45;
+    if (selectAudioRef.current) selectAudioRef.current.volume = 0.6;
   }, []);
 
   const playSfx = (audio: HTMLAudioElement | null) => {
     if (!audio) return;
     audio.currentTime = 0;
-    audio.play().catch(() => {
-      // Swallow errors from the dummy placeholder files above.
+    audio.play().catch((err) => {
+      // Log instead of swallowing, so a bad path/404 is visible in devtools
+      // instead of silently doing nothing.
+      console.warn("GTA SA menu SFX failed to play:", err);
     });
   };
 
@@ -111,13 +97,13 @@ export default function Connect() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                onMouseEnter={() => playSfx(hoverSfx)}
-                onFocus={() => playSfx(hoverSfx)}
+                onMouseEnter={() => playSfx(hoverAudioRef.current)}
+                onFocus={() => playSfx(hoverAudioRef.current)}
                 onClick={(e) => {
                   // Let the "select" SFX finish playing before we actually
                   // navigate — same beat GTA SA's menu confirm has.
                   e.preventDefault();
-                  playSfx(selectSfx);
+                  playSfx(selectAudioRef.current);
                   window.setTimeout(() => {
                     window.open(href, "_blank", "noopener,noreferrer");
                   }, NAV_DELAY_MS);
@@ -133,6 +119,17 @@ export default function Connect() {
               </a>
             ))}
           </div>
+
+          <audio
+            ref={hoverAudioRef}
+            src="/gta-san-menu-hover-sound.mp3"
+            preload="auto"
+          />
+          <audio
+            ref={selectAudioRef}
+            src="/gta-san-menu-click-sound.mp3"
+            preload="auto"
+          />
         </div>
 
         <div className="hidden md:flex h-full w-full flex-1"></div>

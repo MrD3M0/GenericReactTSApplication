@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-09 06:36:56 (Asia/Katmandu / GMT+06:45)
-- **Total Files Processed**: 69
+- **Generated On**: 2026-09-09 10:19:35 (Asia/Katmandu / GMT+06:45)
+- **Total Files Processed**: 71
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -26,6 +26,8 @@
 │   ├── 📄 favicon-96x96.png (2.3 KB)
 │   ├── 📄 favicon.ico (14.73 KB)
 │   ├── 📄 favicon.svg (402.33 KB)
+│   ├── 📄 gta-san-menu-click-sound.mp3 (24.62 KB)
+│   ├── 📄 gta-san-menu-hover-sound.mp3 (27.68 KB)
 │   ├── 📄 profile.png (1.5 MB)
 │   ├── 📄 pronounce.mp3 (36 KB)
 │   ├── 📄 Pronounciation.svg (478 B)
@@ -73,7 +75,7 @@
 │   │   ├── 📁 components-section/
 │   │   │   └── 📄 Component.tsx (245 B)
 │   │   ├── 📁 Connect/
-│   │   │   └── 📄 Connect.tsx (5.78 KB)
+│   │   │   └── 📄 Connect.tsx (5.81 KB)
 │   │   ├── 📁 Experience/
 │   │   │   └── 📄 WorkExperience.tsx (2.98 KB)
 │   │   ├── 📁 Footer/
@@ -81,7 +83,7 @@
 │   │   ├── 📁 hero-section/
 │   │   │   ├── 📄 AboutMe.tsx (1.63 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
-│   │   │   └── 📄 HeroSection.tsx (3.7 KB)
+│   │   │   └── 📄 HeroSection.tsx (4 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
@@ -172,11 +174,11 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 69 |
+| Total Files | 71 |
 | Total Directories | 18 |
 | Text Files | 52 |
-| Binary Files | 17 |
-| Total Size | 3.8 MB |
+| Binary Files | 19 |
+| Total Size | 3.85 MB |
 
 ### 📄 File Types Distribution
 
@@ -186,9 +188,9 @@
 | `.png` | 9 |
 | `.json` | 5 |
 | `.svg` | 4 |
+| `.mp3` | 4 |
 | `.jsx` | 3 |
 | `.ts` | 3 |
-| `.mp3` | 2 |
 | `.css` | 2 |
 | `.ico` | 1 |
 | `.webmanifest` | 1 |
@@ -208,6 +210,8 @@ The following files were not included in the text content:
 - `public/favicon-96x96.png`
 - `public/favicon.ico`
 - `public/favicon.svg`
+- `public/gta-san-menu-click-sound.mp3`
+- `public/gta-san-menu-hover-sound.mp3`
 - `public/profile.png`
 - `public/pronounce.mp3`
 - `public/Pronounciation.svg`
@@ -3842,7 +3846,7 @@ export default AboutMeEle;
 - **Location**: `src/lib/reusable/AutoScrollText.tsx`
 - **Relative Path**: `src/lib/reusable`
 - **Created**: 2026-02-26 18:42:33 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-02 13:41:07 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-09 06:54:34 (Asia/Katmandu / GMT+06:45)
 - **MD5**: `f750e5d6d60d2afc6680807b616a6986`
 - **SHA256**: `d46e91c14decf801188a5896a66dd47ae16c2903c4eafa0e86066e27ef49d684`
 - **Encoding**: ASCII
@@ -4122,22 +4126,22 @@ export default Component;
 ### <a id="📄-src-pages-connect-connect-tsx"></a>📄 `src/pages/Connect/Connect.tsx`
 
 **File Info:**
-- **Size**: 5.78 KB
+- **Size**: 5.81 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/Connect/Connect.tsx`
 - **Relative Path**: `src/pages/Connect`
 - **Created**: 2026-08-15 17:44:54 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-08 18:26:17 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `6b749f6e817b63b2cd73de6ba2f3135f`
-- **SHA256**: `9dff81fd407e99a3c32c4a1b4ab8801eeb7867b8da09c50862d3c724bd344781`
+- **Modified**: 2026-09-09 10:19:34 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `8fa38460626e60de944edd06d31715e4`
+- **SHA256**: `993e58e15d17787ddbe3319deaeb7182583bafb399b13741ddaf9c181d72bec0`
 - **Encoding**: ASCII
 
 **File code content:**
 
 ```typescript
 import { FluidGradientText } from "@/components/fluid-gradient-text";
-import { useMemo, useRef } from "react";
+import { useEffect, useRef } from "react";
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
@@ -4170,18 +4174,11 @@ const SOCIAL_LINKS: SocialLink[] = [
   { label: "Instagram", href: "https://instagram.com/", icon: SiInstagram },
 ];
 
-// ---------------------------------------------------------------------------
-// DUMMY SFX — drop your own GTA San Andreas menu sounds into /public/sounds/
-// using these exact filenames and it'll work with zero code changes.
-//   - gta-sa-menu-blip.mp3    -> plays while hovering/navigating a tab
-//   - gta-sa-menu-select.mp3  -> plays when a tab is clicked/selected
-// Until real files exist there, playback simply fails silently (404),
-// which is expected and harmless.
-// ---------------------------------------------------------------------------
-const SFX = {
-  hover: "/sounds/gta-sa-menu-blip.mp3",
-  select: "/sounds/gta-sa-menu-select.mp3",
-};
+// The <audio> elements below live in /public and are referenced with a
+// root-relative path (e.g. "/gta-san-menu-hover-sound.mp3"), the same way
+// zapSound.mp3 is referenced in HeroSection.tsx. A "./..." relative path
+// resolves against the current page URL instead of the site root, so it
+// would silently 404 on any route other than "/" — that was the original bug.
 
 // How long to hold before actually navigating, so the select SFX above
 // isn't cut off mid-playback. Tweak to match the length of your real file.
@@ -4189,28 +4186,21 @@ const NAV_DELAY_MS = 350;
 
 export default function Connect() {
   const containerRef = useRef<HTMLDivElement>(null);
+  const hoverAudioRef = useRef<HTMLAudioElement | null>(null);
+  const selectAudioRef = useRef<HTMLAudioElement | null>(null);
 
-  const hoverSfx = useMemo(() => {
-    if (typeof Audio === "undefined") return null;
-    const audio = new Audio(SFX.hover);
-    audio.volume = 0.45;
-    audio.preload = "auto";
-    return audio;
-  }, []);
-
-  const selectSfx = useMemo(() => {
-    if (typeof Audio === "undefined") return null;
-    const audio = new Audio(SFX.select);
-    audio.volume = 0.6;
-    audio.preload = "auto";
-    return audio;
+  useEffect(() => {
+    if (hoverAudioRef.current) hoverAudioRef.current.volume = 0.45;
+    if (selectAudioRef.current) selectAudioRef.current.volume = 0.6;
   }, []);
 
   const playSfx = (audio: HTMLAudioElement | null) => {
     if (!audio) return;
     audio.currentTime = 0;
-    audio.play().catch(() => {
-      // Swallow errors from the dummy placeholder files above.
+    audio.play().catch((err) => {
+      // Log instead of swallowing, so a bad path/404 is visible in devtools
+      // instead of silently doing nothing.
+      console.warn("GTA SA menu SFX failed to play:", err);
     });
   };
 
@@ -4249,13 +4239,13 @@ export default function Connect() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label={label}
-                onMouseEnter={() => playSfx(hoverSfx)}
-                onFocus={() => playSfx(hoverSfx)}
+                onMouseEnter={() => playSfx(hoverAudioRef.current)}
+                onFocus={() => playSfx(hoverAudioRef.current)}
                 onClick={(e) => {
                   // Let the "select" SFX finish playing before we actually
                   // navigate — same beat GTA SA's menu confirm has.
                   e.preventDefault();
-                  playSfx(selectSfx);
+                  playSfx(selectAudioRef.current);
                   window.setTimeout(() => {
                     window.open(href, "_blank", "noopener,noreferrer");
                   }, NAV_DELAY_MS);
@@ -4271,6 +4261,17 @@ export default function Connect() {
               </a>
             ))}
           </div>
+
+          <audio
+            ref={hoverAudioRef}
+            src="/gta-san-menu-hover-sound.mp3"
+            preload="auto"
+          />
+          <audio
+            ref={selectAudioRef}
+            src="/gta-san-menu-click-sound.mp3"
+            preload="auto"
+          />
         </div>
 
         <div className="hidden md:flex h-full w-full flex-1"></div>
@@ -4632,15 +4633,15 @@ export default BannerSection;
 ### <a id="📄-src-pages-hero-section-herosection-tsx"></a>📄 `src/pages/hero-section/HeroSection.tsx`
 
 **File Info:**
-- **Size**: 3.7 KB
+- **Size**: 4 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/hero-section/HeroSection.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 06:33:29 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `8f3eb8266dd4427a0578b5e9ec301c2b`
-- **SHA256**: `a119472bbdb4a8138187880ab305a57bfee0de976bcca941bca26be5f8cb0ba2`
+- **Modified**: 2026-09-09 06:47:56 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `e074feabfb8f08e244d173f5847f89f4`
+- **SHA256**: `b41b0a177d703247a7ac045dbaceb337d455f6409e15a20a203c001da19eb592`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4720,10 +4721,13 @@ const HeroSection = () => {
           <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
         <div className="w-full min-w-0">
-          <div className="w-full h-10 border-gray-500/50 border-b text-gray-500">
+          <div className="w-full  md:h-10 border-gray-500/50 border-b text-gray-500">
             <TooltipProvider>
               <Tooltip>
-                <TooltipTrigger>MrD3M0</TooltipTrigger>
+                {/* Responsive text size for MrD3M0 */}
+                <TooltipTrigger className="text-xs sm:text-sm md:text-base">
+                  MrD3M0
+                </TooltipTrigger>
                 <TooltipContent side="right" align="start" variant={"dark"}>
                   IN-GAME-NAME
                 </TooltipContent>
@@ -4731,9 +4735,10 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className="min-w-0 px-1 text-lg sm:text-lg  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
+          <div className=" min-w-0 px-1 text-xl sm:text-xl  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
             <h1 className="m-0 min-w-0 truncate">
-              <ShimmeringText text="Sumit Karki" duration={10} />
+              <ShimmeringText text="Sumit" duration={10} />
+              <ShimmeringText text="Karki" duration={10} />
             </h1>
             <div className="flex shrink-0">
               <img
@@ -4750,7 +4755,8 @@ const HeroSection = () => {
               <audio ref={audioRef} src="pronounce.mp3" />
             </div>
           </div>
-          <div>
+          {/* Wrapper for AutoScrollText with responsive text size */}
+          <div className="text-xs sm:text-sm md:text-base">
             <AutoScrollText />
           </div>
         </div>
