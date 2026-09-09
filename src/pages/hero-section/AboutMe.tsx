@@ -48,8 +48,8 @@ const AboutMe = () => {
         <AboutMeEle
           icon={Link}
           isCompany={true}
-          companyName={"sumitkarki2061.com.np"}
-          companyLink="https://sumitkarki2061.com.np"
+          companyName={"sumitkarki1.com.np"}
+          companyLink="https://sumitkarki1.com.np/"
         />
         <AboutMeEle icon={Clock2} label="GMT+5:45" />
       </div>

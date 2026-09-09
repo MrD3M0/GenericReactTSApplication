@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-09 06:30:56 (Asia/Katmandu / GMT+06:45)
+- **Generated On**: 2026-09-09 06:36:56 (Asia/Katmandu / GMT+06:45)
 - **Total Files Processed**: 69
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -79,7 +79,7 @@
 │   │   ├── 📁 Footer/
 │   │   │   └── 📄 Footer.tsx (635 B)
 │   │   ├── 📁 hero-section/
-│   │   │   ├── 📄 AboutMe.tsx (1.64 KB)
+│   │   │   ├── 📄 AboutMe.tsx (1.63 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
 │   │   │   └── 📄 HeroSection.tsx (3.7 KB)
 │   │   ├── 📁 navigation/
@@ -4449,15 +4449,15 @@ export default function Footer() {
 ### <a id="📄-src-pages-hero-section-aboutme-tsx"></a>📄 `src/pages/hero-section/AboutMe.tsx`
 
 **File Info:**
-- **Size**: 1.64 KB
+- **Size**: 1.63 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/hero-section/AboutMe.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 05:44:55 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `922a2fd179102a97435dc24f28b1008a`
-- **SHA256**: `f93f9afe55f4acc62089400ccd1742339ce2491cc63eede5861011826188bfc7`
+- **Modified**: 2026-09-09 06:36:56 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9807e962d4d95828da1be2560b20243a`
+- **SHA256**: `3b1ce3e850182ae29530df5d71cba358ccc60a7b061e271e3dd71a9e07f8647f`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4513,8 +4513,8 @@ const AboutMe = () => {
         <AboutMeEle
           icon={Link}
           isCompany={true}
-          companyName={"sumitkarki2061.com.np"}
-          companyLink="https://sumitkarki2061.com.np"
+          companyName={"sumitkarki1.com.np"}
+          companyLink="https://sumitkarki1.com.np/"
         />
         <AboutMeEle icon={Clock2} label="GMT+5:45" />
       </div>
@@ -4638,9 +4638,9 @@ export default BannerSection;
 - **Location**: `src/pages/hero-section/HeroSection.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 06:30:56 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `e24036c53b03535df3beb7cffa824165`
-- **SHA256**: `b8fda8c1c00195e13f24aed4456fd86dd031d8cd178a0a85361fca530ce9ba3d`
+- **Modified**: 2026-09-09 06:33:29 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `8f3eb8266dd4427a0578b5e9ec301c2b`
+- **SHA256**: `a119472bbdb4a8138187880ab305a57bfee0de976bcca941bca26be5f8cb0ba2`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4731,7 +4731,7 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className="min-w-0 px-1 text-lg sm:text-lg md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
+          <div className="min-w-0 px-1 text-lg sm:text-lg  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
             <h1 className="m-0 min-w-0 truncate">
               <ShimmeringText text="Sumit Karki" duration={10} />
             </h1>

@@ -83,7 +83,7 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className="min-w-0 px-1 text-lg sm:text-lg md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-4 lg:gap-0 items-center gap-1">
+          <div className="min-w-0 px-1 text-lg sm:text-lg  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
             <h1 className="m-0 min-w-0 truncate">
               <ShimmeringText text="Sumit Karki" duration={10} />
             </h1>
