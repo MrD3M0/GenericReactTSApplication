@@ -12,7 +12,9 @@ import ProjectsSkeleton from "./pages/skeletonLoaders/ProjectsSkeleton";
 import FooterSkeleton from "./pages/skeletonLoaders/FooterSkeleton";
 import Connect from "./pages/Connect/Connect";
 import SplashCursor from "./components/SplashCursor";
-import EntryGate, { SESSION_KEY as ENTRY_GATE_SESSION_KEY } from "./pages/entry-gate/entry-gate";
+import EntryGate, {
+  SESSION_KEY as ENTRY_GATE_SESSION_KEY,
+} from "./pages/entry-gate/entry-gate";
 
 const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
 const Stack = lazy(() => import("./pages/skills-section/Stack"));
@@ -40,14 +42,14 @@ function App() {
       >
         <SplashCursor />
         <NavigationBar />
-        <section id="home">
+        <section id="home" className="scroll-mt-16">
           <BannerSection />
           <HeroSection />
           <Separator />
           <AboutMe />
         </section>
 
-        <section id="journey">
+        <section id="journey" className="scroll-mt-12">
           <Title TitleLabel="Experience" TitleSize="md" />
           <Suspense fallback={<ExperienceSkeleton />}>
             <Experience />
@@ -59,16 +61,14 @@ function App() {
           </Suspense>
         </section>
 
-        {/* Experience isn't in the nav, keep it between sections */}
-
-        <section id="work">
+        <section id="work" className="scroll-mt-12">
           <Title TitleLabel="Projects" TitleSize="md" />
           <Suspense fallback={<ProjectsSkeleton />}>
             <Projects />
           </Suspense>
         </section>
 
-        <section id="connect">
+        <section id="connect" className="scroll-mt-12">
           <Title TitleLabel="Connect" TitleSize="md" />
           <Suspense fallback={<FooterSkeleton />}>
             <Connect />

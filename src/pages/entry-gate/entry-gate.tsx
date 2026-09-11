@@ -9,6 +9,11 @@ import gsap from "gsap";
 // a quick capture-shake, then the panels slide apart like double doors to
 // reveal the real page underneath.
 //
+// Pokeball coloring: on mobile (< md) it renders as a classic red-top /
+// white-bottom pokeball. From md and up it reverts to the site's original
+// all-black wireframe look, with the yellow (#FDD835) glow/fill on hover
+// and focus.
+//
 // Bonus: this click is a genuine user gesture, which is exactly what the
 // browser's autoplay policy requires before <audio> is allowed to play.
 // Since it fires a real pointerdown on window, it also satisfies the
@@ -162,19 +167,35 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
               <clipPath id="pokeball-top-clip">
                 <path d="M2,50 A48,48 0 0 1 98,50 Z" />
               </clipPath>
+              <clipPath id="pokeball-bottom-clip">
+                <path d="M2,50 A48,48 0 0 0 98,50 Z" />
+              </clipPath>
             </defs>
 
             {/* outer circle, filled with page bg so panel edges don't show through */}
             <circle cx="50" cy="50" r="47" fill="#000" />
 
-            {/* top half fill — transparent by default, accent on hover/focus */}
+            {/* bottom half — white on mobile (classic pokeball), reverts to
+                the site's original transparent/black look from md up */}
+            <g clipPath="url(#pokeball-bottom-clip)">
+              <rect
+                x="0"
+                y="48"
+                width="100"
+                height="52"
+                className="fill-white md:fill-transparent"
+              />
+            </g>
+
+            {/* top half — red on mobile (classic pokeball); transparent by
+                default with the yellow hover/focus accent kept from md up */}
             <g clipPath="url(#pokeball-top-clip)">
               <rect
                 x="0"
                 y="0"
                 width="100"
                 height="52"
-                className="fill-transparent transition-colors duration-300 group-hover:fill-[#FDD835]/90 group-focus-visible:fill-[#FDD835]/90"
+                className="fill-[#EE1515] md:fill-transparent transition-colors duration-300 md:group-hover:fill-[#FDD835]/90 md:group-focus-visible:fill-[#FDD835]/90"
               />
             </g>
 
@@ -194,11 +215,13 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
               stroke="#cfd3d6"
               strokeWidth="2"
             />
+
+            {/* center button ring — white face on mobile, black on md+ */}
             <circle
               cx="50"
               cy="50"
               r="12"
-              fill="#000"
+              className="fill-white md:fill-[#000]"
               stroke="#cfd3d6"
               strokeWidth="2"
             />
@@ -206,7 +229,7 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
               cx="50"
               cy="50"
               r="5"
-              fill="#000"
+              className="fill-white md:fill-[#000]"
               stroke="#cfd3d6"
               strokeWidth="1.5"
             />
@@ -219,7 +242,7 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
         style={{ fontFamily: MONO }}
         aria-hidden="true"
       >
-        click to enter
+        click to enter in sumit's world
         <span className="ml-0.5 inline-block animate-pulse">_</span>
       </p>
     </div>

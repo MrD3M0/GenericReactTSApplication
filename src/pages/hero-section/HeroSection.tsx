@@ -101,7 +101,7 @@ const HeroSection = () => {
             <div className="flex shrink-0">
               <img
                 src="./verified.svg"
-                className="w-4 h-4 sm:w-5 sm:h-5 shrink-0"
+                className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 shrink-0"
                 alt=""
               />
               <img

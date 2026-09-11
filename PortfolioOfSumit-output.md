@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-11 16:46:27 (Asia/Katmandu / GMT+06:45)
+- **Generated On**: 2026-09-11 17:36:14 (Asia/Katmandu / GMT+06:45)
 - **Total Files Processed**: 72
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -77,7 +77,7 @@
 │   │   ├── 📁 Connect/
 │   │   │   └── 📄 Connect.tsx (5.22 KB)
 │   │   ├── 📁 entry-gate/
-│   │   │   └── 📄 entry-gate.tsx (7.42 KB)
+│   │   │   └── 📄 entry-gate.tsx (8.45 KB)
 │   │   ├── 📁 Experience/
 │   │   │   └── 📄 WorkExperience.tsx (2.98 KB)
 │   │   ├── 📁 Footer/
@@ -85,7 +85,7 @@
 │   │   ├── 📁 hero-section/
 │   │   │   ├── 📄 AboutMe.tsx (1.79 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
-│   │   │   └── 📄 HeroSection.tsx (4.48 KB)
+│   │   │   └── 📄 HeroSection.tsx (4.49 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
@@ -98,7 +98,7 @@
 │   │   │   └── 📄 StackSkeleton.tsx (740 B)
 │   │   └── 📁 skills-section/
 │   │       └── 📄 Stack.tsx (5.77 KB)
-│   ├── 📄 App.tsx (3.03 KB)
+│   ├── 📄 App.tsx (3.06 KB)
 │   ├── 📄 index.css (6.63 KB)
 │   └── 📄 main.tsx (234 B)
 ├── 📄 components.json (574 B)
@@ -4340,15 +4340,15 @@ export default function Connect() {
 ### <a id="📄-src-pages-entry-gate-entry-gate-tsx"></a>📄 `src/pages/entry-gate/entry-gate.tsx`
 
 **File Info:**
-- **Size**: 7.42 KB
+- **Size**: 8.45 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/entry-gate/entry-gate.tsx`
 - **Relative Path**: `src/pages/entry-gate`
 - **Created**: 2026-09-09 10:33:05 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 13:02:21 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `e90c80bb173dbbb1f6d2918366e0fba7`
-- **SHA256**: `ebcb1af13cf5981fef2a407ad243b3a68ba4109aa8784006f674054770e1e6fb`
+- **Modified**: 2026-09-11 17:36:13 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `b71e12a6075672c7281a15076db3ef7b`
+- **SHA256**: `5fb132e9f574b7a00761994a50374f5f5cd1e0d56f3cb2ea0fbe59ce787e3a52`
 - **Encoding**: UTF-8
 
 **File code content:**
@@ -4364,6 +4364,11 @@ import gsap from "gsap";
 // sits on the seam. Clicking (or pressing Enter/Space on) the pokeball plays
 // a quick capture-shake, then the panels slide apart like double doors to
 // reveal the real page underneath.
+//
+// Pokeball coloring: on mobile (< md) it renders as a classic red-top /
+// white-bottom pokeball. From md and up it reverts to the site's original
+// all-black wireframe look, with the yellow (#FDD835) glow/fill on hover
+// and focus.
 //
 // Bonus: this click is a genuine user gesture, which is exactly what the
 // browser's autoplay policy requires before <audio> is allowed to play.
@@ -4518,19 +4523,35 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
               <clipPath id="pokeball-top-clip">
                 <path d="M2,50 A48,48 0 0 1 98,50 Z" />
               </clipPath>
+              <clipPath id="pokeball-bottom-clip">
+                <path d="M2,50 A48,48 0 0 0 98,50 Z" />
+              </clipPath>
             </defs>
 
             {/* outer circle, filled with page bg so panel edges don't show through */}
             <circle cx="50" cy="50" r="47" fill="#000" />
 
-            {/* top half fill — transparent by default, accent on hover/focus */}
+            {/* bottom half — white on mobile (classic pokeball), reverts to
+                the site's original transparent/black look from md up */}
+            <g clipPath="url(#pokeball-bottom-clip)">
+              <rect
+                x="0"
+                y="48"
+                width="100"
+                height="52"
+                className="fill-white md:fill-transparent"
+              />
+            </g>
+
+            {/* top half — red on mobile (classic pokeball); transparent by
+                default with the yellow hover/focus accent kept from md up */}
             <g clipPath="url(#pokeball-top-clip)">
               <rect
                 x="0"
                 y="0"
                 width="100"
                 height="52"
-                className="fill-transparent transition-colors duration-300 group-hover:fill-[#FDD835]/90 group-focus-visible:fill-[#FDD835]/90"
+                className="fill-[#EE1515] md:fill-transparent transition-colors duration-300 md:group-hover:fill-[#FDD835]/90 md:group-focus-visible:fill-[#FDD835]/90"
               />
             </g>
 
@@ -4550,11 +4571,13 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
               stroke="#cfd3d6"
               strokeWidth="2"
             />
+
+            {/* center button ring — white face on mobile, black on md+ */}
             <circle
               cx="50"
               cy="50"
               r="12"
-              fill="#000"
+              className="fill-white md:fill-[#000]"
               stroke="#cfd3d6"
               strokeWidth="2"
             />
@@ -4562,7 +4585,7 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
               cx="50"
               cy="50"
               r="5"
-              fill="#000"
+              className="fill-white md:fill-[#000]"
               stroke="#cfd3d6"
               strokeWidth="1.5"
             />
@@ -4575,7 +4598,7 @@ export default function EntryGate({ onEnter }: EntryGateProps) {
         style={{ fontFamily: MONO }}
         aria-hidden="true"
       >
-        click to enter
+        click to enter in sumit's world
         <span className="ml-0.5 inline-block animate-pulse">_</span>
       </p>
     </div>
@@ -4924,15 +4947,15 @@ export default BannerSection;
 ### <a id="📄-src-pages-hero-section-herosection-tsx"></a>📄 `src/pages/hero-section/HeroSection.tsx`
 
 **File Info:**
-- **Size**: 4.48 KB
+- **Size**: 4.49 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/hero-section/HeroSection.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-11 16:17:58 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `1555d6a5a35947b117b86a6ddd6870ad`
-- **SHA256**: `697d544518f2d91fdd7ff15d76d9ca51dba2aae501adf25fb879742c122775f4`
+- **Modified**: 2026-09-11 17:16:45 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9d18246a58dbd7ae553e269060d5f14d`
+- **SHA256**: `6bdabc6dcbefb2faa1da9a1529be021f13e503ac21c29fd3eb23f53979f96191`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5041,7 +5064,7 @@ const HeroSection = () => {
             <div className="flex shrink-0">
               <img
                 src="./verified.svg"
-                className="w-4 h-4 sm:w-5 sm:h-5 shrink-0"
+                className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 shrink-0"
                 alt=""
               />
               <img
@@ -5772,15 +5795,15 @@ export default Stack;
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 3.03 KB
+- **Size**: 3.06 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 13:02:08 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `818e11b3ff2f7293d34236aa17cd708a`
-- **SHA256**: `e6b5980089be1194020a557f26b5520c9e1ca7097cdb7f0390a50f5309ab9510`
+- **Modified**: 2026-09-11 17:11:48 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `034381ee1e79aacbbae7ec19a15ad89f`
+- **SHA256**: `aee97837e2842ba0739c9e9a5d6fa4b5d814764e4021d4c35db5625fc4102f8d`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5800,7 +5823,9 @@ import ProjectsSkeleton from "./pages/skeletonLoaders/ProjectsSkeleton";
 import FooterSkeleton from "./pages/skeletonLoaders/FooterSkeleton";
 import Connect from "./pages/Connect/Connect";
 import SplashCursor from "./components/SplashCursor";
-import EntryGate, { SESSION_KEY as ENTRY_GATE_SESSION_KEY } from "./pages/entry-gate/entry-gate";
+import EntryGate, {
+  SESSION_KEY as ENTRY_GATE_SESSION_KEY,
+} from "./pages/entry-gate/entry-gate";
 
 const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
 const Stack = lazy(() => import("./pages/skills-section/Stack"));
@@ -5828,14 +5853,14 @@ function App() {
       >
         <SplashCursor />
         <NavigationBar />
-        <section id="home">
+        <section id="home" className="scroll-mt-16">
           <BannerSection />
           <HeroSection />
           <Separator />
           <AboutMe />
         </section>
 
-        <section id="journey">
+        <section id="journey" className="scroll-mt-12">
           <Title TitleLabel="Experience" TitleSize="md" />
           <Suspense fallback={<ExperienceSkeleton />}>
             <Experience />
@@ -5847,16 +5872,14 @@ function App() {
           </Suspense>
         </section>
 
-        {/* Experience isn't in the nav, keep it between sections */}
-
-        <section id="work">
+        <section id="work" className="scroll-mt-12">
           <Title TitleLabel="Projects" TitleSize="md" />
           <Suspense fallback={<ProjectsSkeleton />}>
             <Projects />
           </Suspense>
         </section>
 
-        <section id="connect">
+        <section id="connect" className="scroll-mt-12">
           <Title TitleLabel="Connect" TitleSize="md" />
           <Suspense fallback={<FooterSkeleton />}>
             <Connect />
@@ -5867,6 +5890,7 @@ function App() {
   );
 }
 export default App;
+
 ```
 
 ---
