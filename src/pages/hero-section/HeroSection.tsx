@@ -5,7 +5,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import AutoScrollText from "@/lib/reusable/AutoScrollText";
-import { ShimmeringText } from "@/components/shimmering-text";
 import { useRef, useState } from "react";
 import ElectricBorder from "@/components/ElectricBorder";
 
@@ -39,12 +38,23 @@ const HeroSection = () => {
     }
   };
 
+  // Fixed square size for the actual avatar image / ElectricBorder.
+  // This keeps the picture itself always the same look at each breakpoint.
+  const avatarSize =
+    "w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40";
+
+  // Width-only class for the bordered box around the avatar.
+  // No fixed height here on purpose — combined with `self-stretch` below,
+  // this box automatically grows to match the height of the info column
+  // next to it, so the horizontal border lines always connect properly.
+  const avatarBoxWidth = "w-20 sm:w-28 md:w-32 lg:w-40";
+
   return (
     <div className="w-full flex flex-row justify-center items-center bg-black">
-      <div className=" hidden md:flex h-full w-full flex-1"></div>
+      <div className="hidden md:flex h-full w-full flex-1"></div>
       <div className="w-[90%] md:w-[80%] lg:w-[40%] flex border-r border-gray-500/50">
         <div
-          className="min-w-40 h-40 border-l border-r  border-gray-500/50"
+          className={`${avatarBoxWidth} shrink-0 self-stretch border-l border-r border-gray-500/50 flex items-center justify-center`}
           onMouseEnter={startZap}
           onMouseLeave={stopZap}
         >
@@ -54,17 +64,17 @@ const HeroSection = () => {
               speed={1}
               chaos={0.15}
               borderRadius={9999}
-              className="w-40 h-40"
+              className={avatarSize}
             >
               <img
-                className="w-40 h-40 rounded-full border border-gray-500/50  "
+                className={`${avatarSize} rounded-full border border-gray-500/50`}
                 src="profile.png"
                 alt="Sumit Karki - Full Stack Developer"
               />
             </ElectricBorder>
           ) : (
             <img
-              className="w-40 h-40 rounded-full border border-gray-500/50  "
+              className={`${avatarSize} rounded-full border border-gray-500/50`}
               src="profile.png"
               alt="Sumit Karki - Full Stack Developer"
             />
@@ -72,11 +82,11 @@ const HeroSection = () => {
           <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
         <div className="w-full min-w-0">
-          <div className="w-full  md:h-10 border-gray-500/50 border-b text-gray-500">
+          <div className="w-full h-8 md:h-10 border-gray-500/50 border-b text-gray-500 flex items-center">
             <TooltipProvider>
               <Tooltip>
                 {/* Responsive text size for MrD3M0 */}
-                <TooltipTrigger className="text-xs sm:text-sm md:text-base">
+                <TooltipTrigger className="text-xs sm:text-sm md:text-base px-1 truncate">
                   MrD3M0
                 </TooltipTrigger>
                 <TooltipContent side="right" align="start" variant={"dark"}>
@@ -86,10 +96,8 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className=" min-w-0 px-1 text-xl sm:text-xl  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
-            <h1 className="m-0 min-w-0 truncate">
-              <ShimmeringText text="Sumit Karki" duration={10} />
-            </h1>
+          <div className="min-w-0 px-1 text-lg sm:text-xl md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
+            <h1 className="m-0 min-w-0 truncate">Sumit Karki</h1>
             <div className="flex shrink-0">
               <img
                 src="./verified.svg"
@@ -111,7 +119,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className=" hidden md:flex h-full w-full flex-1"></div>
+      <div className="hidden md:flex h-full w-full flex-1"></div>
     </div>
   );
 };

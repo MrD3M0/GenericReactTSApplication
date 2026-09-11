@@ -23,23 +23,20 @@ type SocialLink = {
 
 const SOCIAL_LINKS: SocialLink[] = [
   { label: "X (Twitter)", href: "https://x.com/", icon: SiX },
-  { label: "GitHub", href: "https://github.com/", icon: SiGithub },
-  // NOTE: original file imported `SiLinkerd` (the Linkerd logo) for this row.
-  // Swapped to `SiLinkedin` since that's clearly what was intended.
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: SiInsta360 },
+  { label: "GitHub", href: "https://github.com/MrD3M0", icon: SiGithub },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/sumitkarki1/",
+    icon: SiInsta360,
+  },
   { label: "Discord", href: "https://discord.com/", icon: SiDiscord },
   { label: "YouTube", href: "https://youtube.com/", icon: SiYoutube },
-  { label: "Instagram", href: "https://instagram.com/", icon: SiInstagram },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/sumit.karki1/",
+    icon: SiInstagram,
+  },
 ];
-
-// The <audio> elements below live in /public and are referenced with a
-// root-relative path (e.g. "/gta-san-menu-hover-sound.mp3"), the same way
-// zapSound.mp3 is referenced in HeroSection.tsx. A "./..." relative path
-// resolves against the current page URL instead of the site root, so it
-// would silently 404 on any route other than "/" — that was the original bug.
-
-// How long to hold before actually navigating, so the select SFX above
-// isn't cut off mid-playback. Tweak to match the length of your real file.
 const NAV_DELAY_MS = 350;
 
 export default function Connect() {

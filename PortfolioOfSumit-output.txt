@@ -5,7 +5,7 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: PortfolioOfSumit
-Generated On: 2026-09-09 13:02:22 (Asia/Katmandu / GMT+06:45)
+Generated On: 2026-09-11 16:46:27 (Asia/Katmandu / GMT+06:45)
 Total Files Processed: 72
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
@@ -39,7 +39,7 @@ PROJECT STRUCTURE
 │   ├── 📄 verified.svg (997 B)
 │   ├── 📄 web-app-manifest-192x192.png (6.08 KB)
 │   ├── 📄 web-app-manifest-512x512.png (36.25 KB)
-│   ├── 📄 zapSound.mp3 (6.53 KB)
+│   ├── 📄 zapSound.mp3 (9.23 KB)
 │   └── 📄 Zippos.png (624.25 KB)
 ├── 📁 src/
 │   ├── 📁 assets/
@@ -66,8 +66,8 @@ PROJECT STRUCTURE
 │   │   └── 📄 work-experience.tsx (10.05 KB)
 │   ├── 📁 lib/
 │   │   ├── 📁 reusable/
-│   │   │   ├── 📄 AboutMeEle.tsx (1.64 KB)
-│   │   │   ├── 📄 AutoScrollText.tsx (977 B)
+│   │   │   ├── 📄 AboutMeEle.tsx (1.59 KB)
+│   │   │   ├── 📄 AutoScrollText.tsx (2.62 KB)
 │   │   │   ├── 📄 Component-Ele.tsx (447 B)
 │   │   │   ├── 📄 Separator.tsx (734 B)
 │   │   │   └── 📄 Title.tsx (776 B)
@@ -77,7 +77,7 @@ PROJECT STRUCTURE
 │   │   ├── 📁 components-section/
 │   │   │   └── 📄 Component.tsx (245 B)
 │   │   ├── 📁 Connect/
-│   │   │   └── 📄 Connect.tsx (5.81 KB)
+│   │   │   └── 📄 Connect.tsx (5.22 KB)
 │   │   ├── 📁 entry-gate/
 │   │   │   └── 📄 entry-gate.tsx (7.42 KB)
 │   │   ├── 📁 Experience/
@@ -85,9 +85,9 @@ PROJECT STRUCTURE
 │   │   ├── 📁 Footer/
 │   │   │   └── 📄 Footer.tsx (635 B)
 │   │   ├── 📁 hero-section/
-│   │   │   ├── 📄 AboutMe.tsx (1.77 KB)
+│   │   │   ├── 📄 AboutMe.tsx (1.79 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
-│   │   │   └── 📄 HeroSection.tsx (3.95 KB)
+│   │   │   └── 📄 HeroSection.tsx (4.48 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
@@ -3721,21 +3721,21 @@ FILE: src/lib/reusable/AboutMeEle.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.64 KB
+Size: 1.59 KB
 Extension: .tsx
 Language: typescript
 Location: src/lib/reusable/AboutMeEle.tsx
 Relative Path: src/lib/reusable
 Created: 2026-02-26 18:56:36 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 05:48:13 (Asia/Katmandu / GMT+06:45)
-MD5: c3084453cac3239a8b50fbc742b2fbb7
-SHA256: a0139ee61d103147f2e270ba6f41d4280f033d6e7c08b0b2f1c37d5c431f919a
+Modified: 2026-09-11 16:35:41 (Asia/Katmandu / GMT+06:45)
+MD5: 8d03374e05fc369aee96708ec6cc32c3
+SHA256: 795d4303492b4618a4d470405e0696581fc064a934975d1ef54a3b1a2f4cdaad
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
 import { type LucideIcon } from "lucide-react";
-import { useDevice } from "../responsive";
+import { cn } from "@/lib/utils";
 
 type T_AboutMeProps = {
   label?: string;
@@ -3756,22 +3756,20 @@ const AboutMeEle = ({
   className,
   disableAnchor = false,
 }: T_AboutMeProps) => {
-  const { isMobile, isTablet } = useDevice();
+  
   return (
     <div
       className={`w-full h-8 min-w-0 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
     >
       {Icon && (
         <span
-          className="p-0.5! bg-[#0f1117] rounded-md
-                    border border-white/10
-                    shadow-inner shadow-black/40
-                    flex items-center justify-center "
+          className={cn(
+            "flex size-6 shrink-0 items-center justify-center rounded-lg",
+            "bg-muted text-muted-foreground",
+            "border border-muted-foreground/15 ring-1 ring-border ring-offset-1 ring-offset-background",
+          )}
         >
-          <Icon
-            size={isMobile ? 16 : isTablet ? 20 : 24}
-            className="text-gray-400"
-          />
+          <Icon size={18} className="text-gray-400" />
         </span>
       )}
       {label && (
@@ -3805,51 +3803,93 @@ FILE: src/lib/reusable/AutoScrollText.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 977 B
+Size: 2.62 KB
 Extension: .tsx
 Language: typescript
 Location: src/lib/reusable/AutoScrollText.tsx
 Relative Path: src/lib/reusable
 Created: 2026-02-26 18:42:33 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 06:54:34 (Asia/Katmandu / GMT+06:45)
-MD5: f750e5d6d60d2afc6680807b616a6986
-SHA256: d46e91c14decf801188a5896a66dd47ae16c2903c4eafa0e86066e27ef49d684
+Modified: 2026-09-11 16:11:56 (Asia/Katmandu / GMT+06:45)
+MD5: 2e81d4dd2db3c8c0ebe23b8f339318c2
+SHA256: 0dd3be2ef859cf63dc9dbbd16f6c85288ab3f4e7d73ed98b6364de140b799144
 Encoding: ASCII
 
 FILE CONTENT:
 ----------------------------------------
-import { useEffect, useState } from "react";
+import { useEffect, useLayoutEffect, useRef, useState } from "react";
+
+const sentences = [
+  "$_Build Web Applications;",
+  "$_Full-stack Developer;",
+  "$_Great listener;",
+  "$_Good learner;",
+];
 
 export default function AutoScrollText() {
-  const sentences = [
-    "$_Build Web Applications;",
-    "$_Full-stack Developer;",
-    "$_Great listener;",
-    "$_Good learner;",
-  ];
+  // Clone the first sentence at the end so the loop can wrap seamlessly
+  // instead of sliding backwards through the whole list.
+  const items = [...sentences, sentences[0]];
 
   const [index, setIndex] = useState(0);
+  const [animate, setAnimate] = useState(true);
+  const [itemHeight, setItemHeight] = useState(0);
 
+  const itemRef = useRef<HTMLDivElement>(null);
+
+  // Measure the actual rendered height of one sentence so the scroll
+  // distance always matches the real row height on every screen size,
+  // instead of assuming a fixed rem value.
+  useLayoutEffect(() => {
+    const measure = () => {
+      if (itemRef.current) setItemHeight(itemRef.current.offsetHeight);
+    };
+    measure();
+    window.addEventListener("resize", measure);
+    return () => window.removeEventListener("resize", measure);
+  }, []);
+
+  // Advance to the next sentence every 2.5s.
   useEffect(() => {
     const interval = setInterval(() => {
-      setIndex((prev) => (prev + 1) % sentences.length);
+      setIndex((prev) => prev + 1);
     }, 2500);
-
     return () => clearInterval(interval);
   }, []);
 
+  // When we land on the cloned sentence (end of list), let the
+  // transition finish, then snap back to the real first sentence with
+  // no animation, so the loop feels continuous instead of reversing.
+  useEffect(() => {
+    if (index === sentences.length) {
+      const timeout = setTimeout(() => {
+        setAnimate(false);
+        setIndex(0);
+      }, 700); // must match the transition duration below
+      return () => clearTimeout(timeout);
+    }
+
+    if (!animate) {
+      const raf = requestAnimationFrame(() => setAnimate(true));
+      return () => cancelAnimationFrame(raf);
+    }
+  }, [index, animate]);
+
   return (
-    <div className="relative h-12 overflow-hidden w-full">
+    <div
+      className="relative w-full overflow-hidden flex items-center justify-center"
+      style={{ height: itemHeight || undefined }}
+    >
       <div
-        className="transition-transform duration-700 ease-in-out"
-        style={{
-          transform: `translateY(-${index * 3}rem)`,
-        }}
+        className={`w-full ${
+          animate ? "transition-transform duration-700 ease-in-out" : ""
+        }`}
+        style={{ transform: `translateY(-${index * itemHeight}px)` }}
       >
-        {sentences.map((text, i) => (
+        {items.map((text, i) => (
           <div
             key={i}
-            className="h-12 flex items-center justify-center text-sm sm:text-md md:text-lg font-semibold text-gray-500"
+            ref={i === 0 ? itemRef : undefined}
+            className="h-8 sm:h-10 md:h-12 flex items-center justify-center text-center text-xs sm:text-sm md:text-base lg:text-lg font-semibold text-gray-500 px-2 whitespace-nowrap overflow-hidden text-ellipsis"
           >
             {text}
           </div>
@@ -4098,15 +4138,15 @@ FILE: src/pages/Connect/Connect.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 5.81 KB
+Size: 5.22 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/Connect/Connect.tsx
 Relative Path: src/pages/Connect
 Created: 2026-08-15 17:44:54 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 10:19:34 (Asia/Katmandu / GMT+06:45)
-MD5: 8fa38460626e60de944edd06d31715e4
-SHA256: 993e58e15d17787ddbe3319deaeb7182583bafb399b13741ddaf9c181d72bec0
+Modified: 2026-09-11 16:46:26 (Asia/Katmandu / GMT+06:45)
+MD5: 0c2f6e92839c28b01fd7a90865f6fa0d
+SHA256: 56b50bfc4a044f502c6d655801020b1e47f1ec3b72d4f45b27a68a087b2e0c9a
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4136,23 +4176,20 @@ type SocialLink = {
 
 const SOCIAL_LINKS: SocialLink[] = [
   { label: "X (Twitter)", href: "https://x.com/", icon: SiX },
-  { label: "GitHub", href: "https://github.com/", icon: SiGithub },
-  // NOTE: original file imported `SiLinkerd` (the Linkerd logo) for this row.
-  // Swapped to `SiLinkedin` since that's clearly what was intended.
-  { label: "LinkedIn", href: "https://linkedin.com/", icon: SiInsta360 },
+  { label: "GitHub", href: "https://github.com/MrD3M0", icon: SiGithub },
+  {
+    label: "LinkedIn",
+    href: "https://www.linkedin.com/in/sumitkarki1/",
+    icon: SiInsta360,
+  },
   { label: "Discord", href: "https://discord.com/", icon: SiDiscord },
   { label: "YouTube", href: "https://youtube.com/", icon: SiYoutube },
-  { label: "Instagram", href: "https://instagram.com/", icon: SiInstagram },
+  {
+    label: "Instagram",
+    href: "https://www.instagram.com/sumit.karki1/",
+    icon: SiInstagram,
+  },
 ];
-
-// The <audio> elements below live in /public and are referenced with a
-// root-relative path (e.g. "/gta-san-menu-hover-sound.mp3"), the same way
-// zapSound.mp3 is referenced in HeroSection.tsx. A "./..." relative path
-// resolves against the current page URL instead of the site root, so it
-// would silently 404 on any route other than "/" — that was the original bug.
-
-// How long to hold before actually navigating, so the select SFX above
-// isn't cut off mid-playback. Tweak to match the length of your real file.
 const NAV_DELAY_MS = 350;
 
 export default function Connect() {
@@ -4675,15 +4712,15 @@ FILE: src/pages/hero-section/AboutMe.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.77 KB
+Size: 1.79 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/hero-section/AboutMe.tsx
 Relative Path: src/pages/hero-section
 Created: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 10:56:43 (Asia/Katmandu / GMT+06:45)
-MD5: f0191cbee3ecca9d0e730d086668ba8e
-SHA256: 84fee052c6766cc423752065b80811ee19178e2b1ff71c1e29f690c29c55e5ef
+Modified: 2026-09-11 16:36:08 (Asia/Katmandu / GMT+06:45)
+MD5: a84dc6b554c7d8faed3b52cb48298b63
+SHA256: 258529132f8009ee51428ef9bd0d42944a097de5939b935d8a6f08c004b14516
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4703,7 +4740,7 @@ const AboutMe = () => {
   return (
     <div className="w-full bg-black border-b border-gray-500/50 flex justify-center items-center">
       <div className="@container min-w-0 h-full w-[90%] md:w-[80%] lg:w-[40%]">
-        <div className="grid grid-cols-1 @md:grid-cols-2 gap-0.5! md:gap-2! border-gray-500/50 border-l border-r py-2! px-1!">
+        <div className="grid grid-cols-1 @md:grid-cols-2 gap-1! sm:gap-1.5! md:gap-2! border-gray-500/50 border-l border-r py-1.5! sm:py-2! px-1! sm:px-2!">
           {" "}
           <AboutMeEle
             icon={BriefcaseBusiness}
@@ -4720,8 +4757,8 @@ const AboutMe = () => {
           <AboutMeEle
             icon={Mail}
             isCompany={true}
-            companyName={"sumitkarki1000@gmail.com"}
-            companyLink="mailto:sumitkarki1000@gmail.com"
+            companyName={"sumitkarki047@gmail.com"}
+            companyLink="mailto:sumitkarki047@gmail.com"
           />
           <AboutMeEle
             icon={Lightbulb}
@@ -4750,6 +4787,7 @@ const AboutMe = () => {
 };
 
 export default AboutMe;
+
 ================================================================================
 
 
@@ -4861,15 +4899,15 @@ FILE: src/pages/hero-section/HeroSection.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 3.95 KB
+Size: 4.48 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/hero-section/HeroSection.tsx
 Relative Path: src/pages/hero-section
 Created: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 12:43:54 (Asia/Katmandu / GMT+06:45)
-MD5: 4984432beb6b92e19850b0be0a07cde7
-SHA256: 365caf51fc68f693324450ad28b8b16466848e7062f61942478f9085906f4d0e
+Modified: 2026-09-11 16:17:58 (Asia/Katmandu / GMT+06:45)
+MD5: 1555d6a5a35947b117b86a6ddd6870ad
+SHA256: 697d544518f2d91fdd7ff15d76d9ca51dba2aae501adf25fb879742c122775f4
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4881,7 +4919,6 @@ import {
   TooltipTrigger,
 } from "@/components/ui/tooltip";
 import AutoScrollText from "@/lib/reusable/AutoScrollText";
-import { ShimmeringText } from "@/components/shimmering-text";
 import { useRef, useState } from "react";
 import ElectricBorder from "@/components/ElectricBorder";
 
@@ -4915,12 +4952,23 @@ const HeroSection = () => {
     }
   };
 
+  // Fixed square size for the actual avatar image / ElectricBorder.
+  // This keeps the picture itself always the same look at each breakpoint.
+  const avatarSize =
+    "w-20 h-20 sm:w-28 sm:h-28 md:w-32 md:h-32 lg:w-40 lg:h-40";
+
+  // Width-only class for the bordered box around the avatar.
+  // No fixed height here on purpose — combined with `self-stretch` below,
+  // this box automatically grows to match the height of the info column
+  // next to it, so the horizontal border lines always connect properly.
+  const avatarBoxWidth = "w-20 sm:w-28 md:w-32 lg:w-40";
+
   return (
     <div className="w-full flex flex-row justify-center items-center bg-black">
-      <div className=" hidden md:flex h-full w-full flex-1"></div>
+      <div className="hidden md:flex h-full w-full flex-1"></div>
       <div className="w-[90%] md:w-[80%] lg:w-[40%] flex border-r border-gray-500/50">
         <div
-          className="min-w-40 h-40 border-l border-r  border-gray-500/50"
+          className={`${avatarBoxWidth} shrink-0 self-stretch border-l border-r border-gray-500/50 flex items-center justify-center`}
           onMouseEnter={startZap}
           onMouseLeave={stopZap}
         >
@@ -4930,17 +4978,17 @@ const HeroSection = () => {
               speed={1}
               chaos={0.15}
               borderRadius={9999}
-              className="w-40 h-40"
+              className={avatarSize}
             >
               <img
-                className="w-40 h-40 rounded-full border border-gray-500/50  "
+                className={`${avatarSize} rounded-full border border-gray-500/50`}
                 src="profile.png"
                 alt="Sumit Karki - Full Stack Developer"
               />
             </ElectricBorder>
           ) : (
             <img
-              className="w-40 h-40 rounded-full border border-gray-500/50  "
+              className={`${avatarSize} rounded-full border border-gray-500/50`}
               src="profile.png"
               alt="Sumit Karki - Full Stack Developer"
             />
@@ -4948,11 +4996,11 @@ const HeroSection = () => {
           <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
         <div className="w-full min-w-0">
-          <div className="w-full  md:h-10 border-gray-500/50 border-b text-gray-500">
+          <div className="w-full h-8 md:h-10 border-gray-500/50 border-b text-gray-500 flex items-center">
             <TooltipProvider>
               <Tooltip>
                 {/* Responsive text size for MrD3M0 */}
-                <TooltipTrigger className="text-xs sm:text-sm md:text-base">
+                <TooltipTrigger className="text-xs sm:text-sm md:text-base px-1 truncate">
                   MrD3M0
                 </TooltipTrigger>
                 <TooltipContent side="right" align="start" variant={"dark"}>
@@ -4962,10 +5010,8 @@ const HeroSection = () => {
             </TooltipProvider>
           </div>
 
-          <div className=" min-w-0 px-1 text-xl sm:text-xl  md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
-            <h1 className="m-0 min-w-0 truncate">
-              <ShimmeringText text="Sumit Karki" duration={10} />
-            </h1>
+          <div className="min-w-0 px-1 text-lg sm:text-xl md:text-2xl lg:text-4xl border-gray-500/50 border-b font-light text-zinc-200 flex justify-center sm:gap-5 lg:gap-0 items-center gap-1">
+            <h1 className="m-0 min-w-0 truncate">Sumit Karki</h1>
             <div className="flex shrink-0">
               <img
                 src="./verified.svg"
@@ -4987,7 +5033,7 @@ const HeroSection = () => {
           </div>
         </div>
       </div>
-      <div className=" hidden md:flex h-full w-full flex-1"></div>
+      <div className="hidden md:flex h-full w-full flex-1"></div>
     </div>
   );
 };

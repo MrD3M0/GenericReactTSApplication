@@ -1,5 +1,5 @@
 import { type LucideIcon } from "lucide-react";
-import { useDevice } from "../responsive";
+import { cn } from "@/lib/utils";
 
 type T_AboutMeProps = {
   label?: string;
@@ -20,22 +20,20 @@ const AboutMeEle = ({
   className,
   disableAnchor = false,
 }: T_AboutMeProps) => {
-  const { isMobile, isTablet } = useDevice();
+  
   return (
     <div
       className={`w-full h-8 min-w-0 mt-0.5! ml-0.5! gap-2 flex items-center justify-start ${className}`}
     >
       {Icon && (
         <span
-          className="p-0.5! bg-[#0f1117] rounded-md
-                    border border-white/10
-                    shadow-inner shadow-black/40
-                    flex items-center justify-center "
+          className={cn(
+            "flex size-6 shrink-0 items-center justify-center rounded-lg",
+            "bg-muted text-muted-foreground",
+            "border border-muted-foreground/15 ring-1 ring-border ring-offset-1 ring-offset-background",
+          )}
         >
-          <Icon
-            size={isMobile ? 16 : isTablet ? 20 : 24}
-            className="text-gray-400"
-          />
+          <Icon size={18} className="text-gray-400" />
         </span>
       )}
       {label && (
