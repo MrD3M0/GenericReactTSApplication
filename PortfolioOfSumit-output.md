@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-11 17:36:14 (Asia/Katmandu / GMT+06:45)
+- **Generated On**: 2026-09-12 08:59:39 (Asia/Katmandu / GMT+06:45)
 - **Total Files Processed**: 72
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -98,7 +98,7 @@
 │   │   │   └── 📄 StackSkeleton.tsx (740 B)
 │   │   └── 📁 skills-section/
 │   │       └── 📄 Stack.tsx (5.77 KB)
-│   ├── 📄 App.tsx (3.06 KB)
+│   ├── 📄 App.tsx (3.09 KB)
 │   ├── 📄 index.css (6.63 KB)
 │   └── 📄 main.tsx (234 B)
 ├── 📄 components.json (574 B)
@@ -3766,9 +3766,9 @@ function parsePeriodDate(str: string, fallbackMonth: "first" | "last"): Date {
 - **Location**: `src/lib/reusable/AboutMeEle.tsx`
 - **Relative Path**: `src/lib/reusable`
 - **Created**: 2026-02-26 18:56:36 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-11 16:35:41 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `8d03374e05fc369aee96708ec6cc32c3`
-- **SHA256**: `795d4303492b4618a4d470405e0696581fc064a934975d1ef54a3b1a2f4cdaad`
+- **Modified**: 2026-09-12 08:57:10 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `ca675768d2efa1f1555dc5e34ea4d69c`
+- **SHA256**: `6fd32a2398f930c7eff078a5975123f8c8a128b7342ced730cdda94cafd7a10c`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -3806,7 +3806,7 @@ const AboutMeEle = ({
           className={cn(
             "flex size-6 shrink-0 items-center justify-center rounded-lg",
             "bg-muted text-muted-foreground",
-            "border border-muted-foreground/15 ring-1 ring-border ring-offset-1 ring-offset-background",
+            "border border-muted-foreground/15 ring-1 ring-line ring-offset-1 ring-offset-background",
           )}
         >
           <Icon size={18} className="text-gray-400" />
@@ -3833,7 +3833,6 @@ const AboutMeEle = ({
 };
 
 export default AboutMeEle;
-
 ```
 
 ---
@@ -4768,9 +4767,9 @@ export default function Footer() {
 - **Location**: `src/pages/hero-section/AboutMe.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-11 16:36:08 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `a84dc6b554c7d8faed3b52cb48298b63`
-- **SHA256**: `258529132f8009ee51428ef9bd0d42944a097de5939b935d8a6f08c004b14516`
+- **Modified**: 2026-09-12 08:54:11 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `19646700f8545f3240a07f73a8ee51b2`
+- **SHA256**: `df470e18e53b818f1c73831dd4cb493e1680e6fd74d89eca5a3ebbc1a634c47b`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4790,14 +4789,14 @@ import {
 const AboutMe = () => {
   return (
     <div className="w-full bg-black border-b border-gray-500/50 flex justify-center items-center">
-      <div className="@container min-w-0 h-full w-[90%] md:w-[80%] lg:w-[40%]">
-        <div className="grid grid-cols-1 @md:grid-cols-2 gap-1! sm:gap-1.5! md:gap-2! border-gray-500/50 border-l border-r py-1.5! sm:py-2! px-1! sm:px-2!">
+      <div className="min-w-0 h-full w-[90%] md:w-[80%] lg:w-[40%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1! sm:gap-1.5! md:gap-2! border-gray-500/50 border-l border-r py-1.5! sm:py-2! px-1! sm:px-2!">
           {" "}
           <AboutMeEle
             icon={BriefcaseBusiness}
             label={"Full Stack Developer"}
             isCompany={false}
-            className="col-span-2"
+            className="md:col-span-2"
           />
           <AboutMeEle
             icon={MapPin}
@@ -5795,15 +5794,15 @@ export default Stack;
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 3.06 KB
+- **Size**: 3.09 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-11 17:11:48 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `034381ee1e79aacbbae7ec19a15ad89f`
-- **SHA256**: `aee97837e2842ba0739c9e9a5d6fa4b5d814764e4021d4c35db5625fc4102f8d`
+- **Modified**: 2026-09-12 08:56:08 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `c466c3932b7ae83c6a39f39074799fdd`
+- **SHA256**: `dc29405abc9d48826d42e8ffa6bb5c5276c1ac0c9142119c1f7768aa3de79b3a`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5858,6 +5857,7 @@ function App() {
           <HeroSection />
           <Separator />
           <AboutMe />
+          <Separator />
         </section>
 
         <section id="journey" className="scroll-mt-12">

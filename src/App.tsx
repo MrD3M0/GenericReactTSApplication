@@ -47,6 +47,7 @@ function App() {
           <HeroSection />
           <Separator />
           <AboutMe />
+          <Separator />
         </section>
 
         <section id="journey" className="scroll-mt-12">
