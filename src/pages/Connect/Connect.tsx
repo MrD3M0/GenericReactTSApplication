@@ -9,7 +9,6 @@ import {
   SiYoutube,
   SiInstagram,
   SiX,
-  SiInsta360,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 import { LinkedIn } from "@/components/element/linked-in";

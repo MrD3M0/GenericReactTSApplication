@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-13 18:24:41 (Asia/Katmandu / GMT+06:45)
+- **Generated On**: 2026-09-13 18:35:08 (Asia/Katmandu / GMT+06:45)
 - **Total Files Processed**: 73
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -76,7 +76,7 @@
 │   │   ├── 📁 components-section/
 │   │   │   └── 📄 Component.tsx (245 B)
 │   │   ├── 📁 Connect/
-│   │   │   └── 📄 Connect.tsx (5.27 KB)
+│   │   │   └── 📄 Connect.tsx (5.26 KB)
 │   │   ├── 📁 entry-gate/
 │   │   │   └── 📄 entry-gate.tsx (8.45 KB)
 │   │   ├── 📁 Experience/
@@ -4204,15 +4204,15 @@ export default Component;
 ### <a id="📄-src-pages-connect-connect-tsx"></a>📄 `src/pages/Connect/Connect.tsx`
 
 **File Info:**
-- **Size**: 5.27 KB
+- **Size**: 5.26 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/Connect/Connect.tsx`
 - **Relative Path**: `src/pages/Connect`
 - **Created**: 2026-08-15 17:44:54 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-13 18:22:32 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `24456850cac0616462b523ec5f77d7a4`
-- **SHA256**: `d8fe4884fc20102e80be5f1ee8a4f7e35a9b3503b8e92e10dc397dbeebec01ae`
+- **Modified**: 2026-09-13 18:35:07 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `29c96f39e7879c90e976c096db07df7f`
+- **SHA256**: `830688dabe91da732c1d97f42214870b88c1148664083478cad581c31de23da6`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4229,7 +4229,6 @@ import {
   SiYoutube,
   SiInstagram,
   SiX,
-  SiInsta360,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
 import { LinkedIn } from "@/components/element/linked-in";
