@@ -12,6 +12,7 @@ import {
   SiInsta360,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
+import { LinkedIn } from "@/components/element/linked-in";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -27,7 +28,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/sumitkarki1/",
-    icon: SiInsta360,
+    icon: LinkedIn,
   },
   { label: "Discord", href: "https://discord.com/", icon: SiDiscord },
   { label: "YouTube", href: "https://youtube.com/", icon: SiYoutube },

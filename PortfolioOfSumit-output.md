@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-12 08:59:39 (Asia/Katmandu / GMT+06:45)
-- **Total Files Processed**: 72
+- **Generated On**: 2026-09-13 18:24:41 (Asia/Katmandu / GMT+06:45)
+- **Total Files Processed**: 73
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -45,7 +45,8 @@
 │   │   └── 📄 SK.jsx (10.95 KB)
 │   ├── 📁 components/
 │   │   ├── 📁 element/
-│   │   │   └── 📄 componet-ele.tsx
+│   │   │   ├── 📄 componet-ele.tsx
+│   │   │   └── 📄 linked-in.tsx (883 B)
 │   │   ├── 📁 ui/
 │   │   │   ├── 📄 button.tsx (2.34 KB)
 │   │   │   ├── 📄 collapsible.tsx (781 B)
@@ -75,7 +76,7 @@
 │   │   ├── 📁 components-section/
 │   │   │   └── 📄 Component.tsx (245 B)
 │   │   ├── 📁 Connect/
-│   │   │   └── 📄 Connect.tsx (5.22 KB)
+│   │   │   └── 📄 Connect.tsx (5.27 KB)
 │   │   ├── 📁 entry-gate/
 │   │   │   └── 📄 entry-gate.tsx (8.45 KB)
 │   │   ├── 📁 Experience/
@@ -85,7 +86,7 @@
 │   │   ├── 📁 hero-section/
 │   │   │   ├── 📄 AboutMe.tsx (1.79 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
-│   │   │   └── 📄 HeroSection.tsx (4.49 KB)
+│   │   │   └── 📄 HeroSection.tsx (4.61 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.65 KB)
 │   │   ├── 📁 projects/
@@ -101,7 +102,7 @@
 │   ├── 📄 App.tsx (3.09 KB)
 │   ├── 📄 index.css (6.63 KB)
 │   └── 📄 main.tsx (234 B)
-├── 📄 components.json (574 B)
+├── 📄 components.json (600 B)
 ├── 📄 eslint.config.js (616 B)
 ├── 📄 index.html (3.52 KB)
 ├── 📄 package.json (1.2 KB)
@@ -119,6 +120,7 @@
 
 - [📄 src/assets/SK.jsx](#📄-src-assets-sk-jsx)
 - [📄 src/components/element/componet-ele.tsx](#📄-src-components-element-componet-ele-tsx)
+- [📄 src/components/element/linked-in.tsx](#📄-src-components-element-linked-in-tsx)
 - [📄 src/components/ui/button.tsx](#📄-src-components-ui-button-tsx)
 - [📄 src/components/ui/collapsible.tsx](#📄-src-components-ui-collapsible-tsx)
 - [📄 src/components/ui/dialog.tsx](#📄-src-components-ui-dialog-tsx)
@@ -177,9 +179,9 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 72 |
+| Total Files | 73 |
 | Total Directories | 19 |
-| Text Files | 53 |
+| Text Files | 54 |
 | Binary Files | 19 |
 | Total Size | 3.86 MB |
 
@@ -187,7 +189,7 @@
 
 | Extension | Count |
 |-----------|-------|
-| `.tsx` | 36 |
+| `.tsx` | 37 |
 | `.png` | 9 |
 | `.json` | 5 |
 | `.svg` | 4 |
@@ -596,6 +598,40 @@ The following files were not included in the text content:
 **File code content:**
 
 ```typescript
+
+```
+
+---
+
+### <a id="📄-src-components-element-linked-in-tsx"></a>📄 `src/components/element/linked-in.tsx`
+
+**File Info:**
+- **Size**: 883 B
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/element/linked-in.tsx`
+- **Relative Path**: `src/components/element`
+- **Created**: 2026-09-13 18:18:11 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-13 18:24:41 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `b1310e1185276df24b93990ffdc68b96`
+- **SHA256**: `b45ce2fbb1757315aa79f5b982c687e7e517ff512ddb0d6e85b3fc1a49391dd2`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import type { SVGProps } from "react";
+
+const LinkedIn = (props: SVGProps<SVGSVGElement>) => (
+  <svg {...props} preserveAspectRatio="xMidYMid" viewBox="0 0 256 256">
+    <path
+      d="M218.123 218.127h-37.931v-59.403c0-14.165-.253-32.4-19.728-32.4-19.756 0-22.779 15.434-22.779 31.369v60.43h-37.93V95.967h36.413v16.694h.51a39.907 39.907 0 0 1 35.928-19.733c38.445 0 45.533 25.288 45.533 58.186l-.016 67.013ZM56.955 79.27c-12.157.002-22.014-9.852-22.016-22.009-.002-12.157 9.851-22.014 22.008-22.016 12.157-.003 22.014 9.851 22.016 22.008A22.013 22.013 0 0 1 56.955 79.27m18.966 138.858H37.95V95.967h37.97v122.16ZM237.033.018H18.89C8.58-.098.125 8.161-.001 18.471v219.053c.122 10.315 8.576 18.582 18.89 18.474h218.144c10.336.128 18.823-8.139 18.966-18.474V18.454c-.147-10.33-8.635-18.588-18.966-18.453"
+      fill="currentColor"
+    />
+  </svg>
+);
+
+export { LinkedIn };
 
 ```
 
@@ -4168,15 +4204,15 @@ export default Component;
 ### <a id="📄-src-pages-connect-connect-tsx"></a>📄 `src/pages/Connect/Connect.tsx`
 
 **File Info:**
-- **Size**: 5.22 KB
+- **Size**: 5.27 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/Connect/Connect.tsx`
 - **Relative Path**: `src/pages/Connect`
 - **Created**: 2026-08-15 17:44:54 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-11 16:46:26 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `0c2f6e92839c28b01fd7a90865f6fa0d`
-- **SHA256**: `56b50bfc4a044f502c6d655801020b1e47f1ec3b72d4f45b27a68a087b2e0c9a`
+- **Modified**: 2026-09-13 18:22:32 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `24456850cac0616462b523ec5f77d7a4`
+- **SHA256**: `d8fe4884fc20102e80be5f1ee8a4f7e35a9b3503b8e92e10dc397dbeebec01ae`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4196,6 +4232,7 @@ import {
   SiInsta360,
 } from "react-icons/si";
 import type { IconType } from "react-icons";
+import { LinkedIn } from "@/components/element/linked-in";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -4211,7 +4248,7 @@ const SOCIAL_LINKS: SocialLink[] = [
   {
     label: "LinkedIn",
     href: "https://www.linkedin.com/in/sumitkarki1/",
-    icon: SiInsta360,
+    icon: LinkedIn,
   },
   { label: "Discord", href: "https://discord.com/", icon: SiDiscord },
   { label: "YouTube", href: "https://youtube.com/", icon: SiYoutube },
@@ -4345,7 +4382,7 @@ export default function Connect() {
 - **Location**: `src/pages/entry-gate/entry-gate.tsx`
 - **Relative Path**: `src/pages/entry-gate`
 - **Created**: 2026-09-09 10:33:05 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-11 17:36:13 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-12 16:27:55 (Asia/Katmandu / GMT+06:45)
 - **MD5**: `b71e12a6075672c7281a15076db3ef7b`
 - **SHA256**: `5fb132e9f574b7a00761994a50374f5f5cd1e0d56f3cb2ea0fbe59ce787e3a52`
 - **Encoding**: UTF-8
@@ -4946,15 +4983,15 @@ export default BannerSection;
 ### <a id="📄-src-pages-hero-section-herosection-tsx"></a>📄 `src/pages/hero-section/HeroSection.tsx`
 
 **File Info:**
-- **Size**: 4.49 KB
+- **Size**: 4.61 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/hero-section/HeroSection.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-11 17:16:45 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `9d18246a58dbd7ae553e269060d5f14d`
-- **SHA256**: `6bdabc6dcbefb2faa1da9a1529be021f13e503ac21c29fd3eb23f53979f96191`
+- **Modified**: 2026-09-12 16:27:55 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `4cc367ad9acaf2367de593a2edcd34b8`
+- **SHA256**: `0f3085ff923c739e91b94223030e6bbe0a234fac767535fee3db587718bf62de`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -6190,15 +6227,15 @@ createRoot(document.getElementById("root")!).render(
 ### <a id="📄-components-json"></a>📄 `components.json`
 
 **File Info:**
-- **Size**: 574 B
+- **Size**: 600 B
 - **Extension**: `.json`
 - **Language**: `json`
 - **Location**: `components.json`
 - **Relative Path**: `root`
 - **Created**: 2026-02-26 18:27:39 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-25 14:36:46 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `305e5c4e16c5dfd906db50820f7e35c2`
-- **SHA256**: `f795655fbfde1328846faf87eebd55b81f53d58c699cd59c6f7266fca81ab8a9`
+- **Modified**: 2026-09-12 16:27:55 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `dc6a49b37093b12fbcd37078a397b65a`
+- **SHA256**: `9a5012d3d870f6067fd6c2fd1d77e3597d9f8185cc724db100735663671ff98a`
 - **Encoding**: ASCII
 
 **File code content:**
