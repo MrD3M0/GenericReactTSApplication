@@ -49,9 +49,9 @@ export const ProjectElement = ({
         <div ref={iconRef} className="shrink-0">
           <Icon className="h-6 w-6 text-gray-400" />
         </div>
-        <span className="truncate text-xs md:text-sm font-medium text-gray-200">
+        <h3 className="truncate text-xs md:text-sm font-medium text-gray-200 m-0 inline">
           {title}
-        </span>
+        </h3>
       </div>
 
       {link && (

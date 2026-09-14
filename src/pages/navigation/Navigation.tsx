@@ -16,7 +16,7 @@ const NAV_ITEMS = [
 
 const NavigationBar = () => {
   const { isMobile } = useDevice();
-  const navRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
   const stickyPoint = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -58,8 +58,9 @@ const NavigationBar = () => {
     <>
       <div ref={stickyPoint} className="h-0 w-full" />
 
-      <div
+      <nav
         ref={navRef}
+        aria-label="Primary"
         className="w-full h-12 sticky top-0 z-50 bg-black text-zinc-50 text-md text-center flex justify-center items-center border-y border-gray-500/50 mt-2! "
       >
         <div className="w-full h-full flex-1"></div>
@@ -79,7 +80,7 @@ const NavigationBar = () => {
           ))}
         </ul>
         <div className="w-full h-full flex-1"></div>
-      </div>
+      </nav>
     </>
   );
 };

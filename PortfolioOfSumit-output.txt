@@ -5,8 +5,8 @@ PROJECT EXPORT FOR LLMs
 PROJECT INFORMATION:
 --------------------------------------------------
 Project Name: PortfolioOfSumit
-Generated On: 2026-09-14 07:09:15 (Asia/Katmandu / GMT+06:45)
-Total Files Processed: 74
+Generated On: 2026-09-14 07:58:51 (Asia/Katmandu / GMT+06:45)
+Total Files Processed: 77
 Export Tool: Easy Whole Project to Single Text File for LLMs v1.1.0
 Tool Author: Jota / José Guilherme Pandolfi
 
@@ -30,11 +30,14 @@ PROJECT STRUCTURE
 │   ├── 📄 favicon.svg (402.33 KB)
 │   ├── 📄 gta-san-menu-click-sound.mp3 (24.62 KB)
 │   ├── 📄 gta-san-menu-hover-sound.mp3 (27.68 KB)
+│   ├── 📄 llms.txt (979 B)
 │   ├── 📄 profile.png (1.5 MB)
 │   ├── 📄 pronounce.mp3 (36 KB)
 │   ├── 📄 Pronounciation.svg (478 B)
+│   ├── 📄 robots.txt (74 B)
 │   ├── 📄 sajilo-softwares.png (21.6 KB)
 │   ├── 📄 site.webmanifest (436 B)
+│   ├── 📄 sitemap.xml (277 B)
 │   ├── 📄 SK-nobg.png (301.3 KB)
 │   ├── 📄 verified.svg (997 B)
 │   ├── 📄 web-app-manifest-192x192.png (6.08 KB)
@@ -72,7 +75,7 @@ PROJECT STRUCTURE
 │   │   │   ├── 📄 AutoScrollText.tsx (2.62 KB)
 │   │   │   ├── 📄 Component-Ele.tsx (447 B)
 │   │   │   ├── 📄 Separator.tsx (734 B)
-│   │   │   └── 📄 Title.tsx (776 B)
+│   │   │   └── 📄 Title.tsx (821 B)
 │   │   ├── 📄 responsive.ts (318 B)
 │   │   └── 📄 utils.ts (166 B)
 │   ├── 📁 pages/
@@ -87,13 +90,13 @@ PROJECT STRUCTURE
 │   │   ├── 📁 Footer/
 │   │   │   └── 📄 Footer.tsx (635 B)
 │   │   ├── 📁 hero-section/
-│   │   │   ├── 📄 AboutMe.tsx (1.79 KB)
+│   │   │   ├── 📄 AboutMe.tsx (1.85 KB)
 │   │   │   ├── 📄 Banner.tsx (2.01 KB)
 │   │   │   └── 📄 HeroSection.tsx (4.61 KB)
 │   │   ├── 📁 navigation/
-│   │   │   └── 📄 Navigation.tsx (2.65 KB)
+│   │   │   └── 📄 Navigation.tsx (2.68 KB)
 │   │   ├── 📁 projects/
-│   │   │   ├── 📄 projectElement.tsx (1.96 KB)
+│   │   │   ├── 📄 projectElement.tsx (1.97 KB)
 │   │   │   └── 📄 Projects.tsx (2.14 KB)
 │   │   ├── 📁 skeletonLoaders/
 │   │   │   ├── 📄 ExperienceSkeleton.tsx (963 B)
@@ -101,13 +104,13 @@ PROJECT STRUCTURE
 │   │   │   ├── 📄 ProjectsSkeleton.tsx (789 B)
 │   │   │   └── 📄 StackSkeleton.tsx (740 B)
 │   │   └── 📁 skills-section/
-│   │       └── 📄 Stack.tsx (5.77 KB)
+│   │       └── 📄 Stack.tsx (5.84 KB)
 │   ├── 📄 App.tsx (3.14 KB)
 │   ├── 📄 index.css (6.63 KB)
 │   └── 📄 main.tsx (332 B)
 ├── 📄 components.json (600 B)
 ├── 📄 eslint.config.js (616 B)
-├── 📄 index.html (2.82 KB)
+├── 📄 index.html (2.83 KB)
 ├── 📄 package.json (1.24 KB)
 ├── 📄 pnpm-lock.yaml (263.84 KB)
 ├── 📄 README.md (2.5 KB)
@@ -119,9 +122,9 @@ PROJECT STRUCTURE
 ================================================================================
 PROJECT STATISTICS
 ================================================================================
-Total Files: 74
+Total Files: 77
 Total Directories: 19
-Text Files: 55
+Text Files: 58
 Binary Files: 19
 Total Size: 3.87 MB
 
@@ -134,9 +137,11 @@ FILE TYPES DISTRIBUTION:
 .mp3            : 4
 .jsx            : 3
 .ts             : 3
+.txt            : 2
 .css            : 2
 .ico            : 1
 .webmanifest    : 1
+.xml            : 1
 .js             : 1
 .html           : 1
 .yaml           : 1
@@ -144,6 +149,103 @@ FILE TYPES DISTRIBUTION:
 
 ================================================================================
 FILE CODE CONTENTS
+================================================================================
+
+
+================================================================================
+FILE: public/llms.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 979 B
+Extension: .txt
+Language: text
+Location: public/llms.txt
+Relative Path: public
+Created: 2026-09-14 07:26:53 (Asia/Katmandu / GMT+06:45)
+Modified: 2026-09-14 07:27:01 (Asia/Katmandu / GMT+06:45)
+MD5: 24027d5a7f38a7b9ca560fb5b34644d0
+SHA256: 50f253603320a491ddeab67be46d3aa52558b2adf16236c40c0bbe97b8b94168
+Encoding: UTF-8
+
+FILE CONTENT:
+----------------------------------------
+# Sumit Karki
+
+> Sumit Karki (Mr DEMO) is a full-stack developer from Nepal, building with PostgreSQL, Express, React, Node.js and TypeScript (PERN stack).
+
+Sumit is a Full Stack Developer based in Nepal. He builds web applications using the PERN stack (PostgreSQL, Express, React, Node.js) with TypeScript, and has experience with Electron and Tauri for cross-platform desktop apps.
+
+## Work Experience
+- Front-End Intern at Sajilo Softwares — built frontend interfaces for restaurant and hotel management systems using React, TypeScript, Tailwind CSS.
+- Full-Stack Engineer at Zippos Softwares — building Zap, a point-of-sale system for retail businesses, with an offline Electron desktop app and an online PERN web app.
+
+## Links
+- Website: https://sumitkarki1.com.np/
+- GitHub: https://github.com/MrD3M0
+- LinkedIn: https://www.linkedin.com/in/sumitkarki1/
+- Instagram: https://www.instagram.com/sumit.karki1/
+
+## Contact
+- Email: sumitkarki047@gmail.com
+================================================================================
+
+
+================================================================================
+FILE: public/robots.txt
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 74 B
+Extension: .txt
+Language: text
+Location: public/robots.txt
+Relative Path: public
+Created: 2026-09-14 07:58:04 (Asia/Katmandu / GMT+06:45)
+Modified: 2026-09-14 07:58:24 (Asia/Katmandu / GMT+06:45)
+MD5: 676124c776991c1526c516252042815a
+SHA256: 8bb03a67b755dd146783556270f20e7a700db22031d3d280e6819b1d13b64787
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+User-agent: *
+Allow: /
+
+Sitemap: https://sumitkarki1.com.np/sitemap.xml
+================================================================================
+
+
+================================================================================
+FILE: public/sitemap.xml
+================================================================================
+
+FILE INFORMATION:
+----------------------------------------
+Size: 277 B
+Extension: .xml
+Language: xml
+Location: public/sitemap.xml
+Relative Path: public
+Created: 2026-09-14 07:58:40 (Asia/Katmandu / GMT+06:45)
+Modified: 2026-09-14 07:58:50 (Asia/Katmandu / GMT+06:45)
+MD5: 2115b26af8b3d0c5954c31aea24b9262
+SHA256: 48915ccb697c18851539ee56148f0e8d059d6ecc480605e692300c990ca128ba
+Encoding: ASCII
+
+FILE CONTENT:
+----------------------------------------
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>https://sumitkarki1.com.np/</loc>
+    <lastmod>2026-09-14</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+</urlset>
 ================================================================================
 
 
@@ -4125,15 +4227,15 @@ FILE: src/lib/reusable/Title.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 776 B
+Size: 821 B
 Extension: .tsx
 Language: typescript
 Location: src/lib/reusable/Title.tsx
 Relative Path: src/lib/reusable
 Created: 2026-05-10 18:21:17 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-08-13 11:45:03 (Asia/Katmandu / GMT+06:45)
-MD5: f77b33a4f8859cbd41e9cf8f05e546b1
-SHA256: 593782106cc170b37b7fb3c572e1e644909d33fc2c207fb18504cb82da5a646d
+Modified: 2026-09-14 07:44:45 (Asia/Katmandu / GMT+06:45)
+MD5: 8a6edf281f8d8e32196da9a8cf396204
+SHA256: 44b1d5b567e75484826ac1dc9387c00934bc1bbd39bfaf166b2f7ada15745b40
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4152,7 +4254,7 @@ const Title = ({
       <div
         className={`w-[90%] md:w-[80%] lg:w-[40%] border-l border-r border-gray-500/50 text-white text-${TitleSize == "sm" ? "2xl" : TitleSize == "md" ? "3xl font-light" : TitleSize == "lg" ? "4xl font-thin" : "5xl font-thin"} pl-2 pt-1`}
       >
-        <span>{TitleLabel}</span>
+        <h2 className="m-0 inline font-inherit text-inherit">{TitleLabel}</h2>
       </div>
       <div className="hidden md:flex flex-1 h-full w-full"></div>
     </div>
@@ -4862,15 +4964,15 @@ FILE: src/pages/hero-section/AboutMe.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.79 KB
+Size: 1.85 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/hero-section/AboutMe.tsx
 Relative Path: src/pages/hero-section
 Created: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-14 07:02:28 (Asia/Katmandu / GMT+06:45)
-MD5: 19646700f8545f3240a07f73a8ee51b2
-SHA256: df470e18e53b818f1c73831dd4cb493e1680e6fd74d89eca5a3ebbc1a634c47b
+Modified: 2026-09-14 07:54:21 (Asia/Katmandu / GMT+06:45)
+MD5: f9b9d7167a1d986b910aafe598083bb2
+SHA256: dfd395772e15671554adf903b44e6d7fefac6bc7b3f231a9986a3ff88eb20a5b
 Encoding: ASCII
 
 FILE CONTENT:
@@ -4890,7 +4992,8 @@ const AboutMe = () => {
   return (
     <div className="w-full bg-black border-b border-gray-500/50 flex justify-center items-center">
       <div className="min-w-0 h-full w-[90%] md:w-[80%] lg:w-[40%]">
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-1! sm:gap-1.5! md:gap-2! border-gray-500/50 border-l border-r py-1.5! sm:py-2! px-1! sm:px-2!">
+        <h2 className="sr-only">About Me</h2>
+        <address className="grid grid-cols-1 md:grid-cols-2 gap-1! sm:gap-1.5! md:gap-2! border-gray-500/50 border-l border-r py-1.5! sm:py-2! px-1! sm:px-2! not-italic!">
           {" "}
           <AboutMeEle
             icon={BriefcaseBusiness}
@@ -4930,7 +5033,7 @@ const AboutMe = () => {
             companyLink="https://sumitkarki1.com.np/"
           />
           <AboutMeEle icon={Clock2} label="GMT+5:45" />
-        </div>
+        </address>
       </div>
     </div>
   );
@@ -5199,15 +5302,15 @@ FILE: src/pages/navigation/Navigation.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 2.65 KB
+Size: 2.68 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/navigation/Navigation.tsx
 Relative Path: src/pages/navigation
 Created: 2026-02-26 18:22:30 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-08 17:32:02 (Asia/Katmandu / GMT+06:45)
-MD5: 9af3032c16163557d35897089bfeae55
-SHA256: b2e34382413b658b8177ea859a036087f3a51bb958bbcfc5fb579f6917946731
+Modified: 2026-09-14 07:50:27 (Asia/Katmandu / GMT+06:45)
+MD5: 086271dfd6f54dbd80f14022d3d079fa
+SHA256: d63c7e1d3646ba48f5186c5b35c3b108c134d0e3a70d714bd62822a1e820a456
 Encoding: ASCII
 
 FILE CONTENT:
@@ -5230,7 +5333,7 @@ const NAV_ITEMS = [
 
 const NavigationBar = () => {
   const { isMobile } = useDevice();
-  const navRef = useRef<HTMLDivElement>(null);
+  const navRef = useRef<HTMLElement>(null);
   const stickyPoint = useRef<HTMLDivElement>(null);
 
   useGSAP(
@@ -5272,8 +5375,9 @@ const NavigationBar = () => {
     <>
       <div ref={stickyPoint} className="h-0 w-full" />
 
-      <div
+      <nav
         ref={navRef}
+        aria-label="Primary"
         className="w-full h-12 sticky top-0 z-50 bg-black text-zinc-50 text-md text-center flex justify-center items-center border-y border-gray-500/50 mt-2! "
       >
         <div className="w-full h-full flex-1"></div>
@@ -5293,7 +5397,7 @@ const NavigationBar = () => {
           ))}
         </ul>
         <div className="w-full h-full flex-1"></div>
-      </div>
+      </nav>
     </>
   );
 };
@@ -5309,15 +5413,15 @@ FILE: src/pages/projects/projectElement.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 1.96 KB
+Size: 1.97 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/projects/projectElement.tsx
 Relative Path: src/pages/projects
 Created: 2026-07-05 11:38:18 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-09 05:50:37 (Asia/Katmandu / GMT+06:45)
-MD5: 88c2359164718f149395cb121c45ee45
-SHA256: feeae3afd5e64887f172bdbe688597015160bf515d6fd8c9fee7babbc0e18880
+Modified: 2026-09-14 07:39:28 (Asia/Katmandu / GMT+06:45)
+MD5: 6d78ab252e1844f346369243cf9554c8
+SHA256: f2f5cecdfbbfd4475dc8f04a4dda44f4f63e705bad1fa2d653bf14cec5717710
 Encoding: ASCII
 
 FILE CONTENT:
@@ -5373,9 +5477,9 @@ export const ProjectElement = ({
         <div ref={iconRef} className="shrink-0">
           <Icon className="h-6 w-6 text-gray-400" />
         </div>
-        <span className="truncate text-xs md:text-sm font-medium text-gray-200">
+        <h3 className="truncate text-xs md:text-sm font-medium text-gray-200 m-0 inline">
           {title}
-        </span>
+        </h3>
       </div>
 
       {link && (
@@ -5403,6 +5507,7 @@ export const ProjectElement = ({
     </div>
   );
 };
+
 ================================================================================
 
 
@@ -5690,15 +5795,15 @@ FILE: src/pages/skills-section/Stack.tsx
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 5.77 KB
+Size: 5.84 KB
 Extension: .tsx
 Language: typescript
 Location: src/pages/skills-section/Stack.tsx
 Relative Path: src/pages/skills-section
 Created: 2026-03-30 18:37:05 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-08-15 14:33:17 (Asia/Katmandu / GMT+06:45)
-MD5: 3975fa1bf8758e8a66371569916c0802
-SHA256: 1af4db6f635ce851a04e68f01cef99c74bb42dd7ec672f6751604a8755028576
+Modified: 2026-09-14 07:42:12 (Asia/Katmandu / GMT+06:45)
+MD5: 0f003a366e0e513e966073f062681cca
+SHA256: 13f7678c29af781bd81b9ff9a92d51d79c6d787e1c3de444990119f4cff17241
 Encoding: ASCII
 
 FILE CONTENT:
@@ -5868,7 +5973,9 @@ const Stack = () => {
                 <span className="tabular-nums">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <span>{category.label}</span>
+                <h3 className="m-0 text-inherit font-inherit">
+                  {category.label}
+                </h3>
               </div>
 
               <div className="flex flex-wrap gap-x-4 gap-y-2 min-w-0">
@@ -6405,16 +6512,16 @@ FILE: index.html
 
 FILE INFORMATION:
 ----------------------------------------
-Size: 2.82 KB
+Size: 2.83 KB
 Extension: .html
 Language: html
 Location: index.html
 Relative Path: root
 Created: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-Modified: 2026-09-14 07:04:22 (Asia/Katmandu / GMT+06:45)
-MD5: 4e6c5d4c64cd748392b01eec267b0cd5
-SHA256: 6b34cb9555fba7bff31b45f1276d51adaa7e3e7c5f25bc9a8c5dc67d3bfde1cc
-Encoding: ASCII
+Modified: 2026-09-14 07:36:04 (Asia/Katmandu / GMT+06:45)
+MD5: 4f276100e6ce02c79edec34a8ce0146b
+SHA256: b8790d41bb78817c2129df8390123cf5e1c58f32d36b0ebc61db6a8e45befa5f
+Encoding: UTF-8
 
 FILE CONTENT:
 ----------------------------------------
@@ -6441,10 +6548,10 @@ FILE CONTENT:
       rel="stylesheet"
     />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sumit Karki - Portfolio</title>
+    <title>Sumit Karki (Mr DEMO) — Full-Stack Web Developer, Nepal</title>
     <meta
       name="description"
-      content="Sumit Karki (MrD3M0) is a full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
+      content="Sumit Karki (MrD3M0) is a full-stack PERN developer from Nepal. Explore his projects, work experience, and tech stack in React, Node.js and TypeScript."
     />
     <meta
       name="keywords"
@@ -6452,7 +6559,7 @@ FILE CONTENT:
     />
     <meta name="author" content="Sumit Karki" />
     <meta name="robots" content="index, follow" />
-    <link rel="canonical" href="https://sumitkarki2061.com.np/" />
+    <link rel="canonical" href="https://sumitkarki1.com.np/" />
     <meta name="theme-color" content="#000000" />
 
     <link rel="canonical" href="https://sumitkarki1.com.np/" />
@@ -6474,7 +6581,7 @@ FILE CONTENT:
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Sumit Karki",
-        "alternateName": "MrD3M0",
+        "alternateName": "Mr DEMO",
         "url": "https://sumitkarki1.com.np/",
         "image": "https://sumitkarki1.com.np/profile.png",
         "jobTitle": "Full Stack Developer",

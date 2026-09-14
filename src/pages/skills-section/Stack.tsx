@@ -163,7 +163,9 @@ const Stack = () => {
                 <span className="tabular-nums">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <span>{category.label}</span>
+                <h3 className="m-0 text-inherit font-inherit">
+                  {category.label}
+                </h3>
               </div>
 
               <div className="flex flex-wrap gap-x-4 gap-y-2 min-w-0">

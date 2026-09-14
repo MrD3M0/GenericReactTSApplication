@@ -1,0 +1,18 @@
+# Sumit Karki
+
+> Sumit Karki (Mr DEMO) is a full-stack developer from Nepal, building with PostgreSQL, Express, React, Node.js and TypeScript (PERN stack).
+
+Sumit is a Full Stack Developer based in Nepal. He builds web applications using the PERN stack (PostgreSQL, Express, React, Node.js) with TypeScript, and has experience with Electron and Tauri for cross-platform desktop apps.
+
+## Work Experience
+- Front-End Intern at Sajilo Softwares — built frontend interfaces for restaurant and hotel management systems using React, TypeScript, Tailwind CSS.
+- Full-Stack Engineer at Zippos Softwares — building Zap, a point-of-sale system for retail businesses, with an offline Electron desktop app and an online PERN web app.
+
+## Links
+- Website: https://sumitkarki1.com.np/
+- GitHub: https://github.com/MrD3M0
+- LinkedIn: https://www.linkedin.com/in/sumitkarki1/
+- Instagram: https://www.instagram.com/sumit.karki1/
+
+## Contact
+- Email: sumitkarki047@gmail.com
