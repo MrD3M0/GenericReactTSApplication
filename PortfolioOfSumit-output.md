@@ -3,8 +3,8 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-13 18:35:08 (Asia/Katmandu / GMT+06:45)
-- **Total Files Processed**: 73
+- **Generated On**: 2026-09-14 07:09:15 (Asia/Katmandu / GMT+06:45)
+- **Total Files Processed**: 74
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
 
@@ -60,6 +60,7 @@
 │   │   ├── 📄 ElectricBorder.jsx (8.75 KB)
 │   │   ├── 📄 fluid-gradient-text.tsx (2.35 KB)
 │   │   ├── 📄 scroll-fade-effect.tsx (712 B)
+│   │   ├── 📄 SEO.tsx (2.57 KB)
 │   │   ├── 📄 shimmering-text.tsx (1.87 KB)
 │   │   ├── 📄 SplashCursor.jsx (36.07 KB)
 │   │   └── 📄 work-experience.tsx (10.05 KB)
@@ -99,14 +100,14 @@
 │   │   │   └── 📄 StackSkeleton.tsx (740 B)
 │   │   └── 📁 skills-section/
 │   │       └── 📄 Stack.tsx (5.77 KB)
-│   ├── 📄 App.tsx (3.09 KB)
+│   ├── 📄 App.tsx (3.14 KB)
 │   ├── 📄 index.css (6.63 KB)
-│   └── 📄 main.tsx (234 B)
+│   └── 📄 main.tsx (332 B)
 ├── 📄 components.json (600 B)
 ├── 📄 eslint.config.js (616 B)
-├── 📄 index.html (3.52 KB)
-├── 📄 package.json (1.2 KB)
-├── 📄 pnpm-lock.yaml (262.81 KB)
+├── 📄 index.html (2.82 KB)
+├── 📄 package.json (1.24 KB)
+├── 📄 pnpm-lock.yaml (263.84 KB)
 ├── 📄 README.md (2.5 KB)
 ├── 📄 tsconfig.app.json (880 B)
 ├── 📄 tsconfig.json (248 B)
@@ -133,6 +134,7 @@
 - [📄 src/components/ElectricBorder.jsx](#📄-src-components-electricborder-jsx)
 - [📄 src/components/fluid-gradient-text.tsx](#📄-src-components-fluid-gradient-text-tsx)
 - [📄 src/components/scroll-fade-effect.tsx](#📄-src-components-scroll-fade-effect-tsx)
+- [📄 src/components/SEO.tsx](#📄-src-components-seo-tsx)
 - [📄 src/components/shimmering-text.tsx](#📄-src-components-shimmering-text-tsx)
 - [📄 src/components/SplashCursor.jsx](#📄-src-components-splashcursor-jsx)
 - [📄 src/components/work-experience.tsx](#📄-src-components-work-experience-tsx)
@@ -179,17 +181,17 @@
 
 | Metric | Count |
 |--------|-------|
-| Total Files | 73 |
+| Total Files | 74 |
 | Total Directories | 19 |
-| Text Files | 54 |
+| Text Files | 55 |
 | Binary Files | 19 |
-| Total Size | 3.86 MB |
+| Total Size | 3.87 MB |
 
 ### 📄 File Types Distribution
 
 | Extension | Count |
 |-----------|-------|
-| `.tsx` | 37 |
+| `.tsx` | 38 |
 | `.png` | 9 |
 | `.json` | 5 |
 | `.svg` | 4 |
@@ -2034,6 +2036,96 @@ export function ScrollFadeEffect({
       {...props}
     />
   )
+}
+
+```
+
+---
+
+### <a id="📄-src-components-seo-tsx"></a>📄 `src/components/SEO.tsx`
+
+**File Info:**
+- **Size**: 2.57 KB
+- **Extension**: `.tsx`
+- **Language**: `typescript`
+- **Location**: `src/components/SEO.tsx`
+- **Relative Path**: `src/components`
+- **Created**: 2026-09-14 07:07:48 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-14 07:08:36 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `95d0b513cf81362ae7ab75a567a57ccd`
+- **SHA256**: `fe934c03f7704adba0e9715aeaa107b5bd2e59508985b819c0ca6194bc9f465b`
+- **Encoding**: ASCII
+
+**File code content:**
+
+```typescript
+import { Helmet } from "react-helmet-async";
+
+const SITE_URL = "https://sumitkarki1.com.np/";
+const OG_IMAGE = "https://sumitkarki1.com.np/banner.png";
+const PROFILE_IMAGE = "https://sumitkarki1.com.np/profile.png";
+
+const personSchema = {
+  "@context": "https://schema.org",
+  "@type": "Person",
+  name: "Sumit Karki",
+  alternateName: "MrDEMO",
+  url: SITE_URL,
+  image: PROFILE_IMAGE,
+  jobTitle: "Full Stack Developer",
+  email: "mailto:sumitkarki047@gmail.com",
+  address: { "@type": "PostalAddress", addressCountry: "Nepal" },
+  sameAs: [
+    "https://github.com/MrD3M0",
+    "https://www.linkedin.com/in/sumitkarki1/",
+    "https://www.instagram.com/sumit.karki1/",
+  ],
+};
+
+export default function SEO() {
+  return (
+    <Helmet>
+      <title>Sumit Karki - Portfolio</title>
+      <meta
+        name="description"
+        content="Sumit Karki (MrDEM0) is a full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
+      />
+      <meta
+        name="keywords"
+        content="Sumit Karki, MrDEM0, full stack developer, PERN stack developer Nepal, React developer Nepal, Node.js developer, TypeScript developer, web developer Nepal"
+      />
+      <meta name="author" content="Sumit Karki" />
+      <meta name="robots" content="index, follow" />
+      <link rel="canonical" href={SITE_URL} />
+
+      <meta property="og:type" content="website" />
+      <meta property="og:url" content={SITE_URL} />
+      <meta
+        property="og:title"
+        content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
+      />
+      <meta
+        property="og:description"
+        content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
+      />
+      <meta property="og:image" content={OG_IMAGE} />
+      <meta property="og:locale" content="en_US" />
+
+      <meta name="twitter:card" content="summary_large_image" />
+      <meta name="twitter:url" content={SITE_URL} />
+      <meta
+        name="twitter:title"
+        content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
+      />
+      <meta
+        name="twitter:description"
+        content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
+      />
+      <meta name="twitter:image" content={OG_IMAGE} />
+
+      <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
+    </Helmet>
+  );
 }
 
 ```
@@ -4803,7 +4895,7 @@ export default function Footer() {
 - **Location**: `src/pages/hero-section/AboutMe.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 19:04:48 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-12 08:54:11 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-14 07:02:28 (Asia/Katmandu / GMT+06:45)
 - **MD5**: `19646700f8545f3240a07f73a8ee51b2`
 - **SHA256**: `df470e18e53b818f1c73831dd4cb493e1680e6fd74d89eca5a3ebbc1a634c47b`
 - **Encoding**: ASCII
@@ -5830,15 +5922,15 @@ export default Stack;
 ### <a id="📄-src-app-tsx"></a>📄 `src/App.tsx`
 
 **File Info:**
-- **Size**: 3.09 KB
+- **Size**: 3.14 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/App.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-12 08:56:08 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `c466c3932b7ae83c6a39f39074799fdd`
-- **SHA256**: `dc29405abc9d48826d42e8ffa6bb5c5276c1ac0c9142119c1f7768aa3de79b3a`
+- **Modified**: 2026-09-14 07:09:14 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `3bb1beffce4141963a6cf97166826a86`
+- **SHA256**: `335259fbdebb54ffd2bf346077a01f314266d8b3f8a35ec7a2da2029f631d4f5`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5861,6 +5953,7 @@ import SplashCursor from "./components/SplashCursor";
 import EntryGate, {
   SESSION_KEY as ENTRY_GATE_SESSION_KEY,
 } from "./pages/entry-gate/entry-gate";
+import SEO from "./components/SEO";
 
 const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
 const Stack = lazy(() => import("./pages/skills-section/Stack"));
@@ -5878,6 +5971,7 @@ function App() {
 
   return (
     <div className="dark w-full min-h-screen box-border bg-black absolute">
+      <SEO />
       <EntryGate onEnter={() => setEntered(true)} />
 
       {/* Prevent scroll/interaction with the real page until the gate is
@@ -6195,15 +6289,15 @@ html {
 ### <a id="📄-src-main-tsx"></a>📄 `src/main.tsx`
 
 **File Info:**
-- **Size**: 234 B
+- **Size**: 332 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/main.tsx`
 - **Relative Path**: `src`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-03-17 18:00:16 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `45bd0ab9404cdb9f0171bec9d8ecf41f`
-- **SHA256**: `cfceb379e32e1e4b2ece6cc611ae39b11714f147426d203ffed5b200c4b1ed4b`
+- **Modified**: 2026-09-14 07:07:14 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `540159b23418fc2f5b17558606da3ea4`
+- **SHA256**: `1f350f62e255631ae4aa3cd3d9c1a59997b3ebf03156d021b76062525e349767`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -6211,11 +6305,14 @@ html {
 ```typescript
 import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
+import { HelmetProvider } from "react-helmet-async";
 import "./index.css";
 import App from "./App.tsx";
 createRoot(document.getElementById("root")!).render(
   <StrictMode>
-    <App />
+    <HelmetProvider>
+      <App />
+    </HelmetProvider>
   </StrictMode>,
 );
 
@@ -6319,15 +6416,15 @@ export default defineConfig([
 ### <a id="📄-index-html"></a>📄 `index.html`
 
 **File Info:**
-- **Size**: 3.52 KB
+- **Size**: 2.82 KB
 - **Extension**: `.html`
 - **Language**: `html`
 - **Location**: `index.html`
 - **Relative Path**: `root`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 05:55:54 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `42a9a1b81441a70646473aef8e517097`
-- **SHA256**: `9c87d0772a267a6320103d471a400a0f68534f35a3d419b4d3db0af25fcd942f`
+- **Modified**: 2026-09-14 07:04:22 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `4e6c5d4c64cd748392b01eec267b0cd5`
+- **SHA256**: `6b34cb9555fba7bff31b45f1276d51adaa7e3e7c5f25bc9a8c5dc67d3bfde1cc`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -6370,55 +6467,39 @@ export default defineConfig([
     <link rel="canonical" href="https://sumitkarki2061.com.np/" />
     <meta name="theme-color" content="#000000" />
 
-    <!-- Open Graph / Facebook / LinkedIn -->
-    <meta property="og:type" content="website" />
-    <meta property="og:url" content="https://sumitkarki2061.com.np/" />
-    <meta
-      property="og:title"
-      content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
-    />
-    <meta
-      property="og:description"
-      content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
-    />
-    <meta
-      property="og:image"
-      content="https://sumitkarki2061.com.np/banner.png"
-    />
-    <meta property="og:locale" content="en_US" />
+    <link rel="canonical" href="https://sumitkarki1.com.np/" />
+
+    <!-- Open Graph -->
+    <meta property="og:url" content="https://sumitkarki1.com.np/" />
+    <meta property="og:image" content="https://sumitkarki1.com.np/banner.png" />
 
     <!-- Twitter -->
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:url" content="https://sumitkarki2061.com.np/" />
-    <meta
-      name="twitter:title"
-      content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
-    />
-    <meta
-      name="twitter:description"
-      content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
-    />
+    <meta name="twitter:url" content="https://sumitkarki1.com.np/" />
     <meta
       name="twitter:image"
-      content="https://sumitkarki2061.com.np/banner.png"
+      content="https://sumitkarki1.com.np/banner.png"
     />
 
-    <!-- Structured data for search engines -->
+    <!-- JSON-LD -->
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
         "@type": "Person",
         "name": "Sumit Karki",
         "alternateName": "MrD3M0",
-        "url": "https://sumitkarki2061.com.np/",
-        "image": "https://sumitkarki2061.com.np/profile.png",
+        "url": "https://sumitkarki1.com.np/",
+        "image": "https://sumitkarki1.com.np/profile.png",
         "jobTitle": "Full Stack Developer",
-        "email": "mailto:sumitkarki1000@gmail.com",
+        "email": "mailto:sumitkarki047@gmail.com",
         "address": {
           "@type": "PostalAddress",
           "addressCountry": "Nepal"
         },
-        "sameAs": ["https://github.com/MrD3M0"]
+        "sameAs": [
+          "https://github.com/MrD3M0",
+          "https://www.linkedin.com/in/sumitkarki1/",
+          "https://www.instagram.com/sumit.karki1/"
+        ]
       }
     </script>
   </head>
@@ -6435,15 +6516,15 @@ export default defineConfig([
 ### <a id="📄-package-json"></a>📄 `package.json`
 
 **File Info:**
-- **Size**: 1.2 KB
+- **Size**: 1.24 KB
 - **Extension**: `.json`
 - **Language**: `json`
 - **Location**: `package.json`
 - **Relative Path**: `root`
-- **Created**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `6737c9034c99c96011ea471326728555`
-- **SHA256**: `ea91713d86ed5886eed2d046f10996bb02d323aa20e39ee3602fbbd75d6cc241`
+- **Created**: 2026-09-14 07:06:31 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-14 07:06:31 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `b0043357c7741d6515fae255be9cd857`
+- **SHA256**: `6a5e2a2796b217ecb427d3816dcdc5085ae0fd8743f6b087a217d192c68bb203`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -6472,6 +6553,7 @@ export default defineConfig([
     "radix-ui": "^1.4.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
+    "react-helmet-async": "^3.0.0",
     "react-icons": "^5.6.0",
     "react-markdown": "^10.1.0",
     "react-responsive": "^10.0.1",
@@ -6504,15 +6586,15 @@ export default defineConfig([
 ### <a id="📄-pnpm-lock-yaml"></a>📄 `pnpm-lock.yaml`
 
 **File Info:**
-- **Size**: 262.81 KB
+- **Size**: 263.84 KB
 - **Extension**: `.yaml`
 - **Language**: `yaml`
 - **Location**: `pnpm-lock.yaml`
 - **Relative Path**: `root`
-- **Created**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-13 11:21:43 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `b2f6513f90631ff4bc1055c8460a37cb`
-- **SHA256**: `1ca198bc2f8e4148d4bab2be6024e5ed97e26383135bdf5a194212d84e5c865f`
+- **Created**: 2026-09-14 07:06:31 (Asia/Katmandu / GMT+06:45)
+- **Modified**: 2026-09-14 07:06:31 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `00098a5bc2b5b60b1d3afd89e931717e`
+- **SHA256**: `74e09e8f306649dd031c4b8d618d3bf7fd00d752a0dfead11a5a0e0a1baa861c`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -6561,6 +6643,9 @@ importers:
       react-dom:
         specifier: ^19.2.0
         version: 19.2.4(react@19.2.4)
+      react-helmet-async:
+        specifier: ^3.0.0
+        version: 3.0.0(react@19.2.4)
       react-icons:
         specifier: ^5.6.0
         version: 5.6.0(react@19.2.4)
@@ -8878,6 +8963,9 @@ packages:
   inline-style-parser@0.2.7:
     resolution: {integrity: sha512-Nb2ctOyNR8DqQoR0OwRG95uNWIC0C1lCgf5Naz5H6Ji72KZ8OcFZLz2P5sNgwlyoJ8Yif11oMuYs5pBQa86csA==}
 
+  invariant@2.2.4:
+    resolution: {integrity: sha512-phJfQVBuaJM5raOpJjSfkiD6BpbCE4Ns//LaXl6wGYtUBY83nWS6Rf9tXm2e8VaK60JEjYldbPif/A2B1C2gNA==}
+
   ip-address@10.0.1:
     resolution: {integrity: sha512-NWv9YLW4PoW2B7xtzaS3NCot75m6nK7Icdv0o3lfMceJVRfSoQwqD4wEH5rLwoKJwUiZ/rfpiVBhnaF0FK4HoA==}
     engines: {node: '>= 12'}
@@ -9530,6 +9618,14 @@ packages:
     peerDependencies:
       react: ^19.2.4
 
+  react-fast-compare@3.2.2:
+    resolution: {integrity: sha512-nsO+KSNgo1SbJqJEYRE9ERzo7YtYbou/OqjSQKxV7jcKox7+usiUVZOAC+XnDOABXggQTno0Y1CpVnuWEc1boQ==}
+
+  react-helmet-async@3.0.0:
+    resolution: {integrity: sha512-nA3IEZfXiclgrz4KLxAhqJqIfFDuvzQwlKwpdmzZIuC1KNSghDEIXmyU0TKtbM+NafnkICcwx8CECFrZ/sL/1w==}
+    peerDependencies:
+      react: ^16.6.0 || ^17.0.0 || ^18.0.0 || ^19.0.0
+
   react-icons@5.6.0:
     resolution: {integrity: sha512-RH93p5ki6LfOiIt0UtDyNg/cee+HLVR6cHHtW3wALfo+eOHTp8RnU2kRkI6E+H19zMIs03DyxUG/GfZMOGvmiA==}
     peerDependencies:
@@ -9669,6 +9765,9 @@ packages:
 
   shallow-equal@3.1.0:
     resolution: {integrity: sha512-pfVOw8QZIXpMbhBWvzBISicvToTiM5WBF1EeAUZDDSb5Dt29yl4AYbyywbJFSEsRUMr7gJaxqCdr4L3tQf9wVg==}
+
+  shallowequal@1.1.0:
+    resolution: {integrity: sha512-y0m1JoUZSlPAjXVtPPW70aZWfIL/dSP7AFkRnniLCrK/8MDKog3TySTBmckD+RObVxH0v4Tox67+F14PdED2oQ==}
 
   shebang-command@2.0.0:
     resolution: {integrity: sha512-kHxr2zZpYtdmrN1qDjrrX/Z1rR1kG8Dx+gkpK1G4eXmvXswmcE1hTWBWYUzlraYw1/yZp6YuDY77YtvbN0dmDA==}
@@ -12363,6 +12462,10 @@ snapshots:
 
   inline-style-parser@0.2.7: {}
 
+  invariant@2.2.4:
+    dependencies:
+      loose-envify: 1.4.0
+
   ip-address@10.0.1: {}
 
   ipaddr.js@1.9.1: {}
@@ -13116,6 +13219,15 @@ snapshots:
       react: 19.2.4
       scheduler: 0.27.0
 
+  react-fast-compare@3.2.2: {}
+
+  react-helmet-async@3.0.0(react@19.2.4):
+    dependencies:
+      invariant: 2.2.4
+      react: 19.2.4
+      react-fast-compare: 3.2.2
+      shallowequal: 1.1.0
+
   react-icons@5.6.0(react@19.2.4):
     dependencies:
       react: 19.2.4
@@ -13346,6 +13458,8 @@ snapshots:
       - typescript
 
   shallow-equal@3.1.0: {}
+
+  shallowequal@1.1.0: {}
 
   shebang-command@2.0.0:
     dependencies:

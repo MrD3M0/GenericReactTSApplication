@@ -15,6 +15,7 @@ import SplashCursor from "./components/SplashCursor";
 import EntryGate, {
   SESSION_KEY as ENTRY_GATE_SESSION_KEY,
 } from "./pages/entry-gate/entry-gate";
+import SEO from "./components/SEO";
 
 const Experience = lazy(() => import("./pages/Experience/WorkExperience"));
 const Stack = lazy(() => import("./pages/skills-section/Stack"));
@@ -32,6 +33,7 @@ function App() {
 
   return (
     <div className="dark w-full min-h-screen box-border bg-black absolute">
+      <SEO />
       <EntryGate onEnter={() => setEntered(true)} />
 
       {/* Prevent scroll/interaction with the real page until the gate is
