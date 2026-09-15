@@ -3,7 +3,7 @@
 ## 📊 Project Information
 
 - **Project Name**: `PortfolioOfSumit`
-- **Generated On**: 2026-09-14 08:05:59 (Asia/Katmandu / GMT+06:45)
+- **Generated On**: 2026-09-15 11:41:02 (Asia/Katmandu / GMT+06:45)
 - **Total Files Processed**: 77
 - **Export Tool**: Easy Whole Project to Single Text File for LLMs v1.1.0
 - **Tool Author**: Jota / José Guilherme Pandolfi
@@ -29,7 +29,7 @@
 │   ├── 📄 gta-san-menu-click-sound.mp3 (24.62 KB)
 │   ├── 📄 gta-san-menu-hover-sound.mp3 (27.68 KB)
 │   ├── 📄 llms.txt (979 B)
-│   ├── 📄 profile.png (1.5 MB)
+│   ├── 📄 profile.png (316.12 KB)
 │   ├── 📄 pronounce.mp3 (36 KB)
 │   ├── 📄 Pronounciation.svg (478 B)
 │   ├── 📄 robots.txt (74 B)
@@ -63,7 +63,7 @@
 │   │   ├── 📄 ElectricBorder.jsx (8.75 KB)
 │   │   ├── 📄 fluid-gradient-text.tsx (2.35 KB)
 │   │   ├── 📄 scroll-fade-effect.tsx (712 B)
-│   │   ├── 📄 SEO.tsx (2.57 KB)
+│   │   ├── 📄 SEO.tsx (2.89 KB)
 │   │   ├── 📄 shimmering-text.tsx (1.87 KB)
 │   │   ├── 📄 SplashCursor.jsx (36.07 KB)
 │   │   └── 📄 work-experience.tsx (10.05 KB)
@@ -72,7 +72,7 @@
 │   │   │   ├── 📄 AboutMeEle.tsx (1.59 KB)
 │   │   │   ├── 📄 AutoScrollText.tsx (2.62 KB)
 │   │   │   ├── 📄 Component-Ele.tsx (447 B)
-│   │   │   ├── 📄 Separator.tsx (734 B)
+│   │   │   ├── 📄 Separator.tsx (701 B)
 │   │   │   └── 📄 Title.tsx (821 B)
 │   │   ├── 📄 responsive.ts (318 B)
 │   │   └── 📄 utils.ts (166 B)
@@ -89,8 +89,8 @@
 │   │   │   └── 📄 Footer.tsx (635 B)
 │   │   ├── 📁 hero-section/
 │   │   │   ├── 📄 AboutMe.tsx (1.85 KB)
-│   │   │   ├── 📄 Banner.tsx (2.01 KB)
-│   │   │   └── 📄 HeroSection.tsx (4.61 KB)
+│   │   │   ├── 📄 Banner.tsx (2.11 KB)
+│   │   │   └── 📄 HeroSection.tsx (5 KB)
 │   │   ├── 📁 navigation/
 │   │   │   └── 📄 Navigation.tsx (2.68 KB)
 │   │   ├── 📁 projects/
@@ -108,7 +108,7 @@
 │   └── 📄 main.tsx (332 B)
 ├── 📄 components.json (600 B)
 ├── 📄 eslint.config.js (616 B)
-├── 📄 index.html (3.59 KB)
+├── 📄 index.html (6.15 KB)
 ├── 📄 package.json (1.24 KB)
 ├── 📄 pnpm-lock.yaml (263.84 KB)
 ├── 📄 README.md (2.5 KB)
@@ -191,7 +191,7 @@
 | Total Directories | 19 |
 | Text Files | 58 |
 | Binary Files | 19 |
-| Total Size | 3.87 MB |
+| Total Size | 2.68 MB |
 
 ### 📄 File Types Distribution
 
@@ -2147,16 +2147,16 @@ export function ScrollFadeEffect({
 ### <a id="📄-src-components-seo-tsx"></a>📄 `src/components/SEO.tsx`
 
 **File Info:**
-- **Size**: 2.57 KB
+- **Size**: 2.89 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/components/SEO.tsx`
 - **Relative Path**: `src/components`
 - **Created**: 2026-09-14 07:07:48 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-14 07:08:36 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `95d0b513cf81362ae7ab75a567a57ccd`
-- **SHA256**: `fe934c03f7704adba0e9715aeaa107b5bd2e59508985b819c0ca6194bc9f465b`
-- **Encoding**: ASCII
+- **Modified**: 2026-09-15 11:36:16 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `4773a79ca3afda16c6cae878226c1a52`
+- **SHA256**: `1e729e8f1d3f606df869bf7d22eb0376175ad36ad93e140e1af068a68580f54e`
+- **Encoding**: UTF-8
 
 **File code content:**
 
@@ -2167,11 +2167,20 @@ const SITE_URL = "https://sumitkarki1.com.np/";
 const OG_IMAGE = "https://sumitkarki1.com.np/banner.png";
 const PROFILE_IMAGE = "https://sumitkarki1.com.np/profile.png";
 
+// Keep these EXACTLY in sync with the static tags in index.html.
+// index.html is what non-JS crawlers/link-preview bots see; this Helmet
+// version is what browsers see after hydration. If the two ever diverge
+// again, JS-executing crawlers and no-JS crawlers will report a different
+// title/description for the same page.
+const TITLE = "Sumit Karki (Mr DEMO) — Full-Stack Web Developer, Nepal";
+const DESCRIPTION =
+  "Sumit Karki (Mr DEMO) is a full-stack PERN developer from Nepal. Explore his projects, work experience, and tech stack in React, Node.js and TypeScript.";
+
 const personSchema = {
   "@context": "https://schema.org",
   "@type": "Person",
   name: "Sumit Karki",
-  alternateName: "MrDEMO",
+  alternateName: "Mr DEMO",
   url: SITE_URL,
   image: PROFILE_IMAGE,
   jobTitle: "Full Stack Developer",
@@ -2187,43 +2196,39 @@ const personSchema = {
 export default function SEO() {
   return (
     <Helmet>
-      <title>Sumit Karki - Portfolio</title>
-      <meta
-        name="description"
-        content="Sumit Karki (MrDEM0) is a full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
-      />
+      <title>{TITLE}</title>
       <meta
         name="keywords"
-        content="Sumit Karki, MrDEM0, full stack developer, PERN stack developer Nepal, React developer Nepal, Node.js developer, TypeScript developer, web developer Nepal"
+        content="Sumit Karki, MrD3M0, full stack developer, PERN stack developer Nepal, React developer Nepal, Node.js developer, TypeScript developer, web developer Nepal"
       />
+      <meta name="description" content={DESCRIPTION} />
       <meta name="author" content="Sumit Karki" />
       <meta name="robots" content="index, follow" />
       <link rel="canonical" href={SITE_URL} />
 
       <meta property="og:type" content="website" />
       <meta property="og:url" content={SITE_URL} />
-      <meta
-        property="og:title"
-        content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
-      />
-      <meta
-        property="og:description"
-        content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
-      />
+      <meta property="og:title" content={TITLE} />
+      <meta property="og:description" content={DESCRIPTION} />
       <meta property="og:image" content={OG_IMAGE} />
+      <meta property="og:image:width" content="1200" />
+      <meta property="og:image:height" content="630" />
+      <meta
+        property="og:image:alt"
+        content="Sumit Karki — Full-Stack Web Developer"
+      />
+      <meta property="og:site_name" content="Sumit Karki" />
       <meta property="og:locale" content="en_US" />
 
       <meta name="twitter:card" content="summary_large_image" />
       <meta name="twitter:url" content={SITE_URL} />
-      <meta
-        name="twitter:title"
-        content="Sumit Karki | Full Stack Developer (PERN + TypeScript)"
-      />
-      <meta
-        name="twitter:description"
-        content="Full-stack developer from Nepal building with PostgreSQL, Express, React, Node.js and TypeScript. Explore projects, work experience and tech stack."
-      />
+      <meta name="twitter:title" content={TITLE} />
+      <meta name="twitter:description" content={DESCRIPTION} />
       <meta name="twitter:image" content={OG_IMAGE} />
+      <meta
+        name="twitter:image:alt"
+        content="Sumit Karki — Full-Stack Web Developer"
+      />
 
       <script type="application/ld+json">{JSON.stringify(personSchema)}</script>
     </Helmet>
@@ -4217,15 +4222,15 @@ export default ComponentEle;
 ### <a id="📄-src-lib-reusable-separator-tsx"></a>📄 `src/lib/reusable/Separator.tsx`
 
 **File Info:**
-- **Size**: 734 B
+- **Size**: 701 B
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/lib/reusable/Separator.tsx`
 - **Relative Path**: `src/lib/reusable`
 - **Created**: 2026-02-26 18:42:33 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-09 06:12:51 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `84d6dcca26780fc708e56cc00712db91`
-- **SHA256**: `29e5c956c521ec4e5f2f043e7d0c0c6f5ce4e58b986ec49b33dcad7d62e12a2c`
+- **Modified**: 2026-09-15 11:41:02 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `9073d51319536fe3d3e0111e9d585597`
+- **SHA256**: `5a9ebd2447bcbc04d0af6a33f6181a08530558f1ebaf961ed23da7a0a0cc7165`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -4233,10 +4238,10 @@ export default ComponentEle;
 ```typescript
 export default function Separator() {
   return (
-    <div className="relative w-full h-9 border-gray-500!">
+    <div className="relative w-full h-9">
       {/* Background stripes (behind) */}
       <div
-        className="absolute inset-0 bg-black border border-y-gray-500  z-0"
+        className="absolute inset-0 bg-black border-y border-y-gray-500 z-0"
         style={{
           backgroundImage: `repeating-linear-gradient(
             135deg,
@@ -4248,7 +4253,7 @@ export default function Separator() {
         }}
       />
 
-      <div className="relative z-10 h-full w-full flex items-center justify-center border-gray-500!">
+      <div className="relative z-10 h-full w-full flex items-center justify-center">
         <div className="w-[90%] md:w-[80%] lg:w-[40%] h-full border-l border-r border-gray-500" />
       </div>
     </div>
@@ -5076,15 +5081,15 @@ export default AboutMe;
 ### <a id="📄-src-pages-hero-section-banner-tsx"></a>📄 `src/pages/hero-section/Banner.tsx`
 
 **File Info:**
-- **Size**: 2.01 KB
+- **Size**: 2.11 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/hero-section/Banner.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 18:38:26 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-08-14 11:58:42 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `6ca6c8f72d34ea3e0458aad2c3f7266a`
-- **SHA256**: `956cd11f5a77e254f4d7ebe3d8b681042b69ea2387e990629fcb1aa31fe2709b`
+- **Modified**: 2026-09-15 11:38:31 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `8fa1206031cfab4ae57b5696d6ea7d3c`
+- **SHA256**: `e866ec8aadf64c09659c26f2a8dc9d358458d364c0324afb381816e914dbfe44`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5157,8 +5162,12 @@ const BannerSection = () => {
         <img
           ref={imgRef}
           className="relative z-10 w-[50%] md:w-[40%] pointer-events-none will-change-transform"
-          src="SK-nobg.png"
+          src="/SK-nobg.png"
           alt="Sumit Karki"
+          width={400}
+          height={280}
+          loading="eager"
+          decoding="async"
           draggable={false}
         />
       </div>
@@ -5177,15 +5186,15 @@ export default BannerSection;
 ### <a id="📄-src-pages-hero-section-herosection-tsx"></a>📄 `src/pages/hero-section/HeroSection.tsx`
 
 **File Info:**
-- **Size**: 4.61 KB
+- **Size**: 5 KB
 - **Extension**: `.tsx`
 - **Language**: `typescript`
 - **Location**: `src/pages/hero-section/HeroSection.tsx`
 - **Relative Path**: `src/pages/hero-section`
 - **Created**: 2026-02-26 18:40:42 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-12 16:27:55 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `4cc367ad9acaf2367de593a2edcd34b8`
-- **SHA256**: `0f3085ff923c739e91b94223030e6bbe0a234fac767535fee3db587718bf62de`
+- **Modified**: 2026-09-15 11:38:00 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `d33415b2976482c12c04339b5f29de55`
+- **SHA256**: `5a12d3783e17628a95121d9d7dcf46f5ef2d7f363363acc94d4fe5e6fed9e060`
 - **Encoding**: ASCII
 
 **File code content:**
@@ -5242,6 +5251,24 @@ const HeroSection = () => {
   // next to it, so the horizontal border lines always connect properly.
   const avatarBoxWidth = "w-20 sm:w-28 md:w-32 lg:w-40";
 
+  // profile.png is the LCP (Largest Contentful Paint) element on this
+  // page — it's the first thing visible above the fold. Reserving
+  // intrinsic width/height prevents layout shift while it loads, and
+  // fetchPriority + eager loading tells the browser to fetch it first
+  // instead of treating it like a lazy, low-priority image.
+  const avatarImg = (
+    <img
+      className={`${avatarSize} rounded-full border border-gray-500/50`}
+      src="/profile.png"
+      alt="Sumit Karki - Full Stack Developer"
+      width={160}
+      height={160}
+      loading="eager"
+      fetchPriority="high"
+      decoding="async"
+    />
+  );
+
   return (
     <div className="w-full flex flex-row justify-center items-center bg-black">
       <div className="hidden md:flex h-full w-full flex-1"></div>
@@ -5259,18 +5286,10 @@ const HeroSection = () => {
               borderRadius={9999}
               className={avatarSize}
             >
-              <img
-                className={`${avatarSize} rounded-full border border-gray-500/50`}
-                src="profile.png"
-                alt="Sumit Karki - Full Stack Developer"
-              />
+              {avatarImg}
             </ElectricBorder>
           ) : (
-            <img
-              className={`${avatarSize} rounded-full border border-gray-500/50`}
-              src="profile.png"
-              alt="Sumit Karki - Full Stack Developer"
-            />
+            avatarImg
           )}
           <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
@@ -5293,14 +5312,18 @@ const HeroSection = () => {
             <h1 className="m-0 min-w-0 truncate">Sumit Karki</h1>
             <div className="flex shrink-0">
               <img
-                src="./verified.svg"
+                src="/verified.svg"
                 className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 shrink-0"
                 alt=""
+                width={20}
+                height={20}
               />
               <img
                 className="ml-1 w-4 h-4 sm:w-6 sm:h-6 shrink-0 cursor-pointer rounded-2xl"
-                src="./Pronounciation.svg"
+                src="/Pronounciation.svg"
                 alt="Play pronunciation"
+                width={24}
+                height={24}
                 onClick={playAudio}
               />
               <audio ref={audioRef} src="pronounce.mp3" />
@@ -6523,16 +6546,16 @@ export default defineConfig([
 ### <a id="📄-index-html"></a>📄 `index.html`
 
 **File Info:**
-- **Size**: 3.59 KB
+- **Size**: 6.15 KB
 - **Extension**: `.html`
 - **Language**: `html`
 - **Location**: `index.html`
 - **Relative Path**: `root`
 - **Created**: 2026-02-26 18:13:23 (Asia/Katmandu / GMT+06:45)
-- **Modified**: 2026-09-14 08:05:58 (Asia/Katmandu / GMT+06:45)
-- **MD5**: `7fcf0b27c41604b2ce837f29cf9eb9bd`
-- **SHA256**: `40be9e0964db186715955dacffd7761cb8b71243f5a613a139f2c678a5eb0bf8`
-- **Encoding**: UTF-8
+- **Modified**: 2026-09-15 11:35:34 (Asia/Katmandu / GMT+06:45)
+- **MD5**: `f20a5c14cbed8d67c8c7fb140935e278`
+- **SHA256**: `2aca979df5f9915c7ab88c44df83c0c6abf5fc899355fdf4263466a82b763e59`
+- **Encoding**: ASCII
 
 **File code content:**
 
@@ -6559,7 +6582,14 @@ export default defineConfig([
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LCP fix: profile.png is the hero avatar, so warm the connection early -->
+    <link rel="preload" as="image" href="/profile.png" fetchpriority="high" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="dark light" />
     <title>Sumit Karki (Mr DEMO) — Full-Stack Web Developer, Nepal</title>
     <meta
       name="description"
@@ -6586,7 +6616,15 @@ export default defineConfig([
       content="Sumit Karki (Mr DEMO) is a full-stack PERN developer from Nepal. Explore his projects, work experience, and tech stack in React, Node.js and TypeScript."
     />
     <meta property="og:image" content="https://sumitkarki1.com.np/banner.png" />
+    <!-- TODO: confirm banner.png's real pixel dimensions and update these two -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Sumit Karki — Full-Stack Web Developer"
+    />
     <meta property="og:site_name" content="Sumit Karki" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -6603,6 +6641,14 @@ export default defineConfig([
       name="twitter:image"
       content="https://sumitkarki1.com.np/banner.png"
     />
+    <meta
+      name="twitter:image:alt"
+      content="Sumit Karki — Full-Stack Web Developer"
+    />
+    <!-- Add these once you have a handle:
+    <meta name="twitter:site" content="@yourhandle" />
+    <meta name="twitter:creator" content="@yourhandle" />
+    -->
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -6629,6 +6675,54 @@ export default defineConfig([
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Fallback content for crawlers/clients that don't execute JS.
+         This is the only real content a non-JS bot (many link-preview
+         scrapers, some SEO crawlers) will ever see, since this is a
+         client-rendered SPA. Keep it in sync with the hero copy. -->
+    <noscript>
+      <main
+        style="
+          font-family: sans-serif;
+          max-width: 640px;
+          margin: 2rem auto;
+          padding: 0 1rem;
+          color: #e4e4e7;
+        "
+      >
+        <h1>Sumit Karki — Full-Stack Web Developer, Nepal</h1>
+        <p>
+          Sumit Karki (Mr DEMO) is a full-stack PERN developer from Nepal,
+          building with PostgreSQL, Express, React, Node.js and TypeScript.
+        </p>
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            Front-End Intern at Sajilo Softwares — built frontend interfaces for
+            restaurant and hotel management systems using React, TypeScript, and
+            Tailwind CSS.
+          </li>
+          <li>
+            Full-Stack Engineer at Zippos Softwares — building Zap, a
+            point-of-sale system for retail businesses, with an offline Electron
+            desktop app and an online PERN web app.
+          </li>
+        </ul>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://github.com/MrD3M0">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/sumitkarki1/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sumit.karki1/">Instagram</a>
+          </li>
+          <li><a href="mailto:sumitkarki047@gmail.com">Email</a></li>
+        </ul>
+        <p>Please enable JavaScript to view the full interactive site.</p>
+      </main>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

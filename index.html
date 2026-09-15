@@ -20,7 +20,14 @@
       href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap"
       rel="stylesheet"
     />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- LCP fix: profile.png is the hero avatar, so warm the connection early -->
+    <link rel="preload" as="image" href="/profile.png" fetchpriority="high" />
+
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta name="color-scheme" content="dark light" />
     <title>Sumit Karki (Mr DEMO) — Full-Stack Web Developer, Nepal</title>
     <meta
       name="description"
@@ -47,7 +54,15 @@
       content="Sumit Karki (Mr DEMO) is a full-stack PERN developer from Nepal. Explore his projects, work experience, and tech stack in React, Node.js and TypeScript."
     />
     <meta property="og:image" content="https://sumitkarki1.com.np/banner.png" />
+    <!-- TODO: confirm banner.png's real pixel dimensions and update these two -->
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta
+      property="og:image:alt"
+      content="Sumit Karki — Full-Stack Web Developer"
+    />
     <meta property="og:site_name" content="Sumit Karki" />
+    <meta property="og:locale" content="en_US" />
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
@@ -64,6 +79,14 @@
       name="twitter:image"
       content="https://sumitkarki1.com.np/banner.png"
     />
+    <meta
+      name="twitter:image:alt"
+      content="Sumit Karki — Full-Stack Web Developer"
+    />
+    <!-- Add these once you have a handle:
+    <meta name="twitter:site" content="@yourhandle" />
+    <meta name="twitter:creator" content="@yourhandle" />
+    -->
 
     <!-- JSON-LD -->
     <script type="application/ld+json">
@@ -90,6 +113,54 @@
   </head>
   <body>
     <div id="root"></div>
+
+    <!-- Fallback content for crawlers/clients that don't execute JS.
+         This is the only real content a non-JS bot (many link-preview
+         scrapers, some SEO crawlers) will ever see, since this is a
+         client-rendered SPA. Keep it in sync with the hero copy. -->
+    <noscript>
+      <main
+        style="
+          font-family: sans-serif;
+          max-width: 640px;
+          margin: 2rem auto;
+          padding: 0 1rem;
+          color: #e4e4e7;
+        "
+      >
+        <h1>Sumit Karki — Full-Stack Web Developer, Nepal</h1>
+        <p>
+          Sumit Karki (Mr DEMO) is a full-stack PERN developer from Nepal,
+          building with PostgreSQL, Express, React, Node.js and TypeScript.
+        </p>
+        <h2>Work Experience</h2>
+        <ul>
+          <li>
+            Front-End Intern at Sajilo Softwares — built frontend interfaces for
+            restaurant and hotel management systems using React, TypeScript, and
+            Tailwind CSS.
+          </li>
+          <li>
+            Full-Stack Engineer at Zippos Softwares — building Zap, a
+            point-of-sale system for retail businesses, with an offline Electron
+            desktop app and an online PERN web app.
+          </li>
+        </ul>
+        <h2>Links</h2>
+        <ul>
+          <li><a href="https://github.com/MrD3M0">GitHub</a></li>
+          <li>
+            <a href="https://www.linkedin.com/in/sumitkarki1/">LinkedIn</a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/sumit.karki1/">Instagram</a>
+          </li>
+          <li><a href="mailto:sumitkarki047@gmail.com">Email</a></li>
+        </ul>
+        <p>Please enable JavaScript to view the full interactive site.</p>
+      </main>
+    </noscript>
+
     <script type="module" src="/src/main.tsx"></script>
   </body>
 </html>

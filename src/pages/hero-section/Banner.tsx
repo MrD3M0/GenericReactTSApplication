@@ -65,8 +65,12 @@ const BannerSection = () => {
         <img
           ref={imgRef}
           className="relative z-10 w-[50%] md:w-[40%] pointer-events-none will-change-transform"
-          src="SK-nobg.png"
+          src="/SK-nobg.png"
           alt="Sumit Karki"
+          width={400}
+          height={280}
+          loading="eager"
+          decoding="async"
           draggable={false}
         />
       </div>

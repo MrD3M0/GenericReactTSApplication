@@ -49,6 +49,24 @@ const HeroSection = () => {
   // next to it, so the horizontal border lines always connect properly.
   const avatarBoxWidth = "w-20 sm:w-28 md:w-32 lg:w-40";
 
+  // profile.png is the LCP (Largest Contentful Paint) element on this
+  // page — it's the first thing visible above the fold. Reserving
+  // intrinsic width/height prevents layout shift while it loads, and
+  // fetchPriority + eager loading tells the browser to fetch it first
+  // instead of treating it like a lazy, low-priority image.
+  const avatarImg = (
+    <img
+      className={`${avatarSize} rounded-full border border-gray-500/50`}
+      src="/profile.png"
+      alt="Sumit Karki - Full Stack Developer"
+      width={160}
+      height={160}
+      loading="eager"
+      fetchPriority="high"
+      decoding="async"
+    />
+  );
+
   return (
     <div className="w-full flex flex-row justify-center items-center bg-black">
       <div className="hidden md:flex h-full w-full flex-1"></div>
@@ -66,18 +84,10 @@ const HeroSection = () => {
               borderRadius={9999}
               className={avatarSize}
             >
-              <img
-                className={`${avatarSize} rounded-full border border-gray-500/50`}
-                src="profile.png"
-                alt="Sumit Karki - Full Stack Developer"
-              />
+              {avatarImg}
             </ElectricBorder>
           ) : (
-            <img
-              className={`${avatarSize} rounded-full border border-gray-500/50`}
-              src="profile.png"
-              alt="Sumit Karki - Full Stack Developer"
-            />
+            avatarImg
           )}
           <audio ref={zapAudioRef} src="/zapSound.mp3" loop />
         </div>
@@ -100,14 +110,18 @@ const HeroSection = () => {
             <h1 className="m-0 min-w-0 truncate">Sumit Karki</h1>
             <div className="flex shrink-0">
               <img
-                src="./verified.svg"
+                src="/verified.svg"
                 className="w-4 h-4 sm:w-5 sm:h-5 mt-0.5 shrink-0"
                 alt=""
+                width={20}
+                height={20}
               />
               <img
                 className="ml-1 w-4 h-4 sm:w-6 sm:h-6 shrink-0 cursor-pointer rounded-2xl"
-                src="./Pronounciation.svg"
+                src="/Pronounciation.svg"
                 alt="Play pronunciation"
+                width={24}
+                height={24}
                 onClick={playAudio}
               />
               <audio ref={audioRef} src="pronounce.mp3" />

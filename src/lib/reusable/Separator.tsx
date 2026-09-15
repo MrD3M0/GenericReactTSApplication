@@ -1,9 +1,9 @@
 export default function Separator() {
   return (
-    <div className="relative w-full h-9 border-gray-500!">
+    <div className="relative w-full h-9">
       {/* Background stripes (behind) */}
       <div
-        className="absolute inset-0 bg-black border border-y-gray-500  z-0"
+        className="absolute inset-0 bg-black border-y border-y-gray-500 z-0"
         style={{
           backgroundImage: `repeating-linear-gradient(
             135deg,
@@ -15,7 +15,7 @@ export default function Separator() {
         }}
       />
 
-      <div className="relative z-10 h-full w-full flex items-center justify-center border-gray-500!">
+      <div className="relative z-10 h-full w-full flex items-center justify-center">
         <div className="w-[90%] md:w-[80%] lg:w-[40%] h-full border-l border-r border-gray-500" />
       </div>
     </div>
